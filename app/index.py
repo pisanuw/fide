@@ -11,11 +11,13 @@ Search tiers (results of a tier are rating-ordered, tiers are concatenated):
 from __future__ import annotations
 
 import glob
+import heapq
 import io
 import os
 import unicodedata
 import zipfile
 from array import array
+from itertools import chain
 from bisect import bisect_left, bisect_right
 
 # Fixed-width columns of players_list_foa.txt (from its header line).
@@ -145,13 +147,32 @@ class PlayerIndex:
                 out.append(ls)
         return out
 
+    def _search_id(self, q: str, limit: int) -> list[dict]:
+        """Exact FIDE id first, then ids starting with the digits, best rating first."""
+        exact = self.get_fide(int(q))
+        out = [exact] if exact else []
+        if len(q) < 3 or len(out) >= limit:  # 1-2 digits are too ambiguous to be useful
+            return out
+        base = int(q)
+        slices = []
+        for k in range(1, 10 - len(q) + 1):  # FIDE ids have at most 9 digits
+            lo = bisect_left(self.id_sorted, base * 10 ** k)
+            hi = bisect_left(self.id_sorted, (base + 1) * 10 ** k)
+            if hi > lo:
+                slices.append(self.id_pos[lo:hi])
+        skip = int(exact["fideid"]) if exact else None
+        for pos in heapq.nsmallest(limit + 1, chain.from_iterable(slices)):
+            rec = self.record(pos)
+            if rec["fideid"] != skip and len(out) < limit:
+                out.append(rec)
+        return out
+
     def search(self, q: str, limit: int = 5) -> list[dict]:
         q = q.strip()
         if not q:
             return []
         if q.isdigit():
-            hit = self.get_fide(int(q))
-            return [hit] if hit else []
+            return self._search_id(q, limit)
         tokens = fold(q).split()
         if not tokens or max(len(t) for t in tokens) < 2:
             return []

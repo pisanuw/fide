@@ -11,7 +11,7 @@ Minimal FIDE player lookup. In-memory index, FastAPI, one static HTML page.
 `download=1` adds `Content-Disposition: attachment`. `limit` is 1-5 (default 5).
 
 Search: all words must match. A query equal to the whole name (any word order, 2+ words) comes first, then prefix-of-a-word matches, then substring matches; each group is
-ordered by standard, then rapid, then blitz rating. Accents and punctuation are ignored. An all-digit `q` is a FIDE id.
+ordered by standard, then rapid, then blitz rating. Accents and punctuation are ignored. An all-digit `q` is a FIDE id: exact match first, then ids that start with those digits (3+ digits), best rating first.
 
 Only players with a rating in any list are indexed (about 800k of 1.95M); set `INCLUDE_UNRATED=1` for all.
 Data: newest `players/*/players_list_txt.zip`, loaded at startup (~8 s, ~320 MB RAM).

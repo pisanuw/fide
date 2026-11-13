@@ -62,6 +62,18 @@ def test_fide_id(client):
     assert client.get("/api/players/fide/999").status_code == 404
 
 
+def test_fide_id_prefix(client):
+    main.state["index"] = PlayerIndex([line(1503014, "Carlsen, Magnus", std=2800),
+                                       line(150301, "Exact, Id", std=1000),
+                                       line(15030140, "Longer, Id", std=2000),
+                                       line(1503099, "Other, Id", std=1500),
+                                       line(1604000, "Not, Match", std=2900)])
+    r = client.get("/api/players", params={"q": "150301"})
+    assert names(r) == ["Exact, Id", "Carlsen, Magnus", "Longer, Id"]  # exact, then by rating
+    assert names(client.get("/api/players", params={"q": "1503", "limit": 2})) == ["Carlsen, Magnus", "Longer, Id"]
+    assert names(client.get("/api/players", params={"q": "15"})) == []  # too short for prefix
+
+
 def test_formats_and_download(client):
     r = client.get("/api/players", params={"q": "pisan", "format": "xml", "download": 1})
     assert r.headers["content-type"].startswith("application/xml")
