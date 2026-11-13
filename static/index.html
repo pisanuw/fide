@@ -24,16 +24,17 @@
   <span id="status" class="muted"></span>
 </div>
 <table id="res"></table>
+<p id="more" class="muted"></p>
 <p><small>API: <code id="api">/api/players?q=pisan</code> &middot; up to 5 matches &middot; <code>format=json|xml|txt</code></small></p>
 <script>
 const $ = id => document.getElementById(id);
-let timer, seq = 0, current = [];
+let timer, seq = 0, current = [], total = 0, exact = true;
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const url = (path, extra='') => path + (path.includes('?') ? '&' : '?') + 'format=' + $('fmt').value + extra;
 
 async function search() {
   const q = $('q').value.trim(), my = ++seq;
-  if (!q) { current = []; draw(); $('status').textContent = ''; return; }
+  if (!q) { current = []; total = 0; draw(); $('status').textContent = ''; return; }
   $('api').textContent = '/api/players?q=' + encodeURIComponent(q);
   const t = performance.now();
   try {
@@ -41,7 +42,9 @@ async function search() {
     if (my !== seq) return;
     if (r.status === 429) { $('status').textContent = 'Too many requests, slow down'; return; }
     current = await r.json();
-    $('status').textContent = current.length + ' found in ' + Math.round(performance.now() - t) + ' ms';
+    total = parseInt(r.headers.get('X-Total-Count') || current.length, 10);
+    exact = r.headers.get('X-Total-Count-Exact') !== 'false';
+    $('status').textContent = current.length + ' shown in ' + Math.round(performance.now() - t) + ' ms';
   } catch (e) { $('status').textContent = 'error'; return; }
   draw();
 }
@@ -51,8 +54,12 @@ function draw() {
     ? '<tr><th>Name</th><th>Fed</th><th>Title</th><th class="num">Std</th><th class="num">Rapid</th><th class="num">Blitz</th><th>FIDE id</th><th></th></tr>' +
       current.map(p => `<tr><td>${esc(p.name)}</td><td>${esc(p.fed)}</td><td>${esc(p.title)}</td>
         <td class="num">${p.rating||''}</td><td class="num">${p.rapid_rating||''}</td><td class="num">${p.blitz_rating||''}</td>
-        <td>${p.fideid}</td><td><a href="${url('/api/players/fide/' + p.fideid, '&download=1')}">download</a></td></tr>`).join('')
+        <td><a href="https://ratings.fide.com/profile/${p.fideid}" target="_blank" rel="noopener" title="FIDE profile">${p.fideid}</a></td><td><a href="${url('/api/players/fide/' + p.fideid, '&download=1')}">download</a></td></tr>`).join('')
     : '';
+  const extra = total - current.length;
+  $('more').textContent = extra <= 0 ? ''
+    : !exact ? `(more than ${total.toLocaleString()} entries match your search; type more to narrow it)`
+    : `(${extra.toLocaleString()} more ${extra === 1 ? 'entry matches' : 'entries match'} your search)`;
 }
 $('q').addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(search, 120); });
 $('all').onclick = () => { location.href = url('/api/players?q=' + encodeURIComponent($('q').value.trim()), '&download=1'); };

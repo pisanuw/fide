@@ -11,6 +11,9 @@ Live: https://fide-lookup.hintwise.org
 
 `format` is `json` (default), `xml` or `txt` (tab-separated, header row). All fields are always returned.
 `download=1` adds `Content-Disposition: attachment`. `limit` is 1-5 (default 5).
+`/api/players` also sets `X-Total-Count` (all players matching `q`, shown or not) and `X-Total-Count-Exact`
+(`false` when a name search hit the 1,000 counting cap). The page shows FIDE ids as links to ratings.fide.com/profile/<id>
+and "(N more entries match your search)" under the results.
 
 Search: all words must match. A query equal to the whole name (any word order, 2+ words) comes first, then prefix-of-a-word matches, then substring matches; each group is
 ordered by standard, then rapid, then blitz rating. Accents and punctuation are ignored. An all-digit `q` is a FIDE id: exact match first, then ids that start with those digits (3+ digits), best rating first.

@@ -103,8 +103,14 @@ Format = Query("json", pattern="^(json|xml|txt)$")
 def players(q: str = Query(..., min_length=1, max_length=100),
             limit: int = Query(MAX_LIMIT, ge=1, le=MAX_LIMIT),
             format: str = Format, download: bool = False):
-    found = state["index"].search(q, limit)
-    return render(found, format, download, "fide-players")
+    ix = state["index"]
+    found = ix.search(q, limit)
+    total, exact = ix.count(q)
+    resp = render(found, format, download, "fide-players")
+    # total players matching q (shown + not shown); capped at 1000 for names
+    resp.headers["X-Total-Count"] = str(max(total, len(found)))
+    resp.headers["X-Total-Count-Exact"] = "true" if exact else "false"
+    return resp
 
 
 @app.get("/api/players/fide/{fide_id}")

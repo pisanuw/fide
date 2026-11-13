@@ -10,3 +10,4 @@
 2026-11-13 [decision] Drop the xml source list (service reads only txt); refresh fetches txt only. History not purged: saves 51 MB once, PR refs keep the blob on GitHub, needs force-push of main.
 2026-11-13 [decision] Refresh moves to halflife (launchd, 3rd and 8th 09:17): GitHub runners time out connecting to ratings.fide.com. Workflow removed.
 2026-11-13 [code] scripts/refresh_on_host.sh (dedicated clone on main, --check mode) and scripts/install_launchd.sh; tested end to end against a local bare remote.
+2026-11-13 [code] UI: FIDE id links to ratings.fide.com/profile/<id>; "(N more entries match)" line. API: X-Total-Count and X-Total-Count-Exact headers (name counts capped at 1000, ~10-25 ms).
