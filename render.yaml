@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: fide-lookup
+    runtime: python
+    plan: free   # 512 MB; ~320 MB RSS steady, ~390 MB while loading. Switch to starter if it OOMs
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT --proxy-headers --forwarded-allow-ips='*'
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.13.0"
+      - key: RATE_LIMIT
+        value: "60"
