@@ -8,3 +8,5 @@
 2026-11-13 [code] Monthly refresh: refresh-fide.yml (3rd and 8th) runs scripts/fetch_fide.py, validates layout and count, commits players/YYYYMM to main.
 2026-11-13 [decision] No keep-alive and no paid plan; free Render plan with idle cold starts is accepted.
 2026-11-13 [decision] Drop the xml source list (service reads only txt); refresh fetches txt only. History not purged: saves 51 MB once, PR refs keep the blob on GitHub, needs force-push of main.
+2026-11-13 [decision] Refresh moves to halflife (launchd, 3rd and 8th 09:17): GitHub runners time out connecting to ratings.fide.com. Workflow removed.
+2026-11-13 [code] scripts/refresh_on_host.sh (dedicated clone on main, --check mode) and scripts/install_launchd.sh; tested end to end against a local bare remote.

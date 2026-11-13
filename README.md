@@ -21,7 +21,11 @@ Rate limit: `RATE_LIMIT` requests per `RATE_WINDOW` seconds per IP (60 / 60), 42
 No US Chess ID: FIDE's lists do not contain it.
 
 Run: `pip install -r requirements-dev.txt && uvicorn app.main:app` ; test: `pytest`. Deploy: `render.yaml`.
-Data refresh: `.github/workflows/refresh-fide.yml` runs on the 3rd and 8th of each month (or by hand from the Actions tab).
-It runs `scripts/fetch_fide.py`, which downloads the txt list from https://ratings.fide.com/download_lists.phtml, checks the
-txt column layout and player count, files them under `players/YYYYMM/` (month from the date inside FIDE's zip), runs the tests
-and pushes to `main`; Render redeploys from that. An existing month folder is skipped unless `force` is set.
+Data refresh runs on halflife, not GitHub Actions: GitHub's runners cannot connect to ratings.fide.com
+(connection timeout, 2026-11-13). `scripts/install_launchd.sh` installs a launchd job that runs
+`scripts/refresh_on_host.sh` on the 3rd and 8th of each month at 09:17 local time, in a dedicated clone on `main`.
+It pulls `main`, runs `scripts/fetch_fide.py` (downloads the txt list from https://ratings.fide.com/download_lists.phtml,
+checks the column layout and player count, files it under `players/YYYYMM/` using the month from the date inside FIDE's
+zip), runs the tests, and commits and pushes to `main` only when a new month arrived; Render redeploys from that push.
+`refresh_on_host.sh --check` verifies Python, git push access and FIDE reachability without changing anything.
+Log: `~/Library/Logs/fide-refresh.log`.
