@@ -1,12 +1,18 @@
 """In-memory FIDE player index.
 
 Players are sorted best-rating-first, so scanning the search blob front to back
-yields results already ranked and lets a query stop after `limit` hits.
+yields results already ranked and lets a query stop once it has enough.
 
-Search tiers (results of a tier are rating-ordered, tiers are concatenated):
+Name search tiers (each tier is rating-ordered; tiers are concatenated):
   0. the query words are exactly the name's words, in any order (2+ words only)
-  1. every query token is a prefix of some name word
-  2. every query token is a substring somewhere in the name (fallback)
+  1. every query word is a prefix of some name word
+  2. every query word is a substring somewhere in the name (fallback)
+The total count is the size of tier 2's set, which contains the other tiers.
+
+Digit queries are FIDE ids: the exact id first, then ids starting with those
+digits (3+ digits), best rating first.
+
+Optional filters: fed (federation code) and born (birth year).
 """
 from __future__ import annotations
 
@@ -17,8 +23,9 @@ import os
 import unicodedata
 import zipfile
 from array import array
-from itertools import chain
 from bisect import bisect_left, bisect_right
+from collections import Counter
+from itertools import chain
 
 # Fixed-width columns of players_list_foa.txt (from its header line).
 _COLS = {
@@ -34,6 +41,11 @@ _INT_FIELDS = {"rating", "games", "k", "rapid_rating", "rapid_games", "rapid_k",
 FIELDS = ["fideid", "name"] + list(_COLS)
 _RATING_COLS = [_COLS[c] for c in ("rating", "rapid_rating", "blitz_rating")]
 SEP = "\x1f"
+
+# With a filter whose player list is at most this long, walk that list instead
+# of scanning the whole name blob. 30k covers every birth year (~27k max) and all
+# but the largest federations (IND, RUS, FRA, ESP, GER: 40-75k).
+FILTER_LIST_MAX = 30_000
 
 
 def fold(s: str) -> str:
@@ -53,8 +65,19 @@ def find_data_file(root: str) -> str:
     return hits[-1]
 
 
+def _group(keys: array) -> dict[int, array]:
+    """key -> array of the positions holding it, ascending; arrays sized exactly."""
+    counts = Counter(keys)
+    groups = {k: array("I", [0]) * c for k, c in counts.items()}
+    fill = dict.fromkeys(counts, 0)
+    for i, k in enumerate(keys):
+        groups[k][fill[k]] = i
+        fill[k] += 1
+    return groups
+
+
 class PlayerIndex:
-    def __init__(self, lines: list[str], include_unrated: bool = False):
+    def __init__(self, lines, include_unrated: bool = False):
         """lines: raw fixed-width data lines (no header)."""
         rows = []
         for raw in lines:
@@ -72,16 +95,35 @@ class PlayerIndex:
         ids: list[int] = []
         blob_parts: list[str] = []
         offsets = array("I")
+        self.feds: list[str] = []          # federation code by number
+        fed_num: dict[str, int] = {}
+        # preallocated: growing hundreds of arrays one item at a time fragments the heap (~40 MB)
+        self.fed_of = array("H", [0]) * len(rows)   # line -> federation number
+        self.born_of = array("H", [0]) * len(rows)  # line -> birth year (0 = unknown)
         pos = 0
+        # federation and birth year are read back from the record after sorting: keeping
+        # them in `rows` costs ~65 MB that fragmentation never gives back
+        fed_at, born_at = FIELDS.index("fed"), FIELDS.index("birthday")
         for i, (_, _, _, name, rec) in enumerate(rows):
             self.records.append(rec)
+            parts = rec.split(SEP)
+            fed = parts[fed_at].upper()
+            born = int(parts[born_at]) if parts[born_at].isdigit() else 0
             fid = rec.split(SEP, 1)[0]
             ids.append(int(fid) if fid.isdigit() else -1)
             line = " " + " ".join(fold(name).split()) + "\n"
             offsets.append(pos)
             pos += len(line)
             blob_parts.append(line)
+            if fed not in fed_num:
+                fed_num[fed] = len(self.feds)
+                self.feds.append(fed)
+            self.fed_of[i] = fed_num[fed]
+            self.born_of[i] = born if 0 < born < 65536 else 0
         del rows
+        self.fed_num = fed_num
+        self.by_fed = _group(self.fed_of)    # key -> lines, in rating order like the blob
+        self.by_born = _group(self.born_of)
         order = sorted(range(len(ids)), key=ids.__getitem__)
         self.id_sorted = array("q", (ids[i] for i in order))  # FIDE id -> position, by bisect
         self.id_pos = array("I", order)
@@ -109,127 +151,163 @@ class PlayerIndex:
         d["fideid"] = int(d["fideid"])
         return d
 
-    def get_fide(self, fid: int) -> dict | None:
+    def _pos_of_id(self, fid: int) -> int | None:
         j = bisect_left(self.id_sorted, fid)
         if j < len(self.id_sorted) and self.id_sorted[j] == fid:
-            return self.record(self.id_pos[j])
+            return self.id_pos[j]
         return None
 
+    def get_fide(self, fid: int) -> dict | None:
+        i = self._pos_of_id(fid)
+        return None if i is None else self.record(i)
+
+    def _line(self, ls: int) -> str:
+        offsets = self.offsets
+        end = offsets[ls + 1] if ls + 1 < len(offsets) else len(self.blob)
+        return self.blob[offsets[ls]:end]
+
+    # -- filters -----------------------------------------------------------
+    def _filter(self, fed: str | None, born: int | None):
+        """None: no filter. False: matches nothing. Else (fed number | None, born | None)."""
+        if not fed and not born:
+            return None
+        fc = None
+        if fed:
+            fc = self.fed_num.get(fed.strip().upper())
+            if fc is None:
+                return False
+        if born and born not in self.by_born:
+            return False
+        return fc, born or None
+
+    def _ok(self, flt):
+        fc, born = flt
+        fed_of, born_of = self.fed_of, self.born_of
+        if fc is not None and born is not None:
+            return lambda i: fed_of[i] == fc and born_of[i] == born
+        if fc is not None:
+            return lambda i: fed_of[i] == fc
+        return lambda i: born_of[i] == born
+
     # -- search ------------------------------------------------------------
-    def _line_of(self, pos: int) -> int:
-        return bisect_right(self.offsets, pos) - 1
+    def find(self, q: str, limit: int = 5, fed: str | None = None, born: int | None = None,
+             cap: int = 1000) -> tuple[list[dict], int, bool]:
+        """(up to `limit` players, total matching players, whether total is exact).
+        Name totals are counted up to `cap`; id totals are always exact."""
+        q = q.strip()
+        flt = self._filter(fed, born)
+        if not q or flt is False:
+            return [], 0, True
+        if q.isdigit():
+            ids, total, exact = self._find_id(q, limit, flt)
+        else:
+            tokens = fold(q).split()
+            if not tokens or max(len(t) for t in tokens) < 2:
+                return [], 0, True
+            ids, total, exact = self._find_names(tokens, limit, flt, cap)
+        return [self.record(i) for i in ids], total, exact
 
-    def _scan(self, tokens: list[str], prefix: bool, limit: int, seen: set[int],
-              exact: bool = False) -> list[int]:
-        blob = self.blob
-        needles = [(" " + t) if prefix else t for t in tokens]
-        # drive the scan with the longest needle (fewest false hits)
-        driver = max(needles, key=len)
-        others = [n for n in needles if n is not driver]
-        out: list[int] = []
+    def search(self, q: str, limit: int = 5, fed: str | None = None, born: int | None = None) -> list[dict]:
+        return self.find(q, limit, fed, born)[0]
+
+    def count(self, q: str, cap: int = 1000, fed: str | None = None, born: int | None = None) -> tuple[int, bool]:
+        _, total, exact = self.find(q, 1, fed, born, cap)
+        return total, exact
+
+    def _find_id(self, q: str, limit: int, flt) -> tuple[list[int], int, bool]:
+        base = int(q)
+        exact_pos = self._pos_of_id(base)
+        ranges = []
+        if len(q) >= 3:  # 1-2 digits are too ambiguous for prefix matching
+            for k in range(1, 10 - len(q) + 1):  # FIDE ids have at most 9 digits
+                lo = bisect_left(self.id_sorted, base * 10 ** k)
+                hi = bisect_left(self.id_sorted, (base + 1) * 10 ** k)
+                if hi > lo:
+                    ranges.append(self.id_pos[lo:hi])
+        if flt is None:
+            total = (exact_pos is not None) + sum(len(r) for r in ranges)
+            prefix = heapq.nsmallest(limit, chain.from_iterable(ranges))
+        else:
+            ok = self._ok(flt)
+            if exact_pos is not None and not ok(exact_pos):
+                exact_pos = None
+            cands = [p for p in chain.from_iterable(ranges) if ok(p)]
+            total = (exact_pos is not None) + len(cands)
+            prefix = heapq.nsmallest(limit, cands)
+        ids = ([exact_pos] if exact_pos is not None else []) + prefix
+        return ids[:limit], total, True
+
+    def _exact_two(self, tokens: list[str], ok, limit: int) -> list[int]:
+        """Lines whose words are exactly the two tokens, either order, by direct search.
+        Anchored on the preceding newline so ' magnus carlsen' does not match the end
+        of ' sanico magnus carlsen'."""
+        blob, offsets = self.blob, self.offsets
+        hits = set()
+        a, b = tokens
+        for body in {f" {a} {b}\n", f" {b} {a}\n"}:
+            if blob.startswith(body):
+                hits.add(0)
+            needle = "\n" + body
+            p = blob.find(needle)
+            while p >= 0:
+                hits.add(bisect_right(offsets, p + 1) - 1)
+                p = blob.find(needle, p + 1)
+        return sorted(i for i in hits if ok is None or ok(i))[:limit]
+
+    def _candidates(self, driver: str, flt):
+        """(line number, line text) in rating order, for every line that may match."""
+        blob, offsets = self.blob, self.offsets
+        n, end = len(offsets), len(blob)
+        if flt is not None:
+            fc, born = flt
+            lists = ([self.by_fed[fc]] if fc is not None else []) + \
+                    ([self.by_born[born]] if born is not None else [])
+            smallest = min(lists, key=len)
+            if len(smallest) <= FILTER_LIST_MAX:
+                for ls in smallest:
+                    yield ls, blob[offsets[ls]:offsets[ls + 1] if ls + 1 < n else end]
+                return
         start = 0
-        n = len(blob)
-        while len(out) < limit:
-            p = blob.find(driver, start)
-            if p < 0:
-                break
-            ls = self._line_of(p)
-            line_start = self.offsets[ls]
-            line_end = self.offsets[ls + 1] if ls + 1 < len(self.offsets) else n
-            start = line_end  # at most one hit per player
-            if ls in seen:
-                continue
-            line = blob[line_start:line_end]
-            if exact:
-                if set(line.split()) == set(tokens):
-                    out.append(ls)
-            elif all(o in line for o in others):
-                out.append(ls)
-        return out
-
-    def _search_id(self, q: str, limit: int) -> list[dict]:
-        """Exact FIDE id first, then ids starting with the digits, best rating first."""
-        exact = self.get_fide(int(q))
-        out = [exact] if exact else []
-        if len(q) < 3 or len(out) >= limit:  # 1-2 digits are too ambiguous to be useful
-            return out
-        base = int(q)
-        slices = []
-        for k in range(1, 10 - len(q) + 1):  # FIDE ids have at most 9 digits
-            lo = bisect_left(self.id_sorted, base * 10 ** k)
-            hi = bisect_left(self.id_sorted, (base + 1) * 10 ** k)
-            if hi > lo:
-                slices.append(self.id_pos[lo:hi])
-        skip = int(exact["fideid"]) if exact else None
-        for pos in heapq.nsmallest(limit + 1, chain.from_iterable(slices)):
-            rec = self.record(pos)
-            if rec["fideid"] != skip and len(out) < limit:
-                out.append(rec)
-        return out
-
-    def _count_id(self, q: str) -> int:
-        n = 1 if self.get_fide(int(q)) else 0
-        if len(q) < 3:
-            return n
-        base = int(q)
-        for k in range(1, 10 - len(q) + 1):
-            n += bisect_left(self.id_sorted, (base + 1) * 10 ** k) - bisect_left(self.id_sorted, base * 10 ** k)
-        return n
-
-    def _count_names(self, tokens: list[str], cap: int) -> tuple[int, bool]:
-        """Players whose name contains every token. Every search tier is a subset of
-        this set, so it is the total number of matches. Stops at cap."""
-        blob = self.blob
-        driver = max(tokens, key=len)
-        others = list(tokens)
-        others.remove(driver)
-        offsets, n_lines, end = self.offsets, len(self.offsets), len(blob)
-        count = start = 0
         while True:
             p = blob.find(driver, start)
             if p < 0:
-                return count, True
+                return
             ls = bisect_right(offsets, p) - 1
-            line_end = offsets[ls + 1] if ls + 1 < n_lines else end
-            if not others or all(o in blob[offsets[ls]:line_end] for o in others):
+            le = offsets[ls + 1] if ls + 1 < n else end
+            yield ls, blob[offsets[ls]:le]
+            start = le
+
+    def _find_names(self, tokens: list[str], limit: int, flt, cap: int) -> tuple[list[int], int, bool]:
+        ok = self._ok(flt) if flt is not None else None
+        exact_ids: list[int] = []
+        if len(tokens) == 2:
+            exact_ids = self._exact_two(tokens, ok, limit)
+        seen = set(exact_ids)
+        # 3+ words: exact matches are found during the pass, which then cannot stop early
+        exact_in_pass = len(tokens) >= 3
+        want = sorted(tokens)
+        pre = [" " + t for t in tokens]
+        driver = max(tokens, key=len)
+        ex3: list[int] = []
+        prefix: list[int] = []
+        sub: list[int] = []
+        count = 0
+        for ls, line in self._candidates(driver, flt):
+            if not all(t in line for t in tokens):
+                continue
+            if ok is not None and not ok(ls):
+                continue
+            if count < cap:
                 count += 1
-                if count >= cap:
-                    return count, False
-            start = line_end
-
-    def count(self, q: str, cap: int = 1000) -> tuple[int, bool]:
-        """(number of players matching q, whether that number is exact).
-        Name matches are counted up to cap; id matches are always exact."""
-        q = q.strip()
-        if not q:
-            return 0, True
-        if q.isdigit():
-            return self._count_id(q), True
-        tokens = fold(q).split()
-        if not tokens or max(len(t) for t in tokens) < 2:
-            return 0, True
-        return self._count_names(tokens, cap)
-
-    def search(self, q: str, limit: int = 5) -> list[dict]:
-        q = q.strip()
-        if not q:
-            return []
-        if q.isdigit():
-            return self._search_id(q, limit)
-        tokens = fold(q).split()
-        if not tokens or max(len(t) for t in tokens) < 2:
-            return []
-        seen: set[int] = set()
-        ids: list[int] = []
-        # tier 0: the query is the whole name (any word order); single words are skipped
-        # because exact one-word names are rare and the extra scan costs ~10 ms
-        if len(tokens) > 1:
-            ids = self._scan(tokens, True, limit, seen, exact=True)
-            seen.update(ids)
-        if len(ids) < limit:
-            new = self._scan(tokens, True, limit - len(ids), seen)
-            ids += new
-            seen.update(new)
-        if len(ids) < limit:
-            ids += self._scan(tokens, False, limit - len(ids), seen)
-        return [self.record(i) for i in ids]
+            if ls not in seen:
+                if exact_in_pass and sorted(line.split()) == want:
+                    if len(ex3) < limit:
+                        ex3.append(ls)
+                elif all(p in line for p in pre):
+                    if len(prefix) < limit:
+                        prefix.append(ls)
+                elif len(sub) < limit:
+                    sub.append(ls)
+            if count >= cap and len(prefix) >= limit and not exact_in_pass:
+                break
+        return (exact_ids + ex3 + prefix + sub)[:limit], count, count < cap
