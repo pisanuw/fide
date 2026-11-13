@@ -4,6 +4,7 @@ Players are sorted best-rating-first, so scanning the search blob front to back
 yields results already ranked and lets a query stop after `limit` hits.
 
 Search tiers (results of a tier are rating-ordered, tiers are concatenated):
+  0. the query words are exactly the name's words, in any order (2+ words only)
   1. every query token is a prefix of some name word
   2. every query token is a substring somewhere in the name (fallback)
 """
@@ -116,7 +117,8 @@ class PlayerIndex:
     def _line_of(self, pos: int) -> int:
         return bisect_right(self.offsets, pos) - 1
 
-    def _scan(self, tokens: list[str], prefix: bool, limit: int, seen: set[int]) -> list[int]:
+    def _scan(self, tokens: list[str], prefix: bool, limit: int, seen: set[int],
+              exact: bool = False) -> list[int]:
         blob = self.blob
         needles = [(" " + t) if prefix else t for t in tokens]
         # drive the scan with the longest needle (fewest false hits)
@@ -136,7 +138,10 @@ class PlayerIndex:
             if ls in seen:
                 continue
             line = blob[line_start:line_end]
-            if all(o in line for o in others):
+            if exact:
+                if set(line.split()) == set(tokens):
+                    out.append(ls)
+            elif all(o in line for o in others):
                 out.append(ls)
         return out
 
@@ -151,8 +156,16 @@ class PlayerIndex:
         if not tokens or max(len(t) for t in tokens) < 2:
             return []
         seen: set[int] = set()
-        ids = self._scan(tokens, True, limit, seen)
-        seen.update(ids)
+        ids: list[int] = []
+        # tier 0: the query is the whole name (any word order); single words are skipped
+        # because exact one-word names are rare and the extra scan costs ~10 ms
+        if len(tokens) > 1:
+            ids = self._scan(tokens, True, limit, seen, exact=True)
+            seen.update(ids)
+        if len(ids) < limit:
+            new = self._scan(tokens, True, limit - len(ids), seen)
+            ids += new
+            seen.update(new)
         if len(ids) < limit:
             ids += self._scan(tokens, False, limit - len(ids), seen)
         return [self.record(i) for i in ids]

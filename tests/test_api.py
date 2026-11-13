@@ -17,6 +17,7 @@ LINES = [
     line(3, "Apisan, Zed", std=1500),
     line(4, "Müller, José", "GER", std=2200),
     line(5, "Nobody, Unrated"),
+    line(7, "Pisan, Yusuf Junior", std=2300),
     line(6, "O'Brien & Sons, <Al>", std=1700),
 ]
 
@@ -35,12 +36,18 @@ def names(r):
 
 def test_prefix_ranked_by_rating_then_substring_fallback(client):
     assert names(client.get("/api/players", params={"q": "pisan"})) == [
-        "Pisani, Marco", "Pisan, Yusuf", "Apisan, Zed"]
+        "Pisan, Yusuf Junior", "Pisani, Marco", "Pisan, Yusuf", "Apisan, Zed"]
+
+
+def test_exact_name_first_any_order(client):
+    assert names(client.get("/api/players", params={"q": "pisan yusuf"}))[:2] == [
+        "Pisan, Yusuf", "Pisan, Yusuf Junior"]
+    assert names(client.get("/api/players", params={"q": "yusuf, pisan"}))[0] == "Pisan, Yusuf"
 
 
 def test_multi_token_any_order_and_accents(client):
     assert names(client.get("/api/players", params={"q": "jose mul"})) == ["Müller, José"]
-    assert names(client.get("/api/players", params={"q": "yusuf pis"})) == ["Pisan, Yusuf"]
+    assert names(client.get("/api/players", params={"q": "yusuf pis"})) == ["Pisan, Yusuf Junior", "Pisan, Yusuf"]
 
 
 def test_limit_and_unrated_excluded(client):
@@ -62,7 +69,7 @@ def test_formats_and_download(client):
     r = client.get("/api/players", params={"q": "brien", "format": "xml"})
     assert "&amp;" in r.text and "&lt;Al&gt;" in r.text
     r = client.get("/api/players", params={"q": "pisan", "format": "txt"})
-    assert r.text.splitlines()[0].startswith("fideid\tname") and len(r.text.splitlines()) == 4
+    assert r.text.splitlines()[0].startswith("fideid\tname") and len(r.text.splitlines()) == 5
     assert client.get("/api/players", params={"q": "x", "format": "csv"}).status_code == 422
 
 

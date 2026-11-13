@@ -10,7 +10,7 @@ Minimal FIDE player lookup. In-memory index, FastAPI, one static HTML page.
 `format` is `json` (default), `xml` or `txt` (tab-separated, header row). All fields are always returned.
 `download=1` adds `Content-Disposition: attachment`. `limit` is 1-5 (default 5).
 
-Search: all words must match. Prefix-of-a-word matches come first, then substring matches; each group is
+Search: all words must match. A query equal to the whole name (any word order, 2+ words) comes first, then prefix-of-a-word matches, then substring matches; each group is
 ordered by standard, then rapid, then blitz rating. Accents and punctuation are ignored. An all-digit `q` is a FIDE id.
 
 Only players with a rating in any list are indexed (about 800k of 1.95M); set `INCLUDE_UNRATED=1` for all.
