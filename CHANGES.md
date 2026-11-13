@@ -11,3 +11,5 @@
 2026-11-13 [decision] Refresh moves to halflife (launchd, 3rd and 8th 09:17): GitHub runners time out connecting to ratings.fide.com. Workflow removed.
 2026-11-13 [code] scripts/refresh_on_host.sh (dedicated clone on main, --check mode) and scripts/install_launchd.sh; tested end to end against a local bare remote.
 2026-11-13 [code] UI: FIDE id links to ratings.fide.com/profile/<id>; "(N more entries match)" line. API: X-Total-Count and X-Total-Count-Exact headers (name counts capped at 1000, ~10-25 ms).
+2026-11-13 [code] Search: exact two-word names by direct find, one pass for prefix/substring/count; 2-word queries ~2x faster, results identical (reference test).
+2026-11-13 [code] For Chess TD: CORS for https://chesstd.hintwise.org (CORS_ORIGINS), limit up to 30, fed and born filters. Memory unchanged (~350 MB).

@@ -5,3 +5,4 @@ Decisions: Python/FastAPI on Render, plain HTML, in-memory index (no database). 
 Public, per-IP rate limit. Live at https://fide-lookup.hintwise.org (Render free plan, cold starts accepted).
 Monthly data refresh: launchd job on halflife (GitHub runners cannot reach FIDE) commits players/YYYYMM/players_list_txt.zip to main; Render redeploys on push.
 Non-goals for now: US Chess ID (not in FIDE data; revisit with a live lookup + cache).
+API consumers: Chess TD (https://chesstd.hintwise.org) calls the API from the browser (CORS); limit up to 30; fed/born filters.

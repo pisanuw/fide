@@ -5,9 +5,9 @@ from app import main
 from app.index import PlayerIndex
 
 
-def line(fid, name, fed="USA", std=0, rapid=0, blitz=0, flag=""):
+def line(fid, name, fed="USA", std=0, rapid=0, blitz=0, flag="", born=1990):
     s = f"{fid:<15}{name:<61}{fed:<4}{'M':<4}{'':<5}{'':<5}{'':<15}{'':<4}"
-    s += f"{std:>6}{0:>4}{40:>3}{rapid:>6}{0:>4}{0:>3}{blitz:>6}{0:>4}{0:>3}{1990:>6}{flag}"
+    s += f"{std:>6}{0:>4}{40:>3}{rapid:>6}{0:>4}{0:>3}{blitz:>6}{0:>4}{0:>3}{born:>6}{flag}"
     return s
 
 
@@ -53,7 +53,8 @@ def test_multi_token_any_order_and_accents(client):
 def test_limit_and_unrated_excluded(client):
     assert len(client.get("/api/players", params={"q": "pisan", "limit": 1}).json()) == 1
     assert client.get("/api/players", params={"q": "nobody"}).json() == []
-    assert client.get("/api/players", params={"q": "pisan", "limit": 6}).status_code == 422
+    assert client.get("/api/players", params={"q": "pisan", "limit": 30}).status_code == 200
+    assert client.get("/api/players", params={"q": "pisan", "limit": 31}).status_code == 422
 
 
 def test_fide_id(client):
@@ -91,6 +92,40 @@ def test_total_count_cap_and_ids():
     assert ix.count("12") == (0, True)
     assert ix.count("125") == (1, True)
     assert ix.count("") == (0, True) and ix.count("p") == (0, True)
+
+
+def test_fed_and_born_filters(client):
+    assert names(client.get("/api/players", params={"q": "pisan", "fed": "ita"})) == ["Pisani, Marco"]
+    r = client.get("/api/players", params={"q": "pisan", "fed": "USA"})
+    assert names(r) == ["Pisan, Yusuf Junior", "Pisan, Yusuf", "Apisan, Zed"] and r.headers["x-total-count"] == "3"
+    assert client.get("/api/players", params={"q": "pisan", "born": 1990}).json() != []
+    r = client.get("/api/players", params={"q": "pisan", "born": 1991})
+    assert r.json() == [] and r.headers["x-total-count"] == "0"
+    assert client.get("/api/players", params={"q": "pisan", "fed": "XYZ"}).json() == []
+    assert names(client.get("/api/players", params={"q": "2", "fed": "ITA"})) == ["Pisani, Marco"]
+    assert client.get("/api/players", params={"q": "2", "fed": "USA"}).json() == []
+    for bad in ({"fed": "US"}, {"fed": "U1A"}, {"born": 1800}, {"born": "x"}):
+        assert client.get("/api/players", params={"q": "pisan", **bad}).status_code == 422
+
+
+ORIGIN = "https://chesstd.hintwise.org"
+
+
+def test_cors_allowed_origin_only(client):
+    r = client.get("/api/players", params={"q": "pisan"}, headers={"Origin": ORIGIN})
+    assert r.headers["access-control-allow-origin"] == ORIGIN
+    assert "x-total-count" in r.headers["access-control-expose-headers"].lower()
+    r = client.get("/api/players", params={"q": "pisan"}, headers={"Origin": "https://evil.example"})
+    assert "access-control-allow-origin" not in r.headers
+    r = client.options("/api/players", headers={"Origin": ORIGIN, "Access-Control-Request-Method": "GET"})
+    assert r.status_code == 200 and r.headers["access-control-allow-origin"] == ORIGIN
+
+
+def test_cors_header_on_rate_limited_response(client, monkeypatch):
+    monkeypatch.setattr(main, "RATE_LIMIT", 1)
+    client.get("/api/players", params={"q": "pisan"}, headers={"Origin": ORIGIN})
+    r = client.get("/api/players", params={"q": "pisan"}, headers={"Origin": ORIGIN})
+    assert r.status_code == 429 and r.headers["access-control-allow-origin"] == ORIGIN
 
 
 def test_formats_and_download(client):

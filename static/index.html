@@ -25,7 +25,7 @@
 </div>
 <table id="res"></table>
 <p id="more" class="muted"></p>
-<p><small>API: <code id="api">/api/players?q=pisan</code> &middot; up to 5 matches &middot; <code>format=json|xml|txt</code></small></p>
+<p><small>API: <code id="api">/api/players?q=pisan</code> &middot; <code>limit=1..30</code> (default 5) &middot; <code>fed=NOR</code> &middot; <code>born=1990</code> &middot; <code>format=json|xml|txt</code></small></p>
 <script>
 const $ = id => document.getElementById(id);
 let timer, seq = 0, current = [], total = 0, exact = true;

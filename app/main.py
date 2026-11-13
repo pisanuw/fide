@@ -9,6 +9,7 @@ from pathlib import Path
 from xml.sax.saxutils import escape
 
 from fastapi import FastAPI, HTTPException, Query, Request, Response
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse
 
 from .index import FIELDS, PlayerIndex, find_data_file
@@ -18,7 +19,10 @@ DATA = os.environ.get("FIDE_DATA", str(ROOT / "players"))
 INCLUDE_UNRATED = os.environ.get("INCLUDE_UNRATED", "0") == "1"
 RATE_LIMIT = int(os.environ.get("RATE_LIMIT", "60"))  # requests per window per IP
 RATE_WINDOW = float(os.environ.get("RATE_WINDOW", "60"))
-MAX_LIMIT = 5
+DEFAULT_LIMIT = 5
+MAX_LIMIT = 30
+# Browser origins allowed to call the API directly (comma-separated)
+CORS_ORIGINS = [o.strip() for o in os.environ.get("CORS_ORIGINS", "https://chesstd.hintwise.org").split(",") if o.strip()]
 
 state: dict = {}
 
@@ -66,6 +70,17 @@ async def rate_limit(request: Request, call_next):
     return await call_next(request)
 
 
+# Added after the rate limiter so it wraps it: 429 responses carry CORS headers too,
+# otherwise a browser reports a CORS error instead of the 429.
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=CORS_ORIGINS,
+    allow_methods=["GET"],
+    expose_headers=["X-Total-Count", "X-Total-Count-Exact", "Retry-After", "Content-Disposition"],
+    max_age=86400,
+)
+
+
 # -- formatting ------------------------------------------------------------
 def to_txt(players: list[dict]) -> str:
     lines = ["\t".join(FIELDS)]
@@ -101,11 +116,11 @@ Format = Query("json", pattern="^(json|xml|txt)$")
 # -- routes ----------------------------------------------------------------
 @app.get("/api/players")
 def players(q: str = Query(..., min_length=1, max_length=100),
-            limit: int = Query(MAX_LIMIT, ge=1, le=MAX_LIMIT),
+            limit: int = Query(DEFAULT_LIMIT, ge=1, le=MAX_LIMIT),
+            fed: str | None = Query(None, pattern="^[A-Za-z]{3}$", description="federation code, e.g. NOR"),
+            born: int | None = Query(None, ge=1900, le=2100, description="birth year"),
             format: str = Format, download: bool = False):
-    ix = state["index"]
-    found = ix.search(q, limit)
-    total, exact = ix.count(q)
+    found, total, exact = state["index"].find(q, limit, fed, born)
     resp = render(found, format, download, "fide-players")
     # total players matching q (shown + not shown); capped at 1000 for names
     resp.headers["X-Total-Count"] = str(max(total, len(found)))
