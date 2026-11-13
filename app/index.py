@@ -167,6 +167,49 @@ class PlayerIndex:
                 out.append(rec)
         return out
 
+    def _count_id(self, q: str) -> int:
+        n = 1 if self.get_fide(int(q)) else 0
+        if len(q) < 3:
+            return n
+        base = int(q)
+        for k in range(1, 10 - len(q) + 1):
+            n += bisect_left(self.id_sorted, (base + 1) * 10 ** k) - bisect_left(self.id_sorted, base * 10 ** k)
+        return n
+
+    def _count_names(self, tokens: list[str], cap: int) -> tuple[int, bool]:
+        """Players whose name contains every token. Every search tier is a subset of
+        this set, so it is the total number of matches. Stops at cap."""
+        blob = self.blob
+        driver = max(tokens, key=len)
+        others = list(tokens)
+        others.remove(driver)
+        offsets, n_lines, end = self.offsets, len(self.offsets), len(blob)
+        count = start = 0
+        while True:
+            p = blob.find(driver, start)
+            if p < 0:
+                return count, True
+            ls = bisect_right(offsets, p) - 1
+            line_end = offsets[ls + 1] if ls + 1 < n_lines else end
+            if not others or all(o in blob[offsets[ls]:line_end] for o in others):
+                count += 1
+                if count >= cap:
+                    return count, False
+            start = line_end
+
+    def count(self, q: str, cap: int = 1000) -> tuple[int, bool]:
+        """(number of players matching q, whether that number is exact).
+        Name matches are counted up to cap; id matches are always exact."""
+        q = q.strip()
+        if not q:
+            return 0, True
+        if q.isdigit():
+            return self._count_id(q), True
+        tokens = fold(q).split()
+        if not tokens or max(len(t) for t in tokens) < 2:
+            return 0, True
+        return self._count_names(tokens, cap)
+
     def search(self, q: str, limit: int = 5) -> list[dict]:
         q = q.strip()
         if not q:

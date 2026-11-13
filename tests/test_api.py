@@ -74,6 +74,25 @@ def test_fide_id_prefix(client):
     assert names(client.get("/api/players", params={"q": "15"})) == []  # too short for prefix
 
 
+def test_total_count_header(client):
+    r = client.get("/api/players", params={"q": "pisan", "limit": 2})
+    assert len(r.json()) == 2
+    assert r.headers["x-total-count"] == "4" and r.headers["x-total-count-exact"] == "true"
+    r = client.get("/api/players", params={"q": "zzzz"})
+    assert r.json() == [] and r.headers["x-total-count"] == "0"
+
+
+def test_total_count_cap_and_ids():
+    ix = PlayerIndex([line(i, f"Pisan, Player{i}", std=1000 + i) for i in range(100, 130)])
+    assert ix.count("pisan") == (30, True)
+    assert ix.count("pisan", cap=10) == (10, False)
+    assert ix.count("player12 pisan") == (10, True)  # 120-129
+    assert ix.count("11") == (0, True)  # 1-2 digits: exact id only
+    assert ix.count("12") == (0, True)
+    assert ix.count("125") == (1, True)
+    assert ix.count("") == (0, True) and ix.count("p") == (0, True)
+
+
 def test_formats_and_download(client):
     r = client.get("/api/players", params={"q": "pisan", "format": "xml", "download": 1})
     assert r.headers["content-type"].startswith("application/xml")
