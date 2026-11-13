@@ -28,6 +28,8 @@ CORS: browsers on `CORS_ORIGINS` (comma-separated; default `https://chesstd.hint
 `http://localhost:5173`, `http://localhost:4173`) may call the API
 directly; `X-Total-Count`, `X-Total-Count-Exact` and `Retry-After` are exposed to them.
 Rate limit: `RATE_LIMIT` requests per `RATE_WINDOW` seconds per IP (120 / 60), 429 with `Retry-After` beyond that.
+The client IP comes from `CF-Connecting-IP` / `True-Client-IP` (set by Cloudflare in front of Render), never from
+`X-Forwarded-For`, which clients can forge. `GET /api/whoami` shows the address a request is counted against.
 No US Chess ID: FIDE's lists do not contain it.
 
 Run: `pip install -r requirements-dev.txt && uvicorn app.main:app` ; test: `pytest`. Deploy: `render.yaml`.

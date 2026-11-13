@@ -45,10 +45,18 @@ app = FastAPI(title="FIDE player lookup", lifespan=lifespan)
 _hits: dict[str, deque] = {}
 
 
+# Render serves every app through Cloudflare, which sets CF-Connecting-IP / True-Client-IP
+# to the address that connected to it. X-Forwarded-For is NOT used: Render's proxy appends
+# to whatever the client sent, so its first entry is client-controlled (a client could
+# dodge the rate limit by sending a different fake address on every request).
+CLIENT_IP_HEADERS = ("cf-connecting-ip", "true-client-ip")
+
+
 def client_ip(request: Request) -> str:
-    fwd = request.headers.get("x-forwarded-for")
-    if fwd:  # Render appends the real client address last-but-trusted; take the first
-        return fwd.split(",")[0].strip()
+    for h in CLIENT_IP_HEADERS:
+        v = request.headers.get(h)
+        if v:
+            return v.strip()
     return request.client.host if request.client else "?"
 
 
@@ -135,6 +143,12 @@ def by_fide(fide_id: int, format: str = Format, download: bool = False):
     if p is None:
         raise HTTPException(404, "no such FIDE id")
     return render([p], format, download, f"fide-{fide_id}")
+
+
+@app.get("/api/whoami")
+def whoami(request: Request):
+    """The address the rate limiter counts this request against."""
+    return {"ip": client_ip(request)}
 
 
 @app.get("/api/health")
