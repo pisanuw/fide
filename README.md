@@ -22,6 +22,6 @@ No US Chess ID: FIDE's lists do not contain it.
 
 Run: `pip install -r requirements-dev.txt && uvicorn app.main:app` ; test: `pytest`. Deploy: `render.yaml`.
 Data refresh: `.github/workflows/refresh-fide.yml` runs on the 3rd and 8th of each month (or by hand from the Actions tab).
-It runs `scripts/fetch_fide.py`, which downloads both lists from https://ratings.fide.com/download_lists.phtml, checks the
+It runs `scripts/fetch_fide.py`, which downloads the txt list from https://ratings.fide.com/download_lists.phtml, checks the
 txt column layout and player count, files them under `players/YYYYMM/` (month from the date inside FIDE's zip), runs the tests
 and pushes to `main`; Render redeploys from that. An existing month folder is skipped unless `force` is set.

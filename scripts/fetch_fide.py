@@ -94,7 +94,8 @@ def emit(**kv: str) -> None:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--root", default=str(ROOT / "players"))
-    ap.add_argument("--formats", nargs="+", default=["txt", "xml"], choices=list(FILES))
+    ap.add_argument("--formats", nargs="+", default=["txt"], choices=list(FILES),
+                    help="txt only by default; the service never reads the xml list")
     ap.add_argument("--force", action="store_true", help="replace an existing month folder")
     args = ap.parse_args()
     if "txt" not in args.formats:
