@@ -17,12 +17,13 @@ from .index import FIELDS, PlayerIndex, find_data_file
 ROOT = Path(__file__).resolve().parent.parent
 DATA = os.environ.get("FIDE_DATA", str(ROOT / "players"))
 INCLUDE_UNRATED = os.environ.get("INCLUDE_UNRATED", "0") == "1"
-RATE_LIMIT = int(os.environ.get("RATE_LIMIT", "60"))  # requests per window per IP
+RATE_LIMIT = int(os.environ.get("RATE_LIMIT", "120"))  # requests per window per IP
 RATE_WINDOW = float(os.environ.get("RATE_WINDOW", "60"))
 DEFAULT_LIMIT = 5
 MAX_LIMIT = 30
 # Browser origins allowed to call the API directly (comma-separated)
-CORS_ORIGINS = [o.strip() for o in os.environ.get("CORS_ORIGINS", "https://chesstd.hintwise.org").split(",") if o.strip()]
+CORS_ORIGINS = [o.strip() for o in os.environ.get(
+    "CORS_ORIGINS", "https://chesstd.hintwise.org,http://localhost:5173,http://localhost:4173").split(",") if o.strip()]
 
 state: dict = {}
 

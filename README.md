@@ -24,9 +24,10 @@ ordered by standard, then rapid, then blitz rating. Accents and punctuation are 
 
 Only players with a rating in any list are indexed (about 800k of 1.95M); set `INCLUDE_UNRATED=1` for all.
 Data: newest `players/*/players_list_txt.zip`, loaded at startup (~8 s, ~320 MB RAM).
-CORS: browsers on `CORS_ORIGINS` (comma-separated; default `https://chesstd.hintwise.org`) may call the API
+CORS: browsers on `CORS_ORIGINS` (comma-separated; default `https://chesstd.hintwise.org`,
+`http://localhost:5173`, `http://localhost:4173`) may call the API
 directly; `X-Total-Count`, `X-Total-Count-Exact` and `Retry-After` are exposed to them.
-Rate limit: `RATE_LIMIT` requests per `RATE_WINDOW` seconds per IP (60 / 60), 429 with `Retry-After` beyond that.
+Rate limit: `RATE_LIMIT` requests per `RATE_WINDOW` seconds per IP (120 / 60), 429 with `Retry-After` beyond that.
 No US Chess ID: FIDE's lists do not contain it.
 
 Run: `pip install -r requirements-dev.txt && uvicorn app.main:app` ; test: `pytest`. Deploy: `render.yaml`.

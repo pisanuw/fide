@@ -121,6 +121,16 @@ def test_cors_allowed_origin_only(client):
     assert r.status_code == 200 and r.headers["access-control-allow-origin"] == ORIGIN
 
 
+def test_cors_dev_origins():
+    for origin in ("http://localhost:5173", "http://localhost:4173"):
+        assert origin in main.CORS_ORIGINS
+
+
+def test_cors_on_fide_id_endpoint(client):
+    r = client.get("/api/players/fide/4", headers={"Origin": ORIGIN})
+    assert r.headers["access-control-allow-origin"] == ORIGIN
+
+
 def test_cors_header_on_rate_limited_response(client, monkeypatch):
     monkeypatch.setattr(main, "RATE_LIMIT", 1)
     client.get("/api/players", params={"q": "pisan"}, headers={"Origin": ORIGIN})

@@ -10,4 +10,4 @@ services:
       - key: PYTHON_VERSION
         value: "3.13.0"
       - key: RATE_LIMIT
-        value: "60"
+        value: "120"   # per IP per minute; venues share one IP behind NAT

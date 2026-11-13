@@ -13,3 +13,4 @@
 2026-11-13 [code] UI: FIDE id links to ratings.fide.com/profile/<id>; "(N more entries match)" line. API: X-Total-Count and X-Total-Count-Exact headers (name counts capped at 1000, ~10-25 ms).
 2026-11-13 [code] Search: exact two-word names by direct find, one pass for prefix/substring/count; 2-word queries ~2x faster, results identical (reference test).
 2026-11-13 [code] For Chess TD: CORS for https://chesstd.hintwise.org (CORS_ORIGINS), limit up to 30, fed and born filters. Memory unchanged (~350 MB).
+2026-11-13 [decision] CORS also allows http://localhost:5173 and :4173 (Chess TD dev); rate limit raised to 120/min per IP (venues share one NAT IP).
