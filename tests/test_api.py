@@ -153,8 +153,17 @@ def test_rate_limit(client, monkeypatch):
     monkeypatch.setattr(main, "RATE_LIMIT", 3)
     codes = [client.get("/api/players", params={"q": "pisan"}).status_code for _ in range(5)]
     assert codes == [200, 200, 200, 429, 429]
-    other = client.get("/api/players", params={"q": "pisan"}, headers={"x-forwarded-for": "9.9.9.9"})
+    other = client.get("/api/players", params={"q": "pisan"}, headers={"cf-connecting-ip": "9.9.9.9"})
     assert other.status_code == 200
+    # X-Forwarded-For is client-controlled behind Render: it must not open a new bucket
+    spoof = client.get("/api/players", params={"q": "pisan"}, headers={"x-forwarded-for": "8.8.8.8"})
+    assert spoof.status_code == 429
+
+
+def test_whoami(client):
+    assert client.get("/api/whoami", headers={"cf-connecting-ip": "203.0.113.9", "x-forwarded-for": "1.1.1.1"}).json() == {"ip": "203.0.113.9"}
+    assert client.get("/api/whoami", headers={"true-client-ip": "203.0.113.8"}).json() == {"ip": "203.0.113.8"}
+    assert client.get("/api/whoami", headers={"x-forwarded-for": "1.1.1.1"}).json() == {"ip": "testclient"}
 
 
 def test_home(client):
