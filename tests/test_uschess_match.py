@@ -42,6 +42,18 @@ def test_rules():
     assert [p["id"] for p in r["unmatched"]] == ["30000004"]
 
 
+def test_subset_names():
+    ix = PlayerIndex([line(1, "Niemann, Hans Moke", std=2700, born=2003),
+                      line(2, "Frank, Marty", std=2000, born=1962),
+                      line(3, "Lee, Kim", std=1500), line(4, "Lee, Kim Ann", std=1500), line(5, "Lee, Kim Bo", std=1500)])
+    r = match_players({"1": us("1", "Hans", "Niemann"), "2": us("2", "Marty C", "Frank", born=(0, 1962)),
+                       "3": us("3", "Kim J", "Lee"), "4": us("4", "Kim", "Lee")}, ix)
+    got = {row[0]: (row[1], row[5]) for row in r["rows"]}
+    assert got["1"] == (1, "name-subset+fed+age") and got["2"] == (2, "name-subset+fed+age")
+    assert got["4"] == (3, "name+fed+age")      # exact name wins; the subset pass never runs for it
+    assert "3" not in got                       # "Kim J Lee" is neither subset nor superset of the FIDE names
+
+
 def test_ambiguous_and_duplicate_fide():
     ix = PlayerIndex([line(1, "Zhu, Aiden", std=1900), line(2, "Zhu, Aiden", std=1800),
                       line(3, "Twin, Same", std=1700)])

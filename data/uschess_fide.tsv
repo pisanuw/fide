@@ -1,96 +1,234 @@
 uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 10012392	2041588	Rotenberg, Marc	Rotenberg, Marc	USA	name+fed+age
+10017751	2059509	Rodenstein, Alan C	Rodenstein, Alan	USA	name-subset+fed+age
+10019656	2000806	RIZZITANO, JAMES A	Rizzitano, James	USA	name-subset+fed+age
+10025231	2002485	MONTGOMERY, PARKER G	Montgomery, Parker	USA	name-subset+fed+age
+10025265	2004127	TERRIE, Henry L	Terrie, Henry	USA	name-subset+fed+age
+10029732	2052016	CARTER, DAVID E	Carter, David	USA	name-subset+fed+age
 10030048	2018268	SHAW, ALAN	Shaw, Alan	USA	name+fed+age
+10031443	2025906	MEREDITH, MATTHEW DEREK	Meredith, Matthew	USA	name-subset+fed+age
+10032059	30940273	KOCHMAN, DAVID M	Kochman, David	USA	name-subset+fed+age
+10036933	2046814	SOMERS, MICHAEL E	Somers Jr, Michael E	USA	name-subset+fed+age
+10044812	2004143	WEST, JAMES R	West, James	USA	name-subset+fed+age
+10047871	2000172	ROHDE, MICHAEL A	Rohde, Michael	USA	name-subset+fed+age
+10047943	2002914	LUNNA, TODD W	Lunna, Todd	USA	name-subset+fed+age
+10048711	2006324	PINTO, MARK A	Pinto, Mark	USA	name-subset+fed+age
 10050171	2007894	MASSEY, SCOTT	Massey, Scott	USA	name+fed+age
+10050227	2001152	Stoyko, Stephen	Stoyko, Stephen E	USA	name-subset+fed+age
+10051622	2018810	Slatin, David W	Slatin, David W	USA	name+fed+age
+10051932	2029677	Dresher, Kevin	Dresher, Kevin	USA	name+fed+age
+10054834	2000725	REGAN, KENNETH W	Regan, Kenneth	USA	name-subset+fed+age
 10057256	2046954	CHASIN, TOD S	Chasin, Tod S	USA	name+fed+age
+10061083	2007185	DUBECK, LEROY W	Dubeck, Leroy	USA	name-subset+fed+age
+10074258	2004526	Teasley, Dorothy	Teasley, Dorothy O.	USA	name-subset+fed+age
 10078644	2006065	HULSE, BRIAN	Hulse, Brian	USA	name+fed+age
+10079578	2000580	Matera, Salvatore J	Matera, Salvatore	USA	name-subset+fed+age
 10080967	2002604	TIMM, JOHN C	Timm, John C	USA	name+fed+age
 10084369	2011735	Riddell, John	Riddell, John	USA	name+fed+age
 10086795	2010100	KWARTLER, LONNIE S	Kwartler, Lonnie S	USA	name+fed+age
+10089051	2035367	Casden, Alan	Casden, Alan	USA	name+fed+age
+10094879	2001780	SHAPIRO, DANIEL E	Shapiro, Daniel	USA	name-subset+fed+age
+10098327	2000644	Bonin, Jay Richard	Bonin, Jay	USA	name-subset+fed+age
 10099277	2009315	MORRISON, WILLIAM	Morrison, William	USA	name+fed+age
+10099463	2005646	COLDING, ERNEST P	Colding, Ernest	USA	name-subset+fed+age
 10102511	2000091	Benjamin, Joel	Benjamin, Joel	USA	name+fed+age
 10105544	2009889	FITZKO, MITCHELL	Fitzko, Mitchell	USA	name+fed+age
+10110793	2002825	SHURE, GARY M	Shure, Gary	USA	name-subset+fed+age
 10118131	2000849	SCHROER, JONATHAN	Schroer, Jonathan	USA	name+fed+age
+10118506	2009935	KANTOR, ALAN	Kantor, Alan	USA	name+fed+age
+10120225	2022370	Cross, Ted	Cross, Ted	USA	name+fed+age
+10120560	30923760	Carey, Michael P	Carey, Michael	USA	name-subset+fed+age
+10121167	39989798	Kuperman, Joshua	Kuperman, Joshua	USA	name+fed+age
 10123640	566014158	CALVIN, JAMIE DUIF	Calvin, Jamie Duif	USA	name+fed+age
+10132916	2048671	Davis, Barry Brownell	Davis, Barry	USA	name-subset+fed+age
 10140447	2013010	Martinak, Tom M	Martinak, Tom M	USA	name+fed+age
+10142512	2002906	LEVERETT, BRUCE W	Leverett, Bruce	USA	name-subset+fed+age
+10145791	2009595	Eidemiller, Mark B	Eidemiller, Mark	USA	name-subset+fed+age
 10146712	2086158	SAGE, J TIMOTHY	Sage, J Timothy	USA	name+fed+age
+10151384	2058243	FRANK, MARTY C	Frank, Marty	USA	name-subset+fed+age
+10153557	2000393	TAYLOR, TIMOTHY W	Taylor, Timothy	USA	name-subset+fed+age
 10160367	2065827	MITCHELL, ARTHUR D	Mitchell, Arthur D	USA	name+fed+age
 10163013	2001985	ROGERS, NORMAN	Rogers, Norman	USA	name+fed+age
 10164176	2001179	DEHMELT, KARL	Dehmelt, Karl	USA	name+fed+age
+10169861	2010186	COLLIER, PHILIP M	Collier, Philip	USA	name-subset+fed+age
 10170761	2004720	Lanni, Diana	Lanni, Diana	USA	name+fed+age
 10172918	2000563	GINSBURG, MARK	Ginsburg, Mark	USA	name+fed+age
+10179416	2000555	KAUFMAN, LAWRENCE CHARLES	Kaufman, Lawrence	USA	name-subset+fed+age
+10182255	30914990	SCHNEIDER, MARK N	Schneider, Mark N	USA	name+fed+age
+10183481	2025310	ATKINS, MICHAEL	Atkins, Michael	USA	name+fed+age
+10189233	30987857	MILLER, MICHAEL A	Miller. Michael A	USA	name+fed+age
 10190851	2007886	SHERMAN, DAVID	Sherman, David	USA	name+fed+age
 10194636	2002892	KITCES, EDWARD	Kitces, Edward	USA	name+fed+age
+10195624	2003724	Shibut, Macon A	Shibut, Macon	USA	name-subset+fed+age
+10197503	2004666	DODSON, S CATHERINE	Dodson, Catherine	USA	name-subset+fed+age
 10197996	30919738	HOSHOR, MARK T	Hoshor, Mark T	USA	name+fed+age
 10201411	2017571	ROUSH, JOHN EVERETT	Roush, John Everett	USA	name+fed+age
+10202825	2005670	Gibbins, Wilson K	Gibbins, Wilson	USA	name-subset+fed+age
+10211191	2010895	Harris, Neal Douglas	Harris, Neal	USA	name-subset+fed+age
+10240352	39961184	Denton, Thomas J	Denton, Thomas J	USA	name+fed+age
+10253136	2020858	STARK, GREGG	Stark, Gregg	USA	name+fed+age
+10261465	2040743	MARSHALL, CALVIN	Marshall, Calvin	USA	name+fed+age
+10269181	2065517	DIEBERT, CHARLES M	Diebert, Charles	USA	name-subset+fed+age
+10270294	2000709	Donaldson, William John	Donaldson, John	USA	name-subset+fed+age
 10271045	2009137	Timmel, John	Timmel, John	USA	name+fed+age
+10284279	2011662	MILLS, JAMES A	Mills, James	USA	name-subset+fed+age
 10285569	2011638	MULTHOPP, HANS	Multhopp, Hans	USA	name+fed+age
 10294380	2045311	BROOKS, JOHN	Brooks, John	USA	name+fed+age
+10302307	2089963	Czuhai, Kevin Wade	Czuhai, Kevin	USA	name-subset+fed+age
+10305101	2003791	Frankle, Jon A	Frankle, Jon	USA	name-subset+fed+age
+10318637	2021765	VOJE, DANIEL W	Voje, Daniel	USA	name-subset+fed+age
+10322022	2006766	Truelson, Nels W	Truelson, Nels	USA	name-subset+fed+age
+10349257	2001640	FORMANEK, EDWARD WILLIAM	Formanek, Edward	USA	name-subset+fed+age
 10363365	2002523	Winslow, Elliott	Winslow, Elliott	USA	name+fed+age
+10365007	2022842	Luther, Ronald G	Luther, Ronald	USA	name-subset+fed+age
+10374570	2007177	MALPERT, RODNEY A	Malpert, Rodney	USA	name-subset+fed+age
 10374651	2004658	Root, Alexey	Root, Alexey	USA	name+fed+age
 10379041	2007754	HOBART, STEVE	Hobart, Steve	USA	name+fed+age
 10381878	2045257	GRAY, DONNY	Gray, Donny	USA	name+fed+age
 10383251	2003112	ORTON, WILLIAM R	Orton, William R	USA	name+fed+age
+10391270	2004046	Gamble, Jeff S	Gamble, Jeff	USA	name-subset+fed+age
+10394546	2003317	Calogridis, Michael S.	Calogridis, Michael	USA	name-subset+fed+age
+10400481	2005174	STANLEY, GREGG N	Stanley, Gregg	USA	name-subset+fed+age
+10402778	30913624	COE, WILLIAM	Coe, William	USA	name+fed+age
 10403227	2014572	Simms, Gary	Simms, Gary	USA	name+fed+age
+10404452	5100585	DE LA GARZA, ARTURO	De La Garza Madero, Arturo	MEX	name-subset+fed+age
 10404673	30925746	QUINTANAR, SAM	Quintanar, Sam	USA	name+fed+age
+10410347	2032163	LUNDSTROM, BRAD	Lundstrom, Brad	USA	name+fed+age
 10413818	2027950	MORROW, HANS M	Morrow, Hans M	USA	name+fed+age
+10421985	2003376	Lower, Spencer R	Lower, Spencer	USA	name-subset+fed+age
+10422051	2003902	WHARTON, WILLIAM A	Wharton, William	USA	name-subset+fed+age
+10433592	2039257	LEVI, ARIEL S	Levi, Ariel	USA	name-subset+fed+age
+10450951	2001802	BEELBY, MATTHEW AARON	Beelby, Matthew	USA	name-subset+fed+age
+10452881	2000490	Root, Douglas D	Root, Douglas	USA	name-subset+fed+age
+10461138	2010160	Hough, Randall D	Hough, Randall	USA	name-subset+fed+age
+10469007	2000105	de Firmian, Nick E	De Firmian, Nick	USA	name-subset+fed+age
 10475376	566013208	FORTHOFFER, DAVID	Forthoffer, David	USA	name+fed+age
 10479011	566016410	CROSS, STEVEN D	Cross, Steven D	USA	name+fed+age
+10481783	2007258	BECKER, ALLEN J	Becker, Allen	USA	name-subset+fed+age
+10482569	2009633	JANNIRO, MIKE E	Janniro, Mike	USA	name-subset+fed+age
 10482763	2001578	KELSON, RICHARD	Kelson, Richard	USA	name+fed+age
+10492718	2023652	HULSEY, MARK ALLEN	Hulsey, Mark	USA	name-subset+fed+age
 10502772	2002531	Chernin, Oliver	Chernin, Oliver	USA	name+fed+age
+10503892	2003341	HAESSLER, CARL A	Haessler, Carl	USA	name-subset+fed+age
+10505798	2024357	MORRIS, MICHAEL J	Morris, Michael	USA	name-subset+fed+age
+10510376	2062526	Mulford, Michael A	Mulford, Michael	USA	name-subset+fed+age
 10511186	2008009	PUPOLS, VIKTORS	Pupols, Viktors	USA	name+fed+age
+10583896	2003775	BAUER, RICHARD N	Bauer, Richard	USA	name-subset+fed+age
+10604737	2000083	FEDOROWICZ, JOHN P	Fedorowicz, John	USA	name-subset+fed+age
 10735866	2031400	DANA, MAURICE	Dana, Maurice	USA	name+fed+age
+10854164	2011409	Bachler, Kevin L	Bachler, Kevin	USA	name-subset+fed+age
+10923344	2020360	Wall, Brian D	Wall, Brian	USA	name-subset+fed+age
+10991820	2000180	TARJAN, JAMES EDWARD	Tarjan, James	USA	name-subset+fed+age
+11026109	2014041	VEST, DAVID M	Vest, David	USA	name-subset+fed+age
 11041957	2031116	Wright, Polly P	Wright, Polly P	USA	name+fed+age
+11045685	2000334	BROOKS, MICHAEL A	Brooks, Michael	USA	name-subset+fed+age
+11052452	2004402	REA, ANDREW B	Rea, Andrew	USA	name-subset+fed+age
+11155189	9900055	WEERAMANTRY, SUNIL P	Weeramantry, Sunil	SRI	name-subset+fed+age
 11178464	2041910	NAYLOR, CARLA	Naylor, Carla	USA	name+fed+age
 11180035	2006316	COOKE, ERIC	Cooke, Eric	USA	name+fed+age
+11235611	2024535	Sciacca, Patrick	Sciacca, Patrick	USA	name+fed+age
 11257585	2000164	KUDRIN, SERGEY	Kudrin, Sergey	USA	name+fed+age
 11270972	2022680	SCHOONMAKER, NICHOLAS	Schoonmaker, Nicholas	USA	name+fed+age
 11306195	2073790	Thompson, Dexter	Thompson, Dexter	USA	name+fed+age
+11312853	2018438	Bath, John S	Bath, John	USA	name-subset+fed+age
+11316425	2005263	Chabris, Christopher F	Chabris, Christopher	USA	name-subset+fed+age
+11366805	2024012	CHRISTIANSEN, NATASHA C	Christiansen, Natasha	USA	name-subset+fed+age
+11385851	2006847	HANLEY, JOE	Hanley, Joe	USA	name+fed+age
 11414966	2014564	BEREOLOS, PETER	Bereolos, Peter	USA	name+fed+age
 11426051	4400011	ZAPATA, ALONSO	Zapata, Alonso	COL	name+fed+age
 11435629	2000075	Dlugy, Maxim	Dlugy, Maxim	USA	name+fed+age
+11441653	2029090	Mason, Mike W	Mason, Mike W	USA	name+fed+age
 11447431	30931576	KNIGHT, MARK R	Knight, Mark R	USA	name+fed+age
 11453015	2001900	ZLOTNIKOV, MIKHAIL	Zlotnikov, Mikhail	USA	name+fed+age
 11478239	2000350	Rachels, Stuart	Rachels, Stuart	USA	name+fed+age
+11489052	2056275	Phillips, Rene W	Phillips, Rene	USA	name-subset+fed+age
 11502229	2015447	MONOKROUSSOS, DENNIS	Monokroussos, Dennis	USA	name+fed+age
+12003970	2040948	Bradley, Clay R	Bradley, Clay R	USA	name+fed+age
+12005060	2004607	Kuhner, Mary K	Kuhner, Mary	USA	name-subset+fed+age
 12038180	2092050	FRANKLIN, DAVID	Franklin, David	USA	name+fed+age
 12051880	2043564	JOELSON, MICHAEL	Joelson, Michael	USA	name+fed+age
 12057550	2003694	Markzon, Gregory	Markzon, Gregory	USA	name+fed+age
+12065210	30910153	COUSIN, NEIL	Cousin, Neil B	USA	name-subset+fed+age
 12077910	2000377	Fishbein, Alexander	Fishbein, Alexander	USA	name+fed+age
+12079960	2003325	CHAPA, ERIC	Chapa, Eric	USA	name+fed+age
+12093120	2002159	BURNETT, RONALD WAYNE	Burnett, Ronald	USA	name-subset+fed+age
+12137150	2005468	FUENTES, ROMULO C	Fuentes, Romulo	USA	name-subset+fed+age
 12150400	2009730	Adamson, Robby	Adamson, Robby	USA	name+fed+age
 12167330	2029065	Times, Lawyer	Times, Lawyer	USA	name+fed+age
+12203100	39928314	HOLCOMB, DAVID D	Holcomb, David D	USA	name+fed+age
 12212800	2000407	GUREVICH, DMITRY	Gurevich, Dmitry	USA	name+fed+age
+12218060	2014319	BALURAN, ALEJANDRINO	Baluran, Alejandrino	USA	name+fed+age
+12254060	2502321	SHAUGHNESSY, ELIZABETH CARMEL	Shaughnessy, Elizabeth	USA	name-subset+fed+age
 12274700	2004631	JEZIERSKA, IVONA	Jezierska, Ivona	USA	name+fed+age
+12282650	39998568	Degen, Philip G	Degen, Philip G	USA	name+fed+age
+12298150	2022770	McEntee, Tim R	McEntee, Tim	USA	name-subset+fed+age
 12304570	2034042	Procyk, Marijan	Procyk, Marijan	USA	name+fed+age
+12317050	2014980	Fleischman, Eric Justin	Fleischman, Eric	USA	name-subset+fed+age
+12343420	2091046	Dutter, FREDERIC	Dutter, Frederic	USA	name+fed+age
+12394665	30905052	Semel, Michael	Semel, Michael	USA	name+fed+age
 12399940	2013541	Benjamin, Richard	Benjamin, Richard	USA	name+fed+age
 12404173	2002760	DOLGITSER, KONSTANTIN	Dolgitser, Konstantin	USA	name+fed+age
+12409131	2059010	SPINRAD, JERRY	Spinrad, Jerry	USA	name+fed+age
 12416942	30912636	Schoenfeld, Gabriel	Schoenfeld, Gabriel	USA	name+fed+age
+12417336	2031523	FABER, CRAIG ALLEN	Faber, Craig	USA	name-subset+fed+age
 12419882	2052091	PENA, PABLO	Pena, Pablo	USA	name+fed+age
 12422448	2002795	LAHOZ, JOSE	Lahoz, Jose	USA	name+fed+age
+12423786	2026643	MARCELINO, WILLIAM	Marcelino, William	USA	name+fed+age
+12425190	2077370	Porter, Andy S	Porter, Andy S	USA	name+fed+age
 12426279	2007002	Vigorito, David	Vigorito, David	USA	name+fed+age
+12426604	39986241	Day, Jeff L	Day, Jeff L	USA	name+fed+age
+12427494	2007037	YU, PETER C	Yu, Peter	USA	name-subset+fed+age
+12436272	2007959	JOHNSON, LEONARD JEFFREY	Johnson, Leonard	USA	name-subset+fed+age
 12442362	2002035	KRAAI, JESSE	Kraai, Jesse	USA	name+fed+age
+12442662	2090872	Catlin, Andrew Gar	Catlin, Andrew	USA	name-subset+fed+age
+12444347	2008343	Resika, Nathan A	Resika, Nathan	USA	name-subset+fed+age
+12451516	2012901	SAILER, MIKE	Sailer, Mike	USA	name+fed+age
+12452791	2027577	REUTER, WILLIAM C	Reuter, William	USA	name-subset+fed+age
+12455097	2011964	HOOVER, NATHAN E	Hoover, Nathan	USA	name-subset+fed+age
+12457717	2076934	Walsh, Sara Rene	Walsh, Sara	USA	name-subset+fed+age
 12457851	2032694	SKIDMORE SMITH, JENNIFER	Skidmore Smith, Jennifer	USA	name+fed+age
+12458563	30932467	KATZ, STEWART	Katz, Stewart	USA	name+fed+age
 12460475	2005948	RADOMSKYJ, PETER	Radomskyj, Peter	USA	name+fed+age
 12462633	2001233	Gorman, Dov	Gorman, Dov	USA	name+fed+age
+12463414	39988350	Baker, Jerry	Baker, Jerry	USA	name+fed+age
+12468958	2067544	CHENAULT, ROBERT	Chenault, Robert	USA	name+fed+age
 12470662	2016850	Raptis, Nick	Raptis, Nick	USA	name+fed+age
 12471408	30945020	Rennie, Jill Zabrina	Rennie, Jill Zabrina	USA	name+fed+age
+12473672	2024144	Miller, Daniel Isaac	Miller, Daniel	USA	name-subset+fed+age
+12474516	2052989	UNRUH, CHARLES D	Unruh, Charles D	USA	name+fed+age
+12476202	2038510	Zilbermintz, Lev	Zilbermintz, Lev	USA	name+fed+age
 12478873	2025710	Mabe, Chris	Mabe, Chris	USA	name+fed+age
 12479730	2003350	Langreck, John	Langreck, John	USA	name+fed+age
+12480475	2017008	BOOR, CARL	Boor, Carl	USA	name+fed+age
+12481144	2600277	Ross, David s	Ross, David	CAN	name-subset+fed+age
+12488564	2021390	Friedman, David M	Friedman, David	USA	name-subset+fed+age
+12489600	2013932	Kleinman, Jay	Kleinman, Jay	USA	name+fed+age
 12513936	2000202	IVANOV, ALEXANDER	Ivanov, Alexander	USA	name+fed+age
 12513968	2006340	VUCIC, MLADEN	Vucic, Mladen	USA	name+fed+age
 12514557	4500016	EHLVEST, JAAN	Ehlvest, Jaan	USA	name+fed+age
 12519934	39931161	Nunn, Amy C	Nunn, Amy C	USA	name+fed+age
+12523449	2006618	RUSSELL, COREY JOHN	Russell, Corey	USA	name-subset+fed+age
 12524093	566027730	Rosner, Andrew	Rosner, Andrew	USA	name+fed+age
 12524348	2018829	Koo, Oliver T	Koo, Oliver T	USA	name+fed+age
+12526705	30940656	Day, David T	Day, David	USA	name-subset+fed+age
+12529025	2009099	PEALER, SHAWN	Pealer, Shawn	USA	name+fed+age
+12532342	30972620	Paper, Timothy Sean	Paper, Timothy Sean	USA	name+fed+age
 12534917	2005492	YERMOLINSKY, ALEX	Yermolinsky, Alex	USA	name+fed+age
+12536285	5200962	PEREZ, EMMANUEL	Perez, Emmanuel R.	PHI	name-subset+fed+age
 12537112	2015773	TORMAN, ERIC	Torman, Eric	USA	name+fed+age
 12537449	2005484	Marinello, Beatriz	Marinello, Beatriz	USA	name+fed+age
+12541033	30910706	MCGREW, TIMOTHY J	McGrew, Timothy J	USA	name+fed+age
+12541223	2098881	GARCIA, OSCAR	Garcia, Oscar	USA	name+fed+age
 12541249	4606400	Troltenier, Dirk	Troltenier, Dirk	GER	name+fed+age
+12542109	3100022	SOSA, LUIS	Sosa Trani, Luis A.	PUR	name-subset+fed+age
+12542774	30939844	BUSTILLO, JOAQUIN	Bustillo, Joaquin	USA	name+fed+age
 12542897	2011271	Orlov, Georgi	Orlov, Georgi	USA	name+fed+age
 12543137	2012782	Krush, Irina	Krush, Irina	USA	name+fed+age
 12543746	2008564	KAIDANOV, GREGORY	Kaidanov, Gregory	USA	name+fed+age
 12544264	2008572	Shabalov, Alexander	Shabalov, Alexander	USA	name+fed+age
+12545131	30970199	LEON, JUAN J	Leon, Juan	USA	name-subset+fed+age
 12548533	2006960	LAPSHUN, YURY	Lapshun, Yury	USA	name+fed+age
+12553018	2093820	EYDELMAN, ALEX	Eydelman, Alex	USA	name+fed+age
 12556822	2019540	GOLDIN, ALEXANDER	Goldin, Alexander	USA	name+fed+age
 12556825	14100037	NOVIKOV, IGOR	Novikov, Igor	USA	name+fed+age
 12557984	2006634	Torres, Javier Antonio	Torres, Javier Antonio	USA	name+fed+age
@@ -98,23 +236,48 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 12559979	2017849	Bartell, Thomas	Bartell, Thomas	USA	name+fed+age
 12560250	1003062	Van de Mortel, Jan	Van de Mortel, Jan	NED	name+fed+age
 12561112	13300032	Akopian, Vladimir	Akopian, Vladimir	USA	name+fed+age
+12561884	2010011	Sarkar, Justin J	Sarkar, Justin	USA	name-subset+fed+age
 12564228	2011549	Castaneda, Nelson	Castaneda, Nelson	USA	name+fed+age
 12565069	2011280	Sagalchik, Olga	Sagalchik, Olga	USA	name+fed+age
 12566496	2024799	Norowitz, Yaacov	Norowitz, Yaacov	USA	name+fed+age
 12571512	2013878	NAGLE, SEAN	Nagle, Sean	USA	name+fed+age
+12580948	30926068	DE MASTRI, JOHN	De Mastri, John	USA	name+fed+age
+12587111	2053594	STENGELIN, MARTIN K	Stengelin, Martin	USA	name-subset+fed+age
+12593821	2041049	LAUSER, JESSICA T	Lauser, Jessica T	USA	name+fed+age
+12593986	2017199	Friedel, Joshua E	Friedel, Joshua	USA	name-subset+fed+age
 12595730	2017288	Aigner, Michael	Aigner, Michael	USA	name+fed+age
+12602587	2017083	SMITH, BRYAN G	Smith, Bryan	USA	name-subset+fed+age
 12615391	2018950	Sloan, Julia Elizabeth	Sloan, Julia Elizabeth	USA	name+fed+age
+12623645	2026538	Molina, William	Molina, William	USA	name+fed+age
 12625417	2013851	RUBSAMEN, CORNELIUS	Rubsamen, Cornelius	USA	name+fed+age
 12627196	2012529	PERELSHTEYN, EUGENE	Perelshteyn, Eugene	USA	name+fed+age
+12627567	5800110	Wong, Luke Foong-Yin	Wong, Foong Yin	SGP	name-subset+fed+age
 12629918	2020564	Airapetian, Chouchanik	Airapetian, Chouchanik	USA	name+fed+age
+12634664	30939860	Nathan, Suriyan	Nathan, Suriyan	USA	name+fed+age
 12640884	2038102	NIEMI, NICOLE	Niemi, Nicole	USA	name+fed+age
 12641216	2016192	NAKAMURA, HIKARU	Nakamura, Hikaru	USA	name+fed+age
+12642647	2019280	kiewra, keaton	Kiewra, Keaton	USA	name+fed+age
 12648307	30993997	Cabrera, Varinia F	Cabrera, Varinia F	USA	name+fed+age
 12650696	5200156	SEVILLANO, ENRICO	Sevillano, Enrico	USA	name+fed+age
+12654576	2031825	Ismakov, Arthur	Ismakov, Arthur	USA	name+fed+age
 12656022	2038676	Koganov, Mikhail	Koganov, Mikhail	USA	name+fed+age
 12656884	2014602	TREGER, YEFIM	Treger, Yefim	USA	name+fed+age
 12658040	2011182	DEL PILAR, REYNALDO	Del Pilar, Reynaldo	USA	name+fed+age
+12659622	2026759	SNELL, CHRISTOPHER P	Snell, Christopher	USA	name-subset+fed+age
+12659833	2017202	RENSCH, DANIEL M	Rensch, Daniel	USA	name-subset+fed+age
+12661900	2023628	RODRIGUEZ, ERIC O	Rodriguez, Eric	USA	name-subset+fed+age
+12662506	2021722	Molner, Mackenzie S	Molner, Mackenzie	USA	name-subset+fed+age
+12663277	2021714	MCCARTNEY, PATRICK	McCartney, Patrick	USA	name+fed+age
+12664216	2036983	RAMER, SCOTT	Ramer, Scott	USA	name+fed+age
+12675167	2020718	IWU, OKECHUKWU ANELE NNEJ	Iwu, Okechukwu	USA	name-subset+fed+age
+12677440	2050480	SMAIL, BENEDICT	Smail, Benedict	USA	name+fed+age
+12680023	39902072	Scull, Kevin	Scull, Kevin	USA	name+fed+age
+12684250	2803283	SORKIN, IGOR	Sorkin, Igor	ISR	name+fed+age
+12686352	30924030	Bihlmeyer, Joseph	Bihlmeyer, Joseph	USA	name+fed+age
+12690923	2019663	Duren, Andrew Gregory	Duren, Andrew	USA	name-subset+fed+age
 12698126	2016362	FELIACHI, NABIL	Feliachi, Nabil	USA	name+fed+age
+12699061	2020874	KATZ, MICHAEL S	Katz, Michael	USA	name-subset+fed+age
+12699581	2017253	OSMONBEKOV, TALAIBEK D	Osmonbekov, Talaibek	USA	name-subset+fed+age
 12710197	15000290	MITKOV, NIKOLA	Mitkov, Nikola	MKD	name+fed+age
 12710334	13600761	KHABURZANIA, KAKHA	Khaburzania, Kakha	GEO	name+fed+age
 12715435	2015315	STRIPUNSKY, ALEXANDER	Stripunsky, Alexander	USA	name+fed+age
@@ -122,149 +285,243 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 12723905	4900251	Enkhbat, Tegshsuren	Enkhbat, Tegshsuren	USA	name+fed+age
 12724876	2017750	ONDANGAN, RUBEN	Ondangan, Ruben	USA	name+fed+age
 12726115	2022613	MELEKHINA, ALISA	Melekhina, Alisa	USA	name+fed+age
+12726702	2099489	Thomas, Damarcus T	Thomas, Damarcus	USA	name-subset+fed+age
 12727882	4120906	Tsyganov, Igor	Tsyganov, Igor	USA	name+fed+age
+12729266	2024683	VAN ENK, STEVEN J	Van Enk, Steven	USA	name-subset+fed+age
+12735658	2021080	MOEINI, ALI	Moeini, Ali R	USA	name-subset+fed+age
 12735967	2903024	GEORGIEV, VLADIMIR	Georgiev, Vladimir	MKD	name+fed+age
 12740522	13300580	AKOBIAN, VARUZHAN	Akobian, Varuzhan	USA	name+fed+age
 12742780	2026384	Kavutskiy, Kostya	Kavutskiy, Kostya	USA	name+fed+age
 12743305	2020009	Caruana, Fabiano	Caruana, Fabiano	USA	name+fed+age
 12746489	13600613	KACHEISHVILI, GIORGI	Kacheishvili, Giorgi	USA	name+fed+age
+12749774	2022036	Hess, Robert L	Hess, Robert	USA	name-subset+fed+age
+12758264	2070588	BELANOFF, TED	Belanoff, Ted	USA	name+fed+age
 12763633	30944457	Chanadiri, Tamar	Chanadiri, Tamar	USA	name+fed+age
 12770317	922978	MILOVANOVIC, DRAGAN	Milovanovic, Dragan	SRB	name+fed+age
 12774447	5201640	Barbosa, Oliver	Barbosa, Oliver	PHI	name+fed+age
+12777021	3900622	BLANCO, MARIA CAROLINA	Blanco Acevedo, Maria Carolina	USA	name-subset+fed+age
+12778910	2080664	Goodkind, Lauren	Goodkind, Lauren	USA	name+fed+age
+12782633	2093189	BANDYOPADHYAY, SOMENATH	Bandyopadhyay, Somenath	USA	name+fed+age
 12784803	2004879	Marshall, Abby	Marshall, Abby	USA	name+fed+age
 12787646	2021285	LENDERMAN, ALEKSANDR	Lenderman, Aleksandr	USA	name+fed+age
+12788211	2024861	Acor, Corey Bryan	Acor, Corey	USA	name-subset+fed+age
 12790312	2021030	HUNGASKI, ROBERT	Hungaski, Robert	USA	name+fed+age
+12796261	2006898	Leve, Nitai	Leve, Nitai	USA	name+fed+age
 12796611	2034255	ZIERK, STEVEN	Zierk, Steven	USA	name+fed+age
 12802899	2028441	Heimann, Mark	Heimann, Mark	USA	name+fed+age
+12811060	39984850	SEVALL, DANIEL	Sevall, Daniel	USA	name+fed+age
 12817693	2019531	EYNULA, ROZA	Eynula, Roza	KOR	name+fed+age
+12823231	2072203	GIANOS-STEINBERG, ALEX JAMES	Gianos-Steinberg, Alex	USA	name-subset+fed+age
 12827326	13300512	Khachiyan, Melikset	Khachiyan, Melikset	USA	name+fed+age
 12830124	2006456	LIU, JENNIE S	Liu, Jennie S	USA	name+fed+age
 12832679	2033801	KORLEY, KASSA	Korley, Kassa	DEN	name+fed+age
 12833623	4124588	KRETCHETOV, ALEXANDRE	Kretchetov, Alexandre	RUS	name+fed+age
 12836219	105457	Andretta, Carlos Gaston	Andretta, Gaston Carlos	ARG	name+fed+age
+12836880	2007304	STURT, RAVEN M	Sturt, Raven	USA	name-subset+fed+age
+12839764	2017407	REINBERG, JEFFREY A	Reinberg, Jeffrey A	USA	name+fed+age
+12842910	2033534	Retarides, John C.	Retarides, John	USA	name-subset+fed+age
 12843801	3501841	GONZALEZ, RENIER	Gonzalez, Renier	USA	name+fed+age
+12844754	2005611	Freeman, Matthew Herbert	Freeman, Matthew Herbert	USA	name+fed+age
+12845687	2040433	Oldham, Cody	Oldham, David Cody	USA	name-subset+fed+age
 12847250	2023970	Robson, Ray	Robson, Ray	USA	name+fed+age
 12851435	13301918	Abrahamyan, Tatev	Abrahamyan, Tatev	USA	name+fed+age
 12852765	2004887	SHANKLAND, SAM	Shankland, Sam	USA	name+fed+age
+12853959	2032562	ROSEN, ERIC S	Rosen, Eric	USA	name-subset+fed+age
+12859364	2009129	STUDEN, DAMIR	Studen, Damir	USA	name+fed+age
 12860484	2046318	Griffith, Kyron	Griffith, Kyron	USA	name+fed+age
 12870043	2061015	Sekar, Jayashree	Sekar, Jayashree	USA	name+fed+age
 12873912	14101572	ZATONSKIH, ANNA	Zatonskih, Anna	USA	name+fed+age
+12877419	2043700	BRECKENRIDGE, STEVEN	Breckenridge, Steven	USA	name+fed+age
 12879834	2039877	ROZMAN, LEVY	Rozman, Levy	USA	name+fed+age
+12881112	2034239	Ostrovskiy, Aleksandr	Ostrovskiy, Aleksandr	USA	name+fed+age
 12882025	12501654	ATOUFI, PEDRAM	Atoufi, Pedram	IRI	name+fed+age
 12885132	2039796	KATZ, ALEXANDER	Katz, Alexander	USA	name+fed+age
 12887417	2039311	Schmakel, Sam	Schmakel, Sam	USA	name+fed+age
 12890909	2022354	SANA, MARIANO	Sana, Mariano	USA	name+fed+age
+12893934	2024810	Prilleltensky, Matan	Prilleltensky, Matan	USA	name+fed+age
 12902833	2029618	Lee, Megan	Lee, Megan	USA	name+fed+age
 12911242	39987876	Vayntrub, Dmitry	Vayntrub, Dmitry	USA	name+fed+age
+12933950	916498	SCEKIC, MILOS	Scekic, Milos	SRB	name+fed+age
+12935311	2068281	Nardi, Brenda	Nardi, Brenda J	USA	name-subset+fed+age
 12936317	2066149	BORA, SAFAL	Bora, Safal	USA	name+fed+age
+12937291	2028140	HARPER, WARREN THOMAS	Harper, Warren	USA	name-subset+fed+age
+12937909	2034387	Holt, Conrad	Holt, Conrad	USA	name+fed+age
 12937939	2055961	Peters, Epiphany M	Peters, Epiphany M	USA	name+fed+age
+12939342	2047896	Troff, Kayden William	Troff, Kayden	USA	name-subset+fed+age
 12954240	30901480	Bugayev, Vladimir	Bugayev, Vladimir	USA	name+fed+age
+13011217	2040069	Tyagi, Kushan	Tyagi, Kushan	USA	name+fed+age
 13100483	5000300	RENTALA, NAGENDRA	Nagendra, Rentala	IND	name+fed+age
 13104890	2058235	Ballantyne, Rochelle	Ballantyne, Rochelle	TTO	name+fed+age
 13145890	5202213	SO, WESLEY	So, Wesley	USA	name+fed+age
+13147854	2029650	Lin, Dachey	Lin, Dachey	USA	name+fed+age
 13194622	200999	VAN HOOLANDT, PATRICK	Van Hoolandt, Patrick	MNC	name+fed+age
 13218442	2052822	Pelias, Marilyn	Pelias, Marilyn	USA	name+fed+age
+13232760	4671686	Thieme, Steffen	Thieme, Steffen	GER	name+fed+age
+13242201	2044447	Colas, Joshua	Colas, Joshua	USA	name+fed+age
 13377446	30910730	MCGREW, CLARA	McGrew, Clara	USA	name+fed+age
 13462174	2007029	Busygin, Stanislav	Busygin, Stanislav	USA	name+fed+age
+13467370	2033496	Regam, Jessica Shor	Regam, Jessica	USA	name-subset+fed+age
 13469768	3505189	Cardona, Liulia	Cardona, Liulia	USA	name+fed+age
 13493815	2040506	SEVIAN, SAMUEL	Sevian, Samuel	USA	name+fed+age
+13499821	2097125	Zheng, Evan	Zheng, Evan	USA	name+fed+age
 13534356	2049929	WILLIAMS, JUSTUS	Williams, Justus	USA	name+fed+age
+13572466	30976499	CAVENY, AARON	Caveny, Aaron	USA	name+fed+age
+13600428	2036509	Rana, Diwakar	Rana, Diwakar	USA	name+fed+age
+13607663	2063662	CRUMP, ALEXANDER	Crump, Alexander J	USA	name-subset+fed+age
+13616253	2060850	Tanenbaum, Zachary Chen	Tanenbaum, Zachary	USA	name-subset+fed+age
 13646954	2052695	Li, George	Li, George	USA	name+fed+age
 13648621	2047640	Xiong, Jeffery	Xiong, Jeffery	USA	name+fed+age
+13672401	30983665	MARTINEZ, ENOCH	Martinez, Enoch	USA	name+fed+age
 13674544	2805642	ERENBURG, SERGEY	Erenburg, Sergey	USA	name+fed+age
+13696874	30920515	Breskin, Nicklas	Breskin, Nicklas	USA	name+fed+age
+13713073	566000033	Farfel, Vlad	Farfel, Vlad	USA	name+fed+age
 13729221	13700251	Matros, Alexander	Matros, Alexander	KAZ	name+fed+age
 13744720	2062674	HILBY, CRAIG	Hilby, Craig	USA	name+fed+age
 13768313	2061074	LI, RUIFENG	Li, Ruifeng	USA	name+fed+age
+13777055	6501079	MURILLO, JAIME	Murillo Arguedas, Jaime	CRC	name-subset+fed+age
 13778456	2090694	Dommalapati, Aasa	Dommalapati, Aasa	USA	name+fed+age
+13852335	10209794	Chowdhury, Rafi	Chowdhury, Rafi	BAN	name+fed+age
 13856778	2096889	POSTHUMA, JOSHUA	Posthuma, Joshua	USA	name+fed+age
+13915520	30911362	Li, Alex	Li, Alex	USA	name+fed+age
 13917532	2061600	DEVAGHARAN, DEVINA	Devagharan, Devina	USA	name+fed+age
+13926645	2069130	BORKOWSKI, SLAWOMIR	Borkowski, Slawomir	USA	name+fed+age
+13933883	30933072	HEMINGWAY, KEVIN	Hemingway, Kevin	USA	name+fed+age
+13935235	3603687	HEREDIA, CARLA	Heredia Serrano, Carla	ECU	name-subset+fed+age
 13962544	20657307	RAMBALDI, FRANCESCO	Rambaldi, Francesco	ITA	name+fed+age
 13974250	2057360	Sheng, Joshua	Sheng, Joshua	USA	name+fed+age
 13981324	13301616	PETROSIAN, TIGRAN L	Petrosian, Tigran L.	ARM	name+fed+age
 13983494	2058880	Garcia, Erick	Garcia, Erick	USA	name+fed+age
+13984743	2093235	Wyzywany, Annastasia	Wyzywany, Annastasia	USA	name+fed+age
+13987660	2071150	LIU, ANDREW	Liu, Andrew	USA	name+fed+age
 13994740	2051192	SONG, EDWARD	Song, Edward	USA	name+fed+age
 13999045	2056437	Liang, Awonder	Liang, Awonder	USA	name+fed+age
 14006506	2062496	STEARMAN, JOSIAH	Stearman, Josiah	USA	name+fed+age
 14011512	30920795	Andersen, Gunnar	Andersen, Gunnar	USA	name+fed+age
 14012260	1212915	FOISOR, SABINA-FRANCESCA	Foisor, Sabina-Francesca	USA	name+fed+age
+14026082	2073102	MIYASAKA, MARCUS MING	Miyasaka, Marcus	USA	name-subset+fed+age
 14044705	2080788	Eswaran, Ashritha	Eswaran, Ashritha	USA	name+fed+age
 14056673	2064871	BALAKRISHNAN, PRAVEEN	Balakrishnan, Praveen	USA	name+fed+age
+14061227	2078759	Rajendra, Anupama Shashikala	Rajendra, Anupama	USA	name-subset+fed+age
+14079634	2067552	GRIGGS, WALKER KYLE	Griggs, Walker	USA	name-subset+fed+age
+14081435	2087871	ZHANG, DEREK	Zhang, Derek	USA	name+fed+age
 14099361	2063824	Wang, Tianqi	Wang, Tianqi	USA	name+fed+age
 14102056	30946433	CANESSA, KATE	Canessa, Kate	USA	name+fed+age
 14105448	2078090	FENG, MAGGIE	Feng, Maggie	USA	name+fed+age
+14117950	2078341	YU, JENNIFER R	Yu, Jennifer	USA	name-subset+fed+age
+14129047	2069342	CHECA, NICOLAS de T	Checa, Nicolas	USA	name-subset+fed+age
 14160065	30901561	JACOBSON, BRANDON	Jacobson, Brandon	USA	name+fed+age
 14230627	2087456	TIGLON, BRYCE	Tiglon, Bryce	USA	name+fed+age
 14268494	30920604	LIU, KIMBERLY	Liu, Kimberly	USA	name+fed+age
+14323420	2086581	PAUL, JUSTIN	Paul, Justin	USA	name+fed+age
 14345441	30935016	HERMAN, SARA	Herman, Sara	USA	name+fed+age
+14345456	30935008	HERMAN, DANIEL	Herman, Daniel	USA	name+fed+age
 14376203	2081431	Novik, Elena	Novik, Elena	USA	name+fed+age
 14380771	2073250	Brodsky, David	Brodsky, David	USA	name+fed+age
 14381821	30952298	Zelner, Zoe	Zelner, Zoe	USA	name+fed+age
+14385521	2085070	MANGALAM, SHREYA B	Mangalam, Shreya	USA	name-subset+fed+age
+14436451	30945100	Anand, Sanjeev	Anand, Sanjeev	USA	name+fed+age
+14452418	30903920	Nakada, Akira Wood	Nakada, Akira	USA	name-subset+fed+age
+14456386	2087090	GRABINSKY, AARON	Grabinsky, Aaron	USA	name+fed+age
+14468793	30928648	NEALE, MARK ROBERT	Neale, Mark	USA	name-subset+fed+age
+14497790	8500436	Campbell, Charles Adegboyega	Campbell, Charles	NGR	name-subset+fed+age
 14499403	2090759	Daggupati, Balaji	Daggupati, Balaji	USA	name+fed+age
+14514636	2090732	YIP, CARISSA SHIWEN	Yip, Carissa	USA	name-subset+fed+age
+14543654	2089882	Cremisi, Daniel	Cremisi, Daniel	USA	name+fed+age
 14565208	2068460	Otterbach, Renate	Otterbach, Renate	USA	name+fed+age
+14567906	30977924	McCreesh, Brent	McCreesh, Brent L	USA	name-subset+fed+age
 14583755	2083485	ESWARAN, AKSITHI	Eswaran, Aksithi	USA	name+fed+age
 14631046	30918669	HOESLEY, ARIA	Hoesley, Aria	USA	name+fed+age
 14653287	30914051	NARAYANAN, SAMRUG	Narayanan, Samrug	USA	name+fed+age
 14667931	14001780	Otchiyev, Arslan	Otchiyev, Arslan	TKM	name+fed+age
+14675052	30903130	SCHENK, SAM	Schenk, Sam	USA	name+fed+age
+14680747	2099241	Lodh, Anish	Lodh, Anish	USA	name+fed+age
 14681055	4901681	NOROVSAMBUU, BADAMKHAND	Badamkhand, Norovsambuu	MGL	name+fed+age
 14684893	30932980	ZELTSAN, JOSEPH	Zeltsan, Joseph	USA	name+fed+age
+14696346	30934885	McConnell, Sullivan Mac	Mcconnell, Sullivan	USA	name-subset+fed+age
 14698186	12543640	Arab, Kiana	Kiana, Arab	USA	name+fed+age
+14702870	2099659	Costello, Alexander John	Costello, Alexander	USA	name-subset+fed+age
 14709825	2090775	Vivekananthan, Anish	Vivekananthan, Anish	USA	name+fed+age
 14713858	2097486	Vittal, Sanjana	Vittal, Sanjana	USA	name+fed+age
+14714261	30908930	WANG, AUDREY	Wang, Audrey	USA	name+fed+age
 14723368	322750	NEMCOVA, KATERINA	Nemcova, Katerina	USA	name+fed+age
 14732597	2096242	LU, MAXIMILLIAN	Lu, Maximillian	USA	name+fed+age
+14742546	30907403	CHINNAMBETI, ABHINAV	Chinnambeti, Abhinav	USA	name+fed+age
 14744935	3503240	DOMINGUEZ PEREZ, LEINIER	Dominguez Perez, Leinier	USA	name+fed+age
+14761270	30938228	Deviprasath, Sharvesh R	Deviprasath, Sharvesh	USA	name-subset+fed+age
+14766721	30940850	Nozaki, Mao	Nozaki, Mao	USA	name+fed+age
 14770047	7401302	Miller, Rachel	Miller, Rachel	JAM	name+fed+age
+14771956	2616343	ZHOU, LILY	Zhou, Lily	CAN	name+fed+age
 14772092	30903114	GUO, ARTHUR	Guo, Arthur	USA	name+fed+age
 14774846	30904625	PACIORKOWSKI, LEV	Paciorkowski, Lev	USA	name+fed+age
 14821464	12501255	MORADIABADI, ELSHAN	Moradiabadi, Elshan	USA	name+fed+age
+14823963	30923000	Davis, Jeffrey Stuart	Davis, Jeffrey Stuart	USA	name+fed+age
 14885268	30908604	Ghazarian, Kirk	Ghazarian, Kirk	USA	name+fed+age
 14901590	30908132	Wu, Rochelle	Wu, Rochelle	USA	name+fed+age
 14902750	13600575	MANAGADZE, NIKOLOZ	Managadze, Nikoloz	GEO	name+fed+age
 14914512	4900847	TSEGMED, BATCHULUUN	Batchuluun, Tsegmed	MGL	name+fed+age
 14921551	30909090	Huston, Gus	Huston, Gus	USA	name+fed+age
+14922272	30936942	Harrison, Eva C	Harrison, Eva	USA	name-subset+fed+age
 14930994	30943876	Wang, Alex Yuxuan	Wang, Alex Yuxuan	USA	name+fed+age
+14932462	4403312	SALAZAR, AURA CRISTINA	Salazar, Aura Cristina	COL	name+fed+age
 14941904	2099438	Hong, Andrew	Hong, Andrew	USA	name+fed+age
 14946545	30957974	Rambha, Hemachandra	Rambha, Hemachandra	USA	name+fed+age
 14951916	30936934	Shlyakhtenko, Robert	Shlyakhtenko, Robert	USA	name+fed+age
+14955471	30908477	Chasin, Nico Werner	Chasin, Nico	USA	name-subset+fed+age
 14958890	3506690	CORRALES JIMENEZ, FIDEL	Corrales Jimenez, Fidel	USA	name+fed+age
+14961028	30908590	Oberoi, Shelev	Oberoi, Shelev	USA	name+fed+age
 14968016	39903303	Gospodinov, Antony	Gospodinov, Antony	USA	name+fed+age
 14976367	30920175	Gao, Marvin	Gao, Marvin	USA	name+fed+age
+14991426	5009871	Gounder, Prathiba	Gounder, Prathiba Y.	USA	name-subset+fed+age
 14995723	13603620	PAIKIDZE, NAZI	Paikidze, Nazi	USA	name+fed+age
 15001077	30942330	Cooke, Grayson	Cooke, Grayson	USA	name+fed+age
+15012516	30970610	MOOR, NATHANIEL PHILIP	Moor, Nathaniel Philip	USA	name+fed+age
 15013525	30920523	VANAPALLI, VISHNU	Vanapalli, Vishnu	USA	name+fed+age
 15015852	39910598	Wang, Chase	Wang, Chase	USA	name+fed+age
+15041466	2093596	Niemann, Hans	Niemann, Hans Moke	USA	name-subset+fed+age
 15058602	2300117	STEINGRIMSSON, HEDINN	Steingrimsson, Hedinn	ISL	name+fed+age
 15078846	30948436	Timm, Jordan	Timm, Jordan	USA	name+fed+age
 15085398	30919266	Kaur, Aradh	Kaur, Aradh	USA	name+fed+age
 15106903	30919908	Safranek, William	Safranek, William	USA	name+fed+age
 15107740	30931649	VIDYARTHI, VYOM	Vidyarthi, Vyom	USA	name+fed+age
 15113036	2620472	OUELLET, MAILI-JADE	Ouellet, Maili-Jade	CAN	name+fed+age
+15162021	566007461	GOULD, DYLAN	Gould, Dylan	USA	name+fed+age
 15180666	30961564	Slate, Kent	Slate, Kent	USA	name+fed+age
 15194211	30932300	Clasby, Derek	Clasby, Derek	USA	name+fed+age
 15197624	30937310	Balakrishnan, Naveen	Balakrishnan, Naveen	USA	name+fed+age
 15197865	3504409	QUESADA PEREZ, YUNIESKY	Quesada Perez, Yuniesky	USA	name+fed+age
+15197996	30900166	DE VILLA, JOSE	De Villa, Jose	USA	name+fed+age
 15199286	3503739	BRUZON BATISTA, LAZARO	Bruzon Batista, Lazaro	USA	name+fed+age
 15205818	30919495	Mardov, Dimitar	Mardov, Dimitar	USA	name+fed+age
 15211462	30930880	Lu, Ming	Lu, Ming	USA	name+fed+age
 15214738	30953561	Huang, Lulu	Huang, Lulu	USA	name+fed+age
 15215230	30916011	Levine, Jack	Levine, Jack	USA	name+fed+age
+15215643	30952247	WEN, TEDDIE	Wen, Teddie	USA	name+fed+age
 15215658	30952255	Wen, Tommy	Wen, Tommy	USA	name+fed+age
 15218444	13300474	Aronian, Levon	Aronian, Levon	USA	name+fed+age
+15220601	39925692	Belew, Finn	Belew, Finn	USA	name+fed+age
 15244943	30909694	Yoo, Christopher Woojin	Yoo, Christopher Woojin	USA	name+fed+age
+15248334	30935423	Xu, Raymond S.	Xu, Raymond	USA	name-subset+fed+age
 15249281	30931975	Tian, Eddy	Tian, Eddy	USA	name+fed+age
 15250088	30940176	Sivakumar, Shaaketh	Sivakumar, Shaaketh	USA	name+fed+age
+15255524	30943612	Nasta, Kiren	Nasta, Kiren Vivek	USA	name-subset+fed+age
 15256465	39927814	CAMPBELL, MAXWELL	Campbell, Maxwell	USA	name+fed+age
+15263634	30927900	Das, Rohan	Das, Rohan	USA	name+fed+age
 15263943	30934559	KAPLAN, AVI HARRISON	Kaplan, Avi Harrison	USA	name+fed+age
 15267492	30951259	GHAZARIAN, JANNA	Ghazarian, Janna	USA	name+fed+age
 15274812	30964687	Adury, Anant	Adury, Anant	USA	name+fed+age
 15276337	30907381	RAMA, TEJAS	Rama, Tejas	USA	name+fed+age
 15312546	30953111	Yin, Evan	Yin, Evan	USA	name+fed+age
+15330365	30922089	WEI, JAMES	Wei, James	USA	name+fed+age
 15346712	30946930	Zhao, Erick	Zhao, Erick	USA	name+fed+age
 15349011	30926173	Wilson, Ronen	Wilson, Ronen	USA	name+fed+age
 15368733	12502014	POURKASHIYAN, ATOUSA	Pourkashiyan, Atousa	USA	name+fed+age
 15373190	30963036	Mangudi, Amudan	Mangudi, Amudan	USA	name+fed+age
 15375510	30915856	KRISHNAKUMAR, SRIRAM	Krishnakumar, Sriram	USA	name+fed+age
+15383635	30949270	Mutnuri, Krishna Saketh	Mutnuri, Krishna	USA	name-subset+fed+age
+15401090	30932459	Wang, Ellen Luojia	Wang, Ellen	USA	name-subset+fed+age
+15409954	30924839	Barnes, Maxwell	Barnes, Maxwell	USA	name+fed+age
 15417342	30925959	Prestia, Paris	Prestia, Paris	USA	name+fed+age
+15420990	30957605	Klenoff, Caleb Jude	Klenoff, Caleb	USA	name-subset+fed+age
 15423188	30944899	Nozaki, Maya	Nozaki, Maya	USA	name+fed+age
 15429990	30942640	Teitelman, Aiden	Teitelman, Aiden	USA	name+fed+age
 15430006	30922216	Kunka, Harshid	Kunka, Harshid	USA	name+fed+age
@@ -273,9 +530,14 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 15452300	30929849	Li, Rachael	Li, Rachael	USA	name+fed+age
 15453565	30942306	SHUKLA, ANIKET	Shukla, Aniket	USA	name+fed+age
 15456104	30920019	Mishra, Abhimanyu	Mishra, Abhimanyu	USA	name+fed+age
+15462690	30919860	Yan, Ruiyang	Yan, Ruiyang	USA	name+fed+age
 15464538	30934699	Pham, Linda	Pham, Linda	USA	name+fed+age
+15470615	3520498	Cervantes, Thalia	Cervantes Landeiro, Thalia	USA	name-subset+fed+age
 15472832	30941091	Sethuraman, Sandeep	Sethuraman, Sandeep	USA	name+fed+age
 15473182	30958628	GUHA, ESHAN	Guha, Eshan	USA	name+fed+age
+15490096	30953448	Shevkunov, Vladyslav	Shevkunov, Vladyslav	USA	name+fed+age
+15492511	24107131	Stukopin, Andrey	Stukopin, Andrey	RUS	name+fed+age
+15494283	30927870	Nathan, Nitish SG	Nathan, Nitish	USA	name-subset+fed+age
 15496384	627143	SHOKER, SAMY	Shoker, Samy	EGY	name+fed+age
 15496871	39928977	HUANG, KYLAN Z	Huang, Kylan Z	USA	name+fed+age
 15502462	30947030	Hyatt, Jessica	Hyatt, Jessica	USA	name+fed+age
@@ -284,13 +546,16 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 15517506	39928578	Dashti, Pasha	Dashti, Pasha	USA	name+fed+age
 15521827	450600	Rajmohan, Vikram	Rajmohan, Vikram	ENG	name+fed+age
 15524414	8603537	ZHOU, JIANCHAO	Zhou, Jianchao	USA	name+fed+age
+15524607	30926432	Liu, Christina Grace	Liu, Christina	USA	name-subset+fed+age
 15530135	30928621	GADI, VARUN	Gadi, Varun	USA	name+fed+age
 15542082	30922615	MORRIS-SUZUKI, SOPHIE	Morris-Suzuki, Sophie	USA	name+fed+age
 15544622	30964156	Li, Kevin	Li, Kevin	USA	name+fed+age
 15545322	30981212	Nicholson, Ian	Nicholson, Ian	USA	name+fed+age
 15548138	30975336	Hiwale, Ronak	Hiwale, Ronak	USA	name+fed+age
+15550803	30926998	YE, LUKE SICONG	Ye, Luke	USA	name-subset+fed+age
 15552450	30955750	Elgat, Adam	Elgat, Adam	USA	name+fed+age
 15560438	30984521	Feng, Victor	Feng, Victor	USA	name+fed+age
+15560780	30969263	Pothuri, Abhiram Sai	Pothuri, Abhiram	USA	name-subset+fed+age
 15570195	30958245	Melillo, Lucius	Melillo, Lucius	USA	name+fed+age
 15576043	30942268	NGO, BACH	Ngo, Bach	USA	name+fed+age
 15588925	39907899	INGARGIOLA, MAX	Ingargiola, Max	USA	name+fed+age
@@ -298,27 +563,37 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 15607273	30943426	Wang, Lilian	Wang, Lilian	USA	name+fed+age
 15607430	30979838	Yisrael, Shama	Yisrael, Shama	USA	name+fed+age
 15616302	39907929	Yang, Abigail	Yang, Abigail	USA	name+fed+age
+15631341	30950236	Weber, Madeline L	Weber, Madeline	USA	name-subset+fed+age
 15636023	39947653	Broyles, Gabriel Paramonos	Broyles, Gabriel Paramonos	USA	name+fed+age
 15644772	30943159	Morden, Rose	Morden, Rose	USA	name+fed+age
 15649846	30945968	Gutla, Aryan	Gutla, Aryan	USA	name+fed+age
 15676736	30979730	SAHAI, NEEL	Sahai, Neel	USA	name+fed+age
 15680068	30964717	Wang, Chloe	Wang, Chloe	USA	name+fed+age
+15688436	30939941	Li, Eric Yuhan	Li, Eric	USA	name-subset+fed+age
 15694597	30940346	LEVINE, JOSEPH	Levine, Joseph	USA	name+fed+age
+15701903	30965950	Guel, Daniel Joseph	Guel, Daniel	USA	name-subset+fed+age
+15702336	5081394	TAJ, ISHRATH AMINA	Ishrath Amina Taj	IND	name+fed+age
 15703571	30945593	Lee, Merrill	Lee, Merrill	USA	name+fed+age
 15706544	30961580	Mullodzhanov, Nathaniel	Mullodzhanov, Nathaniel	USA	name+fed+age
 15714654	30979293	He, Henry	He, Henry	USA	name+fed+age
 15715113	39928810	WHITE, AURELIA	White, Aurelia	USA	name+fed+age
+15717256	39920127	Arvind, Charithra	Arvind, Charithra C	USA	name-subset+fed+age
 15722648	30951640	Rutkoske, Reese	Rutkoske, Reese	USA	name+fed+age
 15724996	30933099	Kaur, Jind	Kaur, Jind	USA	name+fed+age
 15728407	30941849	Hardaway, Brewington	Hardaway, Brewington	USA	name+fed+age
+15732892	150109601	Bruggeman, Noah B	Bruggeman, Noah	USA	name-subset+fed+age
 15733084	30941296	Xie, Bryan	Xie, Bryan	USA	name+fed+age
 15739716	30940729	Rajaram, Rohan	Rajaram, Rohan	USA	name+fed+age
 15740871	39901823	Wu, Eliot S	Wu, Eliot S	USA	name+fed+age
+15744057	3503933	Valido Bouza, Cesar	Valido Bouza, Cesar Jose	CUB	name-subset+fed+age
 15748464	30931142	Park, Evan	Park, Evan	USA	name+fed+age
+15752957	30945828	SHETTY, ANSHUL P	Shetty, Anshul	USA	name-subset+fed+age
 15753375	39905608	Nobles, William	Nobles, William	USA	name+fed+age
 15753704	39985733	KUDRYAVSKY, AARON	Kudryavsky, Aaron	USA	name+fed+age
 15754295	30998115	Jou, Esther	Jou, Esther	USA	name+fed+age
+15757981	30939011	Lee, Jayden H	Lee, Jayden	USA	name-subset+fed+age
 15760517	30960045	RAMESH, RAHUL	Ramesh, Rahul	USA	name+fed+age
+15766785	30929296	EMRIKIAN, AREN C	Emrikian, Aren	USA	name-subset+fed+age
 15768624	13803158	Chyngyz, Sultai	Chyngyz, Sultai	KGZ	name+fed+age
 15770981	30944481	Liu, Kelsey	Liu, Kelsey	USA	name+fed+age
 15777696	3507041	VIGOA APECHECHE, YANIRA	Vigoa Apecheche, Yanira	USA	name+fed+age
@@ -328,12 +603,17 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 15790277	30990050	Roberts, Aston	Roberts, Aston	USA	name+fed+age
 15791966	30927064	Dinesh, Abinav	Dinesh, Abinav	USA	name+fed+age
 15794244	30939836	Mou, Iris	Mou, Iris	USA	name+fed+age
+15799078	30943965	Sheehan, Ethan T	Sheehan, Ethan	USA	name-subset+fed+age
 15799497	30964300	Marian, Aaron	Marian, Aaron	USA	name+fed+age
 15799681	30937370	Su, Kevin	Su, Kevin	USA	name+fed+age
 15816768	30946409	Nandhakumar, Vaseegaran	Nandhakumar, Vaseegaran	USA	name+fed+age
 15817364	39954935	Zhong, Maggie	Zhong, Maggie	USA	name+fed+age
+15827114	30942063	BAGLEY, Saadhika Lakshmi	Bagley, Saadhika	USA	name-subset+fed+age
 15831064	39902838	HUANG, JOLIE	Huang, Jolie	USA	name+fed+age
+15832581	30953766	Polacek, Noah	Polacek, Noah	USA	name+fed+age
+15837022	30962854	LANE, THOMAS	Lane, Thomas	USA	name+fed+age
 15840554	30988772	Bruni, Xavier	Bruni, Xavier	USA	name+fed+age
+15841411	45012458	Panda, Asish	Asish Panda	IND	name+fed+age
 15842723	30951828	ZHU, RYAN	Zhu, Ryan	USA	name+fed+age
 15844061	30943540	Meng, Alexander	Meng, Alexander	USA	name+fed+age
 15856064	39953378	LIN, ALEXANDER	Lin, Alexander	USA	name+fed+age
@@ -345,26 +625,35 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 15882866	30941628	meiyappan, Kavya	Meiyappan, Kavya	USA	name+fed+age
 15889697	30974569	Rutledge, Rebecca	Rutledge, Rebecca	USA	name+fed+age
 15891702	30998417	BUPESHNATH, ARJUN	Bupeshnath, Arjun	USA	name+fed+age
+15894373	30983533	Yin, Elise	Yin, Elise S	USA	name-subset+fed+age
+15895821	30949149	Bellamy, Chase Josue	Bellamy, Chase	USA	name-subset+fed+age
+15900267	25980408	Nair, Advait	Advait Shankar Nair	USA	name-subset+fed+age
 15903555	39904792	Zhang, Sunny	Zhang, Sunny	USA	name+fed+age
+15907570	30955718	Chamadia, Avaan Shiv	Chamadia, Avaan	USA	name-subset+fed+age
 15912240	30943655	Qiao, Caden	Qiao, Caden	USA	name+fed+age
 15913546	39910067	Thakur, Bhavya	Thakur, Bhavya	USA	name+fed+age
 15914362	30970547	Diao, Matthew Guo	Diao, Matthew Guo	USA	name+fed+age
 15914665	30939020	WONGSO, STEVE	Wongso, Steve	USA	name+fed+age
 15921044	30962765	Yu, Avery	Yu, Avery	USA	name+fed+age
 15924106	30949521	Gardezi, Arsal	Gardezi, Arsal	USA	name+fed+age
+15928816	30943167	Doan, Emilyn	Doan, Emilyn Chiu	USA	name-subset+fed+age
 15930555	30966329	Nair, Ajitesh	Nair, Ajitesh	USA	name+fed+age
 15942721	30943183	Zhu, Sophie	Zhu, Sophie	USA	name+fed+age
 15949902	30984610	Van Zandweghe, Henri	Van Zandweghe, Henri	USA	name+fed+age
 15962834	30978521	BROWN, MADISON	Brown, Madison	USA	name+fed+age
+15965071	39939073	SHI, GAVIN	Shi, Gavin	USA	name+fed+age
 15966582	39924769	Jiang, Olivia	Jiang, Olivia	USA	name+fed+age
 15967098	30970369	Brady, Tyson	Brady, Tyson	USA	name+fed+age
 15967852	30978130	Ziegler, Nate	Ziegler, Nate	USA	name+fed+age
+15969005	30938279	PUTNAM, LIAM HENRY	Putnam, Liam	USA	name-subset+fed+age
 15970938	30998050	Cheung, Kyle	Cheung, Kyle	USA	name+fed+age
 15971911	30943191	Ananth, Ananya	Ananth, Ananya	USA	name+fed+age
 15975240	39928381	RADCHENKO, ANNA SOPHIA	Radchenko, Anna Sophia	USA	name+fed+age
+15976160	30964733	Lin, Benjamin Gu	Lin, Benjamin	USA	name-subset+fed+age
 15977026	30956714	ARUN, RAGHAV	Arun, Raghav	USA	name+fed+age
 15991103	30945666	MEHROTRA, EKANSH	Mehrotra, Ekansh	USA	name+fed+age
 15992594	30993130	Borse, Tanvi	Borse, Tanvi	USA	name+fed+age
+15996864	30943272	Luo, Will	Luo, Will	USA	name+fed+age
 15999891	39901548	CHEN, BRANDON JOSEPH	Chen, Brandon Joseph	USA	name+fed+age
 16004571	4174003	BELOUS, VLADIMIR	Belous, Vladimir	RUS	name+fed+age
 16010621	30984793	WIDJAJA, LUKE	Widjaja, Luke	USA	name+fed+age
@@ -375,27 +664,37 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 16024678	30957478	Murugan Ayyappan, Adhiraiyan	Murugan Ayyappan, Adhiraiyan	USA	name+fed+age
 16026633	30943132	Qiao, Evelyn	Qiao, Evelyn	USA	name+fed+age
 16027820	30944996	RORRER, GRAYSON	Rorrer, Grayson	USA	name+fed+age
+16028583	54110718	Melikian, Nune Erika	Melikian, Nune	USA	name-subset+fed+age
 16033981	30964555	Sripada, Havish	Sripada, Havish	USA	name+fed+age
 16037722	30984203	NAGARAJ, AVNI GAURI	Nagaraj, Avni Gauri	USA	name+fed+age
+16041488	30940303	Liang, Jason S	Liang, Jason	USA	name-subset+fed+age
 16048482	30978122	Belenky, Nicholas	Belenky, Nicholas	USA	name+fed+age
 16050220	30964636	Paruchuri, Naveen	Paruchuri, Naveen	USA	name+fed+age
 16051045	30942489	FARRAGUT, CANNON	Farragut, Cannon	USA	name+fed+age
+16054066	39924270	Yang, Daniel Benji	Yang, Daniel Benji	USA	name+fed+age
 16054553	30958130	Harish, Neeraj	Harish, Neeraj	USA	name+fed+age
 16056387	30962862	CHEUNG, RYAN	Cheung, Ryan	USA	name+fed+age
 16057292	39908461	Sun, Lisa	Sun, Lisa	USA	name+fed+age
 16059387	39904156	Alvarado-Yoshida, Nico	Alvarado-Yoshida, Nico	USA	name+fed+age
+16059648	30941822	LEE, ALICE TERESA	Lee, Alice	USA	name-subset+fed+age
 16061366	30983860	Runge, Matteo	Runge, Matteo	USA	name+fed+age
 16061387	30954339	Tang, Vincent	Tang, Vincent	USA	name+fed+age
 16061785	30994535	Wang, Leo Q	Wang, Leo Q	USA	name+fed+age
+16067868	30943221	CHENG, Claire	Cheng, Claire Ziyun	USA	name-subset+fed+age
 16068511	30951151	BANSAL, ADVAY	Bansal, Advay	USA	name+fed+age
 16071630	33339414	SHARMA, AAHAN	Aahan Sharma	IND	name+fed+age
+16076312	30961157	Mehta, Hursh	Mehta, Hursh	USA	name+fed+age
+16077535	30941334	Field, Lila	Field, Lila Quinn	IRL	name-subset+fed+age
 16079918	39933733	SWING, HENRY	Swing, Henry	USA	name+fed+age
 16083648	30956560	Hao, Max	Hao, Max	USA	name+fed+age
 16084553	25984357	Sattaru, Sritej Sai	Sattaru, Sritej Sai	USA	name+fed+age
+16084835	30942691	RIZZO, TOBIAS M	Rizzo, Tobias	USA	name-subset+fed+age
 16085871	30951356	Prakash, Nandini	Prakash, Nandini	USA	name+fed+age
+16085960	3524310	Hernandez, Ronald	Hernandez Placeres, Ronald	USA	name-subset+fed+age
 16086648	39933148	Liu, Chris Ping	Liu, Chris Ping	USA	name+fed+age
 16089084	30952239	Fausto, Aliana	Fausto, Aliana	USA	name+fed+age
 16089208	30958636	Silva, Javier	Silva, Javier	USA	name+fed+age
+16090452	30948479	Mei, Austin R	Mei, Austin	USA	name-subset+fed+age
 16090927	30953413	Tse, Whitney	Tse, Whitney	USA	name+fed+age
 16091063	30953510	Jiang, Andrew	Jiang, Andrew	USA	name+fed+age
 16093205	30962331	Chiang, Jacob	Chiang, Jacob	USA	name+fed+age
@@ -411,22 +710,27 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 16103156	30981069	Laido, Olivia	Laido, Olivia	USA	name+fed+age
 16103931	39909000	Ng, Sophia	Ng, Sophia	USA	name+fed+age
 16103988	39953130	Booncharoen, Nathan	Booncharoen, Nathan	USA	name+fed+age
+16108634	30968275	JIANDANI, MEHAK S	Jiandani, Mehak	USA	name-subset+fed+age
 16110091	25059653	Srivatshav P, Rahul	Rahul Srivatshav P	IND	name+fed+age
 16110744	39965830	Laskaris, Evie	Laskaris, Evie	USA	name+fed+age
 16111031	30967988	Zhang, Alex	Zhang, Alex	USA	name+fed+age
 16113085	30943264	Xie, Timothy	Xie, Timothy	USA	name+fed+age
 16113717	1126881	Swiercz, Dariusz	Swiercz, Dariusz	USA	name+fed+age
+16115411	30967279	Elshazly, Mohamed K	Elshazly, Mohamed	USA	name-subset+fed+age
 16126281	30949122	Johnson, Donald	Johnson, Donald	USA	name+fed+age
 16126955	39908879	Waduthanthree, Thihansa Ovindee	Waduthanthree, Thihansa Ovindee	USA	name+fed+age
 16128527	30983681	Kodarapu, Ishaan	Kodarapu, Ishaan	USA	name+fed+age
 16128815	39914518	Muneepeerakul, Analaya	Muneepeerakul, Analaya	USA	name+fed+age
 16137370	5201110	Bitoon, Richard	Bitoon, Richard	PHI	name+fed+age
 16138806	30977070	Stark, Chloe A	Stark, Chloe A	USA	name+fed+age
+16139198	30972450	Lim, Timothy	Lim, Timothy Chien En	USA	name-subset+fed+age
 16147664	30993776	Zhu, Alexander	Zhu, Alexander	USA	name+fed+age
 16148233	30964725	Gu, Minghao	Gu, Minghao	USA	name+fed+age
+16150557	30967392	Soni, Arjun Gorakh	Soni, Arjun	USA	name-subset+fed+age
 16151483	30967350	NGUYEN, AMY	Nguyen, Amy	USA	name+fed+age
 16152224	150112376	GILLMAN, JONES	Gillman, Jones	USA	name+fed+age
 16156007	39927830	Shvarts, Tim	Shvarts, Tim	USA	name+fed+age
+16160527	39933946	BAS, GOKTUG	Bas, Goktug	USA	name+fed+age
 16164934	30978688	Cherukuri, Nitesh	Cherukuri, Nitesh	USA	name+fed+age
 16167206	30969280	Chakrabarti, Brejesh	Chakrabarti, Brejesh	USA	name+fed+age
 16169156	30982626	Porat, Tori	Porat, Tori	USA	name+fed+age
@@ -436,14 +740,17 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 16190224	30961904	DENTCHOUK, Emmanuel	Dentchouk, Emmanuel	USA	name+fed+age
 16192001	30952719	Guo, Andrew	Guo, Andrew	USA	name+fed+age
 16196601	30965292	HO, CARTER	Ho, Carter	USA	name+fed+age
+16202460	30964644	Hoffman, Luc William Crim	Hoffman, Luc	USA	name-subset+fed+age
 16203181	30974437	Selvam, Swagatha	Selvam, Swagatha	USA	name+fed+age
 16225038	30965276	JI, YUNZE OWEN	Ji, Yunze Owen	USA	name+fed+age
+16230807	39950875	Goldman, Jacob Marq	Goldman, Jacob Marq	USA	name+fed+age
 16231843	30943787	Gansukh, Megan	Gansukh, Megan	USA	name+fed+age
 16237534	30943710	Zhang, Roger	Zhang, Roger	USA	name+fed+age
 16237733	30965284	JI, YUZE LUKE	Ji, Yuze Luke	USA	name+fed+age
 16238130	30952026	KUMAR, SANJAY	Kumar, Sanjay	USA	name+fed+age
 16242623	30996805	MUMMIDI, AARYAN	Mummidi, Aaryan	USA	name+fed+age
 16245754	30959624	Ramkumar, Aditya	Ramkumar, Aditya	USA	name+fed+age
+16246077	30995752	KULKARNI, NEIL	Kulkarni, Neil	USA	name+fed+age
 16249020	30951747	Goktepe, Derin	Goktepe, Derin	USA	name+fed+age
 16249172	30999413	Hosur, Sanmita	Hosur, Sanmita	USA	name+fed+age
 16250362	39908283	Williams, Christopher J	Williams, Christopher J	USA	name+fed+age
@@ -452,10 +759,14 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 16277552	39905543	Ma, Cuihan	Ma, Cuihan	USA	name+fed+age
 16278356	30983100	THIMMASAMUDRAM, SANDEEP	Thimmasamudram, Sandeep	USA	name+fed+age
 16280801	39906671	Kinney, Travis Blaise	Kinney, Travis Blaise	USA	name+fed+age
+16282415	30967384	Kurup, Siddharth Ajay	Kurup, Siddharth	USA	name-subset+fed+age
 16285567	30999693	VADDERAJU, SUDEEP	Vadderaju, Sudeep	USA	name+fed+age
+16287187	30964024	RAPARTHI, INDIRA LAKSHMI	Raparthi, Indira	USA	name-subset+fed+age
 16287522	39947688	Zhang, Jerrick	Zhang, Jerrick	USA	name+fed+age
+16292302	30979510	CRUZ, ARMIN VALE	Cruz, Armin Vale	USA	name+fed+age
 16299917	30976154	Lad, Neil	Lad, Neil	USA	name+fed+age
 16301835	39923738	Sukhiashvili, Alexander	Sukhiashvili, Alexander	USA	name+fed+age
+16302012	30953499	Woodward, Andy Austin	Woodward, Andy	USA	name-subset+fed+age
 16303021	30951011	Atwell, Rose	Atwell, Rose	USA	name+fed+age
 16304918	30950880	YANG, ANDERSEN	Yang, Andersen	USA	name+fed+age
 16305755	39901912	Rajeev, Ameya	Rajeev, Ameya	USA	name+fed+age
@@ -465,14 +776,18 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 16319996	566000157	Bitoon, Jarl Reyhan Lee	Bitoon, Jarl Reyhan Lee	USA	name+fed+age
 16328978	30974038	Zheng, Marcus	Zheng, Marcus	USA	name+fed+age
 16342416	39985792	Karpenko, Oskar	Karpenko, Oskar	USA	name+fed+age
+16344675	30957435	Xiong, Lang Leo	Xiong, Lang	USA	name-subset+fed+age
 16350155	75003570	KAZAN, JUDE	Kazan, Jude	USA	name+fed+age
 16353223	30955920	THAKKAR, AAYUSH	Thakkar, Aayush	USA	name+fed+age
+16357247	39920968	VEMURI, SURYA	Vemuri, Surya	USA	name+fed+age
 16359401	30958121	LIANG, YU-CHENG	Liang, Yu-Cheng	USA	name+fed+age
+16360791	30951321	Leschinsky, Gary A	Leschinsky, Gary	USA	name-subset+fed+age
 16367678	30965250	Sethuraman, Roshan	Sethuraman, Roshan	USA	name+fed+age
 16368295	30957486	zhuang, kyle	Zhuang, Kyle	USA	name+fed+age
 16368693	25980840	KUNAPULI, Siddarth Sriaditya	Kunapuli, Siddarth Sriaditya	USA	name+fed+age
 16369220	30953600	Huang, Lucia	Huang, Lucia	USA	name+fed+age
 16374152	39952550	Ehrenberg, Nathan Eric	Ehrenberg, Nathan Eric	USA	name+fed+age
+16377701	30974909	Su, Jasmine	Su, Jasmine Zhixin	USA	name-subset+fed+age
 16378223	566022827	Javeri, Arhan	Javeri, Arhan	USA	name+fed+age
 16378945	39922200	RAMBHA, GNANADATTA	Rambha, Gnanadatta	USA	name+fed+age
 16379802	30965659	Sun, Ryan	Sun, Ryan	USA	name+fed+age
@@ -480,6 +795,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 16380642	30964202	Xiao, Marina	Xiao, Marina	USA	name+fed+age
 16380657	30984939	Guo, Ella	Guo, Ella	USA	name+fed+age
 16380966	30978556	Stuckert, Elena	Stuckert, Elena	USA	name+fed+age
+16381431	39900746	Sensing, Beau	Sensing, Beau	USA	name+fed+age
 16394505	30988616	MAHESHWARI, VEDANT	Maheshwari, Vedant	USA	name+fed+age
 16396413	30968070	Fang, Elbert	Fang, Elbert	USA	name+fed+age
 16397710	30963273	Colville, Julian	Colville, Julian	USA	name+fed+age
@@ -489,10 +805,15 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 16412420	30981379	Sripada, Anisha	Sripada, Anisha	USA	name+fed+age
 16414275	1406710	PEDERSEN, CHRISTIAN KYNDEL	Pedersen, Christian Kyndel	DEN	name+fed+age
 16416334	8612676	WEN, YILI	Wen, Yili	CHN	name+fed+age
+16416795	30965268	Yang, Maxwell Z	Yang, Maxwell	USA	name-subset+fed+age
+16416904	91163480	Zurawski, Zachary David	Zurawski, Zachary	POL	name-subset+fed+age
 16417961	39900614	James, Matthew	James, Matthew	USA	name+fed+age
 16418483	30990165	Gnana Hari Sekar, Easwar	Gnana Hari Sekar, Easwar	USA	name+fed+age
+16419450	30988659	Stern, Kevin	Stern, Kevin B	USA	name-subset+fed+age
+16421156	30961130	CHEN, ETHAN BUMRUNGVONGTONG	Chen, Ethan	USA	name-subset+fed+age
 16422824	39910202	Loh, Summer	Loh, Summer	USA	name+fed+age
 16424622	30981158	LUO, WESLEY	Luo, Wesley	USA	name+fed+age
+16425316	39901645	Lu, Katherine	Lu, Katherine Sunny	USA	name-subset+fed+age
 16428542	30974780	Sinkar, Anagha Aniket	Sinkar, Anagha Aniket	USA	name+fed+age
 16429310	30973856	Kilari, Dattasai	Kilari, Dattasai	USA	name+fed+age
 16430495	30966230	Yan, Nathan	Yan, Nathan	USA	name+fed+age
@@ -519,6 +840,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 16458708	30997780	Saxena, Vihaan	Saxena, Vihaan	USA	name+fed+age
 16459676	39915182	Wang, Eric	Wang, Eric	USA	name+fed+age
 16461572	30981093	Li, Audrey Keyan	Li, Audrey Keyan	USA	name+fed+age
+16462988	39909018	GONZALEZ, DIEGO LAWRENCE	Gonzalez, Diego Lawrence	USA	name+fed+age
 16463453	14201143	KHAMRAKULOV, DJURABEK	Khamrakulov, Djurabek	UZB	name+fed+age
 16464655	30967538	Sathish, Pranav	Sathish, Pranav	USA	name+fed+age
 16464806	30976340	Yang, Daniel	Yang, Daniel	USA	name+fed+age
@@ -527,11 +849,14 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 16471866	2320673	Zoffer, Oskar	Zoffer, Oskar	USA	name+fed+age
 16472723	30953588	ZHANG, ANGELLA	Zhang, Angella	USA	name+fed+age
 16476340	30990564	Zhang, Iris Runyi	Zhang, Iris Runyi	USA	name+fed+age
+16480806	30976677	Chirilov, James	Chirilov, James A	USA	name-subset+fed+age
 16483587	30985889	Fang, Arabella	Fang, Arabella	USA	name+fed+age
 16485720	30977401	Meng, Joshua	Meng, Joshua	USA	name+fed+age
 16485982	30956137	ZHANG, RYAN	Zhang, Ryan	USA	name+fed+age
 16486310	39905802	Singhvi, Armaan	Singhvi, Armaan	USA	name+fed+age
+16486827	75000660	Smits, Kaiya Bridgit Ng	Smits, Kaiya	USA	name-subset+fed+age
 16487601	2639270	Sundara Rajan, Inbhavenkat	Sundara Rajan, Inbhavenkat	CAN	name+fed+age
+16488212	39905594	Heath, Derek	Heath, Derek Xu	USA	name-subset+fed+age
 16492601	30950309	Gangavarapu, Sreekar	Gangavarapu, Sreekar	USA	name+fed+age
 16500650	39969398	SILVA, ASHA	Silva, Asha	USA	name+fed+age
 16503231	39970108	Tushman, Fiona	Tushman, Fiona	USA	name+fed+age
@@ -540,8 +865,11 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 16512998	30957397	Yao, Hanchi	Yao, Hanchi	USA	name+fed+age
 16515130	39940276	Venkatesh, Adhithi	Venkatesh, Adhithi	USA	name+fed+age
 16522403	39905462	Velampalli, Akhil	Velampalli, Akhil	USA	name+fed+age
+16545130	30951232	GOPALAKRISHNAN, KRITIN ROHAN	Gopalakrishnan, Kritin	USA	name-subset+fed+age
+16545605	30964342	TANG, BENJAMIN BENCHEN	Tang, Benjamin	USA	name-subset+fed+age
 16548501	39963438	Sane, Shreyus	Sane, Shreyus	USA	name+fed+age
 16551237	30972531	Tang, Dylan	Tang, Dylan	USA	name+fed+age
+16552121	2629453	JOSEPH  BENHER, SAVIO Bennihyn	Joseph Benher, Savio	CAN	name-subset+fed+age
 16554917	30981441	Wadhwa, Aayush	Wadhwa, Aayush	USA	name+fed+age
 16558231	30969549	Wang, Ryan R	Wang, Ryan R	USA	name+fed+age
 16565807	39914356	ZHANG, MICHAEL	Zhang, Michael	USA	name+fed+age
@@ -557,25 +885,33 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 16599760	39907171	Ravishankar, Dhruvesh	Ravishankar, Dhruvesh	USA	name+fed+age
 16600045	39927644	Bynum, Jacorey	Bynum, Jacorey	USA	name+fed+age
 16608942	30966892	Gaw, Chloe	Gaw, Chloe	USA	name+fed+age
+16614292	30973503	Templin, Aethelred Magni Hildebrandt	Templin, Aethelred Magni	USA	name-subset+fed+age
+16615802	39907252	Petukhov, Arthur	Petukhov, Arthur	USA	name+fed+age
 16624387	30977134	Jammalamadaka, Vihaan	Jammalamadaka, Vihaan	USA	name+fed+age
 16633636	30993911	Adhikari, Sunav	Adhikari, Sunav	USA	name+fed+age
+16633657	30983266	Bondalapati, Sri	Bondalapati, Sri Vibhav	USA	name-subset+fed+age
 16634247	30967368	Nguyen, Christine	Nguyen, Christine	USA	name+fed+age
 16636182	30972558	WU, JAYDEN	Wu, Jayden	USA	name+fed+age
 16639835	30984092	RANA, SHYLA	Rana, Shyla	USA	name+fed+age
 16640681	30990599	Zhang, Michelle	Zhang, Michelle	USA	name+fed+age
 16640984	30961149	Zhou, Ruoyu	Zhou, Ruoyu	USA	name+fed+age
+16641003	30981506	Xu, Gordon Zhenyu	Xu, Gordon	USA	name-subset+fed+age
 16646544	39954846	Zafar, Faris	Zafar, Faris	USA	name+fed+age
 16647087	30965500	REN, JESSE	Ren, Jesse	USA	name+fed+age
 16649550	39980383	Crasta, Sean	Crasta, Sean	USA	name+fed+age
 16649696	30966396	Adewumi, Tanitoluwa	Adewumi, Tanitoluwa	USA	name+fed+age
 16649900	39911047	Levine, Mack Ibosh	Levine, Mack Ibosh	USA	name+fed+age
+16650666	30960240	Liu, Eric Chang	Liu, Eric	USA	name-subset+fed+age
 16651084	39963403	MADDALI, KRISHNA	Maddali, Krishna	USA	name+fed+age
 16656363	39989755	He, William Z	He, William Z	USA	name+fed+age
 16659871	39993167	She, Gloria Beichen	She, Gloria Beichen	USA	name+fed+age
 16659933	30991331	Hu, Ruyi	Hu, Ruyi	USA	name+fed+age
+16665811	30983843	BASKARRAJ, SAMUEL G	Baskarraj, Samuel G	USA	name+fed+age
 16665853	39942260	YANG, JON	Yang, Jon	USA	name+fed+age
+16667410	30966213	Liu, Patrick Peijun	Liu, Patrick	USA	name-subset+fed+age
 16668895	39904113	AMIN, AIDA	Amin, Aida	USA	name+fed+age
 16669814	39949222	Lin, Ashley	Lin, Ashley	USA	name+fed+age
+16670090	39966623	BALAKUMAR, ARUSH DYLAN	Balakumar, Arush	USA	name-subset+fed+age
 16673000	30999758	Baranwal, Suvan	Baranwal, Suvan	USA	name+fed+age
 16674898	30957532	Yehamandram Sridhar, Jagadeeshwar	Sridhar, Jagadeeshwar Yehamandram	USA	name+fed+age
 16679915	30965136	Liu, Austin	Liu, Austin	USA	name+fed+age
@@ -593,15 +929,18 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 16703111	30965241	Qian, Bobby	Qian, Bobby	USA	name+fed+age
 16710694	39954340	Goto, Kenji	Goto, Kenji	USA	name+fed+age
 16710940	39914151	ROY, AYUSH	Roy, Ayush	USA	name+fed+age
+16711236	30972477	Bauml, Broderick	Bauml, Broderick Kenneth	USA	name-subset+fed+age
 16713783	39926168	LEE, JUSTIN	Lee, Justin	USA	name+fed+age
 16715925	30976715	Zhuge, Katherine	Zhuge, Katherine	USA	name+fed+age
 16717750	30985226	BHADURI, NEIL S	Bhaduri, Neil S	USA	name+fed+age
 16720637	39925722	JAGAN, ARJUN	Jagan, Arjun	USA	name+fed+age
+16722628	39909646	Amaya, Brayan Angel	Amaya, Brayan Angel	USA	name+fed+age
 16723842	39942040	Sen, Samant Robert	Sen, Samant Robert	USA	name+fed+age
 16724055	39905900	JIANG, JASON	Jiang, Jason	USA	name+fed+age
 16727082	39969568	Ryerson, Olivia	Ryerson, Olivia	USA	name+fed+age
 16728985	30974143	Shetty, Saharsh Darsh	Shetty, Saharsh Darsh	USA	name+fed+age
 16733661	30981530	Zhang, Kylie	Zhang, Kylie	USA	name+fed+age
+16738150	30974879	Braddy, Elizabeth	Braddy, Elizabeth R	USA	name-subset+fed+age
 16740405	30994926	Yang, Lucas	Yang, Lucas	USA	name+fed+age
 16741147	30984440	Aravindakshan, Sahana	Aravindakshan, Sahana	USA	name+fed+age
 16741168	30967767	Wang, Freyr	Wang, Freyr	USA	name+fed+age
@@ -612,26 +951,31 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 16749316	30982669	Guo, Yanfeng	Guo, Yanfeng	USA	name+fed+age
 16752551	39904695	ZHANG, WARREN XIAO	Zhang, Warren Xiao	USA	name+fed+age
 16753438	566005779	REN, ERIC	Ren, Eric	USA	name+fed+age
+16754301	30967139	SHANKAR, AASHRITHA VIDHYA	Shankar, Aashritha	USA	name-subset+fed+age
 16754590	14120828	BORTNYK, OLEXANDR	Bortnyk, Olexandr	UKR	name+fed+age
 16755503	39923681	BIZE, NICHOLAS TIM	Bize, Nicholas Tim	USA	name+fed+age
 16758518	30981344	Shen, Edward	Shen, Edward	USA	name+fed+age
 16759616	30956188	Xu, Alan	Xu, Alan	USA	name+fed+age
 16761994	30976359	Guo, Ethan	Guo, Ethan	USA	name+fed+age
 16764382	30978874	RAMACHANDRAN, ADVAIT	Ramachandran, Advait	USA	name+fed+age
+16764726	30993806	Bhangale, Likhit Vijay	Bhangale, Likhit	USA	name-subset+fed+age
 16765007	3500292	RODRIGUEZ RIVERA, PEDRO	Rodriguez Rivera, Pedro	CUB	name+fed+age
 16767471	30985781	Luger, John	Luger, John	USA	name+fed+age
 16767486	30985773	Luger, Sam	Luger, Sam	USA	name+fed+age
 16769070	30968240	Turba, Timur	Turba, Timur	USA	name+fed+age
 16769854	39930262	Ramesh, Kavya	Ramesh, Kavya	USA	name+fed+age
+16772800	39915395	Ang, Timothy	Ang, Timothy	USA	name+fed+age
 16772836	39901653	Wu, Zhuoyuan	Wu, Zhuoyuan	USA	name+fed+age
 16775795	39933121	PARRIPATI, TANAY	Parripati, Tanay	USA	name+fed+age
 16776316	39949168	Zamojski, Chloe Melissandre	Zamojski, Chloe Melissandre	USA	name+fed+age
 16778004	39902242	Srinivasan, Sivavishnu	Srinivasan, Sivavishnu	USA	name+fed+age
+16779756	5137861	Alencastre Miranda, Moises	Alencastre Miranda, Moises	MEX	name+fed+age
 16780251	39977544	Zamarripa, Salma	Zamarripa, Salma	USA	name+fed+age
 16780293	39915077	Schwartz, Raphael D	Schwartz, Raphael D	USA	name+fed+age
 16781955	39996271	Ding, Isabella	Ding, Isabella	USA	name+fed+age
 16783177	39928292	Joseph, Julian	Joseph, Julian	USA	name+fed+age
 16785655	39953505	Zhang, Louis	Zhang, Louis	USA	name+fed+age
+16785682	39923983	GUNDUMALLA, CHALPATI RAO	Gundumalla, Chalpati Rao	USA	name+fed+age
 16786670	30998379	RAMAN, ARJUN	Raman, Arjun	USA	name+fed+age
 16787391	39948277	Samayamantri, Hemanth	Samayamantri, Hemanth	USA	name+fed+age
 16792076	30974844	Sammons, Evan	Sammons, Evan	USA	name+fed+age
@@ -647,6 +991,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 16807683	30978912	Dasari, Saathvik	Dasari, Saathvik	USA	name+fed+age
 16808204	39962180	Pidathala, Esha	Pidathala, Esha	USA	name+fed+age
 16811908	30975298	Deng, Michael	Deng, Michael	USA	name+fed+age
+16812703	30997674	Duran, Violet	Duran, Violet Maria Carol	USA	name-subset+fed+age
 16813308	39910210	Ma, Jin	Ma, Jin	USA	name+fed+age
 16824026	30998697	Misra, Shubh	Misra, Shubh	USA	name+fed+age
 16831504	39902064	Goodrich, Elliott	Goodrich, Elliott	USA	name+fed+age
@@ -658,6 +1003,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 16857692	30970237	Lu, Yiding	Lu, Yiding	USA	name+fed+age
 16857748	39942171	Ma, Yunhui	Ma, Yunhui	USA	name+fed+age
 16858008	39920658	Sizova, Sophia	Sizova, Sophia	USA	name+fed+age
+16863365	39905446	Fan, Evan Qianyuan	Fan, Evan Qianyuan	USA	name+fed+age
 16867525	30998492	Morgan, Lakshmi M	Morgan, Lakshmi M	USA	name+fed+age
 16872380	39904377	Vanderhoek, Kalman	Vanderhoek, Kalman	USA	name+fed+age
 16873335	30975972	Das, Aditeya	Das, Aditeya	USA	name+fed+age
@@ -671,6 +1017,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 16882611	39923029	Phu, Emma	Phu, Emma	USA	name+fed+age
 16885668	30990572	Verma, Darsh	Verma, Darsh	USA	name+fed+age
 16887121	39906922	Liu, Serena	Liu, Serena	USA	name+fed+age
+16887781	30980968	Indukuri, Suhas Varma	Indukuri, Suhas	USA	name-subset+fed+age
 16888647	30985064	Sun, Sophia	Sun, Sophia	USA	name+fed+age
 16893742	39976408	Sadhu Venkata, Vahini	Sadhu Venkata, Vahini	USA	name+fed+age
 16898466	30980836	CHOVANEC, ALICE	Chovanec, Alice	USA	name+fed+age
@@ -678,15 +1025,19 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 16905470	44100566	ESAULOVA, MARFA	Esaulova, Marfa	RUS	name+fed+age
 16905993	30993490	HSIAO, OLIVER	Hsiao, Oliver	USA	name+fed+age
 16909357	39904601	SakthiSaravanan, Kaavya	SakthiSaravanan, Kaavya	USA	name+fed+age
+16914802	7003072	Chen, Ryo Wenyu	Chen, Ryo	USA	name-subset+fed+age
 16918131	39902218	JAIN, PARINYA	Jain, Parinya	USA	name+fed+age
+16920880	30977045	PHADKE, VIRAJ SHARAD	Phadke, Viraj Sharad	USA	name+fed+age
 16921202	30988128	CHENG, ERIC	Cheng, Eric	USA	name+fed+age
 16922191	39913309	REN, STANLEY	Ren, Stanley	USA	name+fed+age
+16922802	30987318	Abraham, John	Abraham, John Z	USA	name-subset+fed+age
 16923502	39945910	De Meillon, Mariette	De Meillon, Mariette	USA	name+fed+age
 16926428	30988705	VICHARE, RUHAN YOGESH	Vichare, Ruhan Yogesh	USA	name+fed+age
 16934805	30990467	KARTHIKEYAN, HARISHKUMAR	Karthikeyan, Harishkumar	USA	name+fed+age
 16935841	30999162	RAMESH, SAHANA	Ramesh, Sahana	USA	name+fed+age
 16936713	30980810	CHAUDHURY, ANMAY KUMAR	Chaudhury, Anmay Kumar	USA	name+fed+age
 16943553	30995884	Sharad, Suhana	Sharad, Suhana	USA	name+fed+age
+16948874	30990440	KONA, VIDIP KUMAR	Kona, Vidip	USA	name-subset+fed+age
 16956146	30982979	Bhargava, Kushagra	Bhargava, Kushagra	USA	name+fed+age
 16957066	39930521	YANG, ANDRE	Yang, Andre	USA	name+fed+age
 16959220	33479160	Ayyappan, Anushka	Anushka Ayyappan	IND	name+fed+age
@@ -698,6 +1049,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 16963734	30975522	Tendulkar, Ojas	Tendulkar, Ojas	USA	name+fed+age
 16965808	39918220	CHIN, ZEE	Chin, Zee	USA	name+fed+age
 16966452	39903192	Dhanasekar, Rakshita	Dhanasekar, Rakshita	USA	name+fed+age
+16967654	39952720	Twilley, Jackson Clyde	Twilley, Jackson Clyde	USA	name+fed+age
 16967853	30985749	Wu, Andrew	Wu, Andrew	USA	name+fed+age
 16969048	566016444	Sinha, Aditi	Sinha, Aditi	USA	name+fed+age
 16970553	2636891	Latorre, Vincent	Latorre, Vincent	CAN	name+fed+age
@@ -724,7 +1076,10 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 17037367	39919706	Dsouza, Aiden	Dsouza, Aiden	USA	name+fed+age
 17039667	30976634	Mahesh, Kanishk	Mahesh, Kanishk	USA	name+fed+age
 17039735	39914860	Arul, Sharvesh	Arul, Sharvesh	USA	name+fed+age
+17039741	150096853	Iyengar, Varun	Iyengar, Varun Venkat	USA	name-subset+fed+age
 17042064	30998123	LIU, STELLA	Liu, Stella	USA	name+fed+age
+17048236	39954455	Newell, Logan	Newell, Logan	USA	name+fed+age
+17048985	39939626	JACKSON, MADDOX	Jackson, Maddox	USA	name+fed+age
 17050607	39922782	Hoja, Saeed	Hoja, Saeed	USA	name+fed+age
 17050786	30995914	Qi, Jenny	Qi, Jenny	USA	name+fed+age
 17052301	30984076	JING, ANDREW	Jing, Andrew	USA	name+fed+age
@@ -735,26 +1090,33 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 17058192	30977185	Wang, Isaac	Wang, Isaac	USA	name+fed+age
 17058212	39900398	Sarangi, Shreyan	Sarangi, Shreyan	USA	name+fed+age
 17060275	39914380	Sankar, Tarun	Sankar, Tarun	USA	name+fed+age
+17060934	566003148	GOLDFARB, ANDREW	Goldfarb, Andrew	USA	name+fed+age
 17061896	39904725	Seelam, Tanish	Seelam, Tanish	USA	name+fed+age
+17062973	39918076	RAJESH, EDNIT	Rajesh, Ednit	USA	name+fed+age
 17063117	39956253	Kwan, Charmaine	Kwan, Charmaine	USA	name+fed+age
 17064058	39916790	Vuyyuru, Aryan	Vuyyuru, Aryan	USA	name+fed+age
 17066385	39922766	Senthil Kumar, Athiyan	Senthil Kumar, Athiyan	USA	name+fed+age
+17066495	30990181	Videna, Daniel	Videna, Daniel T	USA	name-subset+fed+age
 17068417	39936970	HUANG, GEORGE	Huang, George	USA	name+fed+age
 17072545	39964043	Kaul, Anika Shambhavi	Kaul, Anika Shambhavi	USA	name+fed+age
 17073114	39969401	Zhan, Amy	Zhan, Amy	USA	name+fed+age
 17074803	39907244	Stubbins, Isabella	Stubbins, Isabella	USA	name+fed+age
 17075132	30974690	HEBBAR, ESHAAN	Hebbar, Eshaan	USA	name+fed+age
+17079183	39935191	GROVER, AASTIK	Grover, Aastik	USA	name+fed+age
 17079946	39951707	Sivakumar, Aarya	Sivakumar, Aarya	USA	name+fed+age
 17080503	39912736	Shen, Yangyang	Shen, Yangyang	USA	name+fed+age
+17080545	39921107	Weingarten, Phineas Hugo	Weingarten, Phineas	USA	name-subset+fed+age
 17083043	39906698	Fang, Zelin	Fang, Zelin	USA	name+fed+age
 17083655	30973350	Wang, Jacob S	Wang, Jacob S	USA	name+fed+age
 17084025	24125890	OPARIN, GRIGORIY	Oparin, Grigoriy	USA	name+fed+age
+17088783	30981468	WILLY, STEPHEN John	Willy, Stephen	USA	name-subset+fed+age
 17089037	39901807	ZHANG, EMMA	Zhang, Emma	USA	name+fed+age
 17091200	39968588	Maddipati, Srijani Sai	Maddipati, Srijani Sai	USA	name+fed+age
 17093275	30983495	Zhou, Alexander Zheng	Zhou, Alexander Zheng	USA	name+fed+age
 17094456	30990629	GARINE, UJWAL	Garine, Ujwal	USA	name+fed+age
 17095004	30978173	Sawhney, Yuvraj Singh	Sawhney, Yuvraj Singh	USA	name+fed+age
 17097765	30998565	Ganapathy, Aishwarya Lakshmi	Ganapathy, Aishwarya Lakshmi	USA	name+fed+age
+17099673	13316737	BOTOYAN, ARMEN	Botoyan, Armen	ARM	name+fed+age
 17101695	30990696	Han, Shuyi	Han, Shuyi	USA	name+fed+age
 17103011	39900738	Diao, Sujia	Diao, Sujia	USA	name+fed+age
 17105641	24208213	KROTOV, DAMIAN	Krotov, Damian	FID	name+fed+age
@@ -771,7 +1133,9 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 17119897	39942120	Lu, Lucas	Lu, Lucas	USA	name+fed+age
 17119902	39942139	Lu, Marissa	Lu, Marissa	USA	name+fed+age
 17122026	39924700	Yang, Grace Siqi	Yang, Grace Siqi	USA	name+fed+age
+17124861	30981247	PIMANOFF, THEODORE V	Pimanoff, Theodore	USA	name-subset+fed+age
 17124950	39994287	Zhang, Katherine	Zhang, Katherine	USA	name+fed+age
+17125026	39973816	WANG, ANQING AURORA	Wang, Aurora	USA	name-subset+fed+age
 17125858	39904644	WONG, KATE	Wong, Kate	USA	name+fed+age
 17128308	30987261	Muthukumar, Haari	Muthukumar, Haari	USA	name+fed+age
 17132332	39920720	Shen, Leo Xiaohang	Shen, Leo Xiaohang	USA	name+fed+age
@@ -779,32 +1143,45 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 17135421	39971457	Yang, Haoran	Yang, Haoran	USA	name+fed+age
 17137475	30999200	Hanke, Harvey	Hanke, Harvey	USA	name+fed+age
 17137680	39999394	Huang, Michelle	Huang, Michelle	USA	name+fed+age
+17141706	39902021	GUPTA, AARUSH	Gupta, Aarush	USA	name+fed+age
 17143614	30981107	Li, Sophie	Li, Sophie	USA	name+fed+age
 17144712	30989795	Jin, Austin	Jin, Austin	USA	name+fed+age
 17148935	39975860	Lin, Luoxi	Lin, Luoxi	USA	name+fed+age
+17152864	39907147	Maddipati, Srihas Sai Sarvesh	Maddipati, Srihas	USA	name-subset+fed+age
 17153914	39908712	SANTOSH, SAHARSH	Santosh, Saharsh	USA	name+fed+age
 17154243	30987881	Venkatesh, Narayan	Venkatesh, Narayan	USA	name+fed+age
 17154490	30996635	WANG, KEVIN	Wang, Kevin	USA	name+fed+age
 17157923	39911748	WONG, EUGENE	Wong, Eugene	USA	name+fed+age
+17158184	30984904	Cui, Young	Cui, Young Cheung	USA	name-subset+fed+age
 17159983	30983118	LING, CHENXUAN	Ling, Chenxuan	USA	name+fed+age
 17164035	39940284	DUMITRU, ERIC ALEXANDER	Dumitru, Eric Alexander	USA	name+fed+age
+17164297	39911780	Motaharinezhad, Parsa	Motaharinezhad, Parsa	USA	name+fed+age
 17164653	39905985	Gupta, Reyansh	Gupta, Reyansh	USA	name+fed+age
+17165368	39908810	Yu, Vincent	Yu, Vincent Zhiwen	USA	name-subset+fed+age
 17166561	39910024	Patel, Raza Mikal	Patel, Raza Mikal	USA	name+fed+age
 17168834	30983525	Jin, David	Jin, David	USA	name+fed+age
+17172041	39967417	Diwakar, Saathvik	Diwakar, Saathvik	USA	name+fed+age
 17177796	39983676	Raghuraman Pratheepa, Harshitha	Raghuraman Pratheepa, Harshitha	USA	name+fed+age
 17179264	30996163	Jani, Aakash	Jani, Aakash	USA	name+fed+age
+17181855	39945901	Hong, Hunter	Hong, Hunter	USA	name+fed+age
 17181917	39974529	Srinivasan, Shiv Karthik	Srinivasan, Shiv Karthik	USA	name+fed+age
 17187840	30990459	Wang, Ted	Wang, Ted	USA	name+fed+age
 17192683	39903761	Wang, Gaofei	Wang, Gaofei	USA	name+fed+age
 17193472	39905373	IRANIAN PRABHU KUMAR, ASHWIN	Iranian Prabhu Kumar, Ashwin	USA	name+fed+age
 17194941	30981565	Baker, Aidan	Baker, Aidan	USA	name+fed+age
 17196617	39924823	Bankuru, Sudhiksha	Bankuru, Sudhiksha	USA	name+fed+age
+17197867	150110774	MENON, ROHAN Dileep	Menon, Rohan	USA	name-subset+fed+age
 17197998	39955222	Jin, Fan	Jin, Fan	USA	name+fed+age
 17198510	39981088	Sceusi, Ryan	Sceusi, Ryan	USA	name+fed+age
 17201452	39910679	Jagirapu, Harshin Reddy	Jagirapu, Harshin Reddy	USA	name+fed+age
 17205696	39907023	Singh, Siddharth	Singh, Siddharth	USA	name+fed+age
 17205701	39907201	Singh, Sejal	Singh, Sejal	USA	name+fed+age
 17208152	39962776	Chandar, Sai Avantika	Chandar, Sai Avantika	USA	name+fed+age
+17214250	150094170	Wang, Darren	Wang, Darren	USA	name+fed+age
+17214574	39903621	Durost, Benjamin E	Durost, Benjamin E	USA	name+fed+age
+17214690	39944506	Tanaka, Takki	Tanaka, Takki	USA	name+fed+age
+17224461	4902360	BATSAIKHAN, GANCHIMEG	Batsaikhan, Ganchimeg	MGL	name+fed+age
+17240544	39910890	MCINTYRE, ANDREW	McIntyre, Andrew	USA	name+fed+age
 17241381	39910105	Dubey, Shiv	Dubey, Shiv	USA	name+fed+age
 17241710	39955311	Seidel, Eli	Seidel, Eli	USA	name+fed+age
 17242996	13311980	Gasparyan, David	Gasparyan, David	USA	name+fed+age
@@ -812,6 +1189,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 17246235	39924351	Li, Ethan	Li, Ethan	USA	name+fed+age
 17247223	39901327	YELISETTI, VISHRUTH	Yelisetti, Vishruth	USA	name+fed+age
 17251957	39941213	Saha, Avik	Saha, Avik	USA	name+fed+age
+17254586	30979668	FONG, KEVIN M.	Fong, Kevin M	USA	name+fed+age
 17257303	39933202	ZLODOREV, ALEXANDER	Zlodorev, Alexander	USA	name+fed+age
 17260306	30989345	FITZSIMMONS, DANIELA	Fitzsimmons, Daniela	USA	name+fed+age
 17261253	39912655	AMRANY, BENJAMIN	Amrany, Benjamin	USA	name+fed+age
@@ -826,6 +1204,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 17281737	30996325	LIN, MICHAEL	Lin, Michael	USA	name+fed+age
 17287571	33400830	MYNALA, RAHUL	Rahul Mynala	IND	name+fed+age
 17288161	30996457	LEONG, ANSON	Leong, Anson	USA	name+fed+age
+17292482	33359849	Karthik, Shiva	Shiva Srinivas Karthik	USA	name-subset+fed+age
 17295978	39994732	Li, Anthony	Li, Anthony	USA	name+fed+age
 17299788	39971465	Mishra, Ridhima	Mishra, Ridhima	USA	name+fed+age
 17299835	39926001	ASHOK, SAADHANAA	Ashok, Saadhanaa	USA	name+fed+age
@@ -833,13 +1212,16 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 17303765	39910237	Natraj, Tapas Aarav	Natraj, Tapas Aarav	USA	name+fed+age
 17305578	39927911	Saha, Tanisha	Saha, Tanisha	USA	name+fed+age
 17306848	39971210	Vernik, Lilia	Vernik, Lilia	USA	name+fed+age
+17307025	30981395	Sundar, Neal	Sundar, Neal	USA	name+fed+age
 17307512	39934250	Chen, Victoria	Chen, Victoria	USA	name+fed+age
 17310192	39911420	KARTHIGEYAN, KISHAN	Karthigeyan, Kishan	USA	name+fed+age
 17310824	39901777	Yuan, Owen	Yuan, Owen	USA	name+fed+age
 17314200	39900207	Debmisra, Ariv	Debmisra, Ariv	USA	name+fed+age
+17317325	39960072	Munnangi, Sohan	Munnangi, Sohan	USA	name+fed+age
 17318177	39936260	MAHESHWARI, RAYANSH	Maheshwari, Rayansh	USA	name+fed+age
 17319976	39903800	Zhu, Alicia	Zhu, Alicia	USA	name+fed+age
 17323973	39953874	Qian, Evan Zeyu	Qian, Evan Zeyu	USA	name+fed+age
+17324391	39960579	Devata, Venkat Devarshi	Devata, Venkat Devarshi	USA	name+fed+age
 17330278	30980771	Buchireddy, Neeli	Buchireddy, Neeli	USA	name+fed+age
 17330352	7005512	MATSUNAGA, TOMA	Matsunaga, Toma	JPN	name+fed+age
 17332590	39925242	DESAI, JAIRAJ	Desai, Jairaj	USA	name+fed+age
@@ -855,9 +1237,15 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 17353340	39942058	Sarwar, Sawyer L	Sarwar, Sawyer L	USA	name+fed+age
 17353438	13304852	MIKAELYAN, ARMAN	Mikaelyan, Arman	ARM	name+fed+age
 17353890	30997550	Guo, Felix	Guo, Felix	USA	name+fed+age
+17355628	39925943	Thandra, Sarayu Reddy	Thandra, Sarayu	USA	name-subset+fed+age
 17355875	39975240	Goodrich, Avery	Goodrich, Avery	USA	name+fed+age
+20005894	2084430	Montgomery, John Lewis	Montgomery, John	USA	name-subset+fed+age
+20048591	2027569	LOPEZ, FRANCISCO JAVIER	Lopez, Francisco	USA	name-subset+fed+age
 20058682	2015390	Fernandez, Daniel	Fernandez, Daniel	USA	name+fed+age
+20109893	30997224	Stewart, Douglas	Stewart, Douglas	USA	name+fed+age
+30013886	150096521	Alappatt, Steve	Alappatt, Steve Paul	USA	name-subset+fed+age
 30014129	30975182	Yue, Tariq	Yue, Tariq	USA	name+fed+age
+30015588	30980895	Fei, Irene	Fei, Irene Jiao	USA	name-subset+fed+age
 30016333	30983029	Karthi, Jashith	Karthi, Jashith	USA	name+fed+age
 30016341	39943550	Gadde, Arnav	Gadde, Arnav	USA	name+fed+age
 30017413	39920704	Ma, Julian	Ma, Julian	USA	name+fed+age
@@ -866,6 +1254,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30020820	30990475	Xu, Owen	Xu, Owen	USA	name+fed+age
 30020975	30987121	Lin, Bryan Enming	Lin, Bryan Enming	USA	name+fed+age
 30021117	30974550	AYITHI, Yashaswini	Ayithi, Yashaswini	USA	name+fed+age
+30021343	150097930	Raja, Rian	Raja, Rian	USA	name+fed+age
 30021630	30981930	Silvestre, Lucas	Silvestre, Lucas	USA	name+fed+age
 30022059	39972607	Siu, Liam	Siu, Liam	USA	name+fed+age
 30023364	39915492	Sanghani, Tanay	Sanghani, Tanay	USA	name+fed+age
@@ -880,6 +1269,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30029804	39927865	Lee, Rohan	Lee, Rohan	USA	name+fed+age
 30030387	39944085	Zheng, Philip T	Zheng, Philip T	USA	name+fed+age
 30030525	39910997	Yue, Andy	Yue, Andy	USA	name+fed+age
+30031155	39987680	Vakharia, Ahrin	Vakharia, Ahrin	USA	name+fed+age
 30033726	30978238	Xiao, Edira	Xiao, Edira	USA	name+fed+age
 30033801	39923347	Hardison, William K	Hardison, William K	USA	name+fed+age
 30034737	39904547	Guo, Miah	Guo, Miah	USA	name+fed+age
@@ -888,12 +1278,16 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30041004	39915905	Vinayagaram, Nethra	Vinayagaram, Nethra	USA	name+fed+age
 30042119	30996678	Krishnan, Ashvath	Krishnan, Ashvath	USA	name+fed+age
 30043223	39974995	Kim, Ethan J	Kim, Ethan J	USA	name+fed+age
+30043285	39949613	Wang, Dena	Wang, Dena N	USA	name-subset+fed+age
 30043465	39950808	Shin, Theodore	Shin, Theodore	USA	name+fed+age
 30043660	39918890	Jehin, Rishin	Jehin, Rishin	USA	name+fed+age
 30043807	39933172	Bhaskaran, Siddharth	Bhaskaran, Siddharth	USA	name+fed+age
+30044023	39928195	Ganesh, Advaith	Ganesh, Advaith	USA	name+fed+age
 30044244	30990610	Razmov, Gabriel	Razmov, Gabriel	USA	name+fed+age
 30045146	30997402	Chowdada, Devanshi	Devanshi, Chowdada	USA	name+fed+age
 30045327	39900436	Han, Leqi	Han, Leqi	USA	name+fed+age
+30045956	39923339	Kumar, Anirudh	Kumar, Anirudh	USA	name+fed+age
+30047481	39906760	Li, Albert Zao	Li, Albert	USA	name-subset+fed+age
 30048585	39905004	Natarajan, Neil	Natarajan, Neil	USA	name+fed+age
 30050913	30993423	Gu, Samuel	Gu, Samuel	USA	name+fed+age
 30051673	39953785	Ciacci, Marco	Ciacci, Marco	USA	name+fed+age
@@ -905,6 +1299,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30059498	30989531	Moorhouse, Will	Moorhouse, Will	USA	name+fed+age
 30061958	2640929	Sreekumar, Gayathri	Sreekumar, Gayathri	CAN	name+fed+age
 30062016	39929736	Daftuar, Leya	Daftuar, Leya	USA	name+fed+age
+30063398	39957730	Gan, Aiden	Gan, Aiden	USA	name+fed+age
 30065205	39946924	Kailasam, Sabarish	Kailasam, Sabarish	USA	name+fed+age
 30065329	39927385	Mukherjee, Sathvik	Mukherjee, Sathvik	USA	name+fed+age
 30065644	39902757	Rajagopalan, Aadhya Jay	Rajagopalan, Aadhya Jay	USA	name+fed+age
@@ -935,14 +1330,18 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30095222	30992990	Yao, Annie	Yao, Annie	USA	name+fed+age
 30096395	39903362	Chu, Alex Haoning	Chu, Alex Haoning	USA	name+fed+age
 30100762	30992885	Zou, Andrew	Zou, Andrew	USA	name+fed+age
+30103787	39904989	PANIKKATH, ADITYA	Panikkath, Aditya	USA	name+fed+age
 30104193	566022339	Waduthanthree, Senulya Savindee	Waduthanthree, Senulya Savindee	USA	name+fed+age
 30104944	39912183	Zhang, Brian Qixuan	Zhang, Brian Qixuan	USA	name+fed+age
 30107043	39926265	Das, Debarghya	Das, Debarghya	USA	name+fed+age
 30108445	39931374	Rajkumar, Sachit Srinivas	Rajkumar, Sachit Srinivas	USA	name+fed+age
 30110069	39909042	Rao, Dhruthi	Rao, Dhruthi	USA	name+fed+age
 30110098	39982181	Prasad, Anika	Prasad, Anika	USA	name+fed+age
+30118209	39914500	Malhotra, Rehaan	Malhotra, Rehaan	USA	name+fed+age
 30120722	30981077	LI, ELLA XINYI	Li, Ella Xinyi	USA	name+fed+age
 30120992	39991539	Gao, Mark	Gao, Mark	USA	name+fed+age
+30124879	39930238	Panciu, Olivia Rebecca	Panciu, Olivia	USA	name-subset+fed+age
+30124887	39930246	Panciu, Sophia Elizabeth	Panciu, Sophia	USA	name-subset+fed+age
 30127892	39910083	Yang, Leah	Yang, Leah	USA	name+fed+age
 30131064	30993253	Sustento, Brandon	Sustento, Brandon	USA	name+fed+age
 30135375	39943143	Vadher, Preash Mayank	Vadher, Preash Mayank	USA	name+fed+age
@@ -950,6 +1349,9 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30135488	2873133	Alkin, Ido	Alkin, Ido	ISR	name+fed+age
 30135865	39971791	Kong, Scarlett	Kong, Scarlett	USA	name+fed+age
 30136086	39919188	Wu, Darren	Wu, Darren	USA	name+fed+age
+30136104	39938760	LIU, ERIC YJ	Liu, Eric	USA	name-subset+fed+age
+30136237	39968260	Chakrabarty, Preron	Chakrabarty, Preron	USA	name+fed+age
+30136759	39907120	Kunchanapalli, Havish	Kunchanapalli, Havish Nagasai Sashank	USA	name-subset+fed+age
 30138098	39978591	Lui, Isaac Noah	Lui, Isaac Noah	USA	name+fed+age
 30142328	39925226	Kore, Anvika Mattam	Kore, Anvika Mattam	USA	name+fed+age
 30142525	39958310	Grigorev, Mikhail	Grigorev, Mikhail	USA	name+fed+age
@@ -961,7 +1363,9 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30149077	39901939	Liu, Caden	Liu, Caden	USA	name+fed+age
 30149738	30996201	Gurumoorthi, Gurugrahan	Gurumoorthi, Gurugrahan	USA	name+fed+age
 30150160	30988322	Kantem, Samanvi	Kantem, Samanvi	USA	name+fed+age
+30150762	30999715	Wang, Aaron Yitian	Wang, Aaron	USA	name-subset+fed+age
 30151794	13222791	Lim, Hayul	Lim, Hayul	KOR	name+fed+age
+30152362	39948692	Tjipto, Gavin	Tjipto, Gavin	USA	name+fed+age
 30154455	39928349	Zhang, Royce	Zhang, Royce	USA	name+fed+age
 30156827	39953939	Xu, Kevin	Xu, Kevin	USA	name+fed+age
 30156835	39963098	Xu, Mark	Xu, Mark	USA	name+fed+age
@@ -969,6 +1373,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30158030	39910288	Li, Joylin	Li, Joylin	USA	name+fed+age
 30158113	39904970	Cao, Frank Zhongtian	Cao, Frank Zhongtian	USA	name+fed+age
 30158337	39960277	Gorantla, Eesha Sri	Gorantla, Eesha Sri	USA	name+fed+age
+30158700	30997810	Priya, Ishan	Priya, Ishan	USA	name+fed+age
 30159592	5183189	Fogo Esquivel, Levi Kalani Alexander	Fogo Esquivel, Levi Kalani Alexander	MEX	name+fed+age
 30163715	39914291	Yan, Isabella	Yan, Isabella	USA	name+fed+age
 30163816	39913104	Statz, Isaac Hart	Statz, Isaac Hart	USA	name+fed+age
@@ -976,6 +1381,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30166549	566007305	Yoo, David J	Yoo, David J	USA	name+fed+age
 30167437	39900967	Zhang, Lawrence	Zhang, Lawrence	USA	name+fed+age
 30167442	39900959	Zhang, Ellery	Zhang, Ellery	USA	name+fed+age
+30168355	39976025	Karthikeyan, Adhinanth Krishna	Karthikeyan, Adhinanth Krishna	USA	name+fed+age
 30168995	39960528	Varada, Praharsh	Varada, Praharsh	USA	name+fed+age
 30169902	150096586	Dokka, Tanush	Dokka, Tanush	USA	name+fed+age
 30170409	30996120	Verma, Angelina	Verma, Angelina	USA	name+fed+age
@@ -983,9 +1389,11 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30173780	39937380	Bai, Jason	Bai, Jason	USA	name+fed+age
 30174920	39983919	Lin, Olivia	Lin, Olivia	USA	name+fed+age
 30178363	39917037	Shankaranand, Deeksha	Shankaranand, Deeksha	USA	name+fed+age
+30182156	39907074	dinesan, Thanuj	Dinesan, Thanuj	USA	name+fed+age
 30183383	88120260	Vijay, Sahasra	Sahasra Vijay	IND	name+fed+age
 30183534	30981034	Katta, Sriansh	Katta, Sriansh	USA	name+fed+age
 30183968	39968294	Karry, Tapasya	Karry, Tapasya	USA	name+fed+age
+30184214	566010756	Somers, Dale William	Somers, Dale William	USA	name+fed+age
 30185788	39926176	Alluri, Samanyu	Alluri, Samanyu	USA	name+fed+age
 30186145	39927202	Malhotra, Rishan	Malhotra, Rishan	USA	name+fed+age
 30186237	39922995	Tadros, Nicholas	Tadros, Nicholas	USA	name+fed+age
@@ -995,6 +1403,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30200342	14117231	Odnorozhenko, Kateryna	Odnorozhenko, Kateryna	UKR	name+fed+age
 30201175	39903141	Singi, Advay	Singi, Advay	USA	name+fed+age
 30203278	39933415	Pavuluri, Vivaan	Pavuluri, Vivaan	USA	name+fed+age
+30204058	39983315	Tan, Nathan	Tan, Nathan	USA	name+fed+age
 30204511	39966372	Ganesh, Kaira Ananya	Ganesh, Kaira Ananya	USA	name+fed+age
 30204909	39954960	Gao, Gillian	Gao, Gillian	USA	name+fed+age
 30206277	39986497	Lu, Ryan	Lu, Ryan	USA	name+fed+age
@@ -1002,6 +1411,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30214553	39940403	Chen, Jerry	Chen, Jerry	USA	name+fed+age
 30214880	39957667	Gutta, Anirudh	Gutta, Anirudh	USA	name+fed+age
 30216172	39960145	Ram, Nikhilesh	Ram, Nikhilesh	USA	name+fed+age
+30218690	39994929	Smygov, David Aleksandrovich	Smygov, David Aleksandrovich	USA	name+fed+age
 30219239	39904539	Ding, Olivia	Ding, Olivia	USA	name+fed+age
 30221255	39935981	Iskandarov, Elvin	Iskandarov, Elvin	USA	name+fed+age
 30221502	39910938	Pan, Zachary	Pan, Zachary	USA	name+fed+age
@@ -1016,6 +1426,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30237854	39918866	Dey, Soumili	Dey, Soumili	USA	name+fed+age
 30237977	39904350	Snyder, Charles William	Snyder, Charles William	USA	name+fed+age
 30239811	39902676	Singh, Ian Avery	Singh, Ian Avery	USA	name+fed+age
+30240628	39961141	Vashisth, Arav	Vashisth, Arav	USA	name+fed+age
 30242580	39914135	Li, Brian Borui	Li, Brian Borui	USA	name+fed+age
 30243658	30995981	Biswas, Avidha	Biswas, Avidha	USA	name+fed+age
 30244283	39902188	Xu, Zoe Yue	Xu, Zoe Yue	USA	name+fed+age
@@ -1025,10 +1436,13 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30251494	150098722	McMillan, Felix	McMillan, Felix	USA	name+fed+age
 30252044	39978605	Sreenivasan, Ajay Beuria	Sreenivasan, Ajay Beuria	USA	name+fed+age
 30257133	39911659	Sun, Yi	Sun, Yi	USA	name+fed+age
+30259526	566029767	Lin, Frank	Lin, Frank	USA	name+fed+age
 30260472	39971023	Kumbharathi, Eeshan	Kumbharathi, Eeshan	USA	name+fed+age
+30262542	2853736	Williams, Oscar Izzy	Williams, Oscar	ISR	name-subset+fed+age
 30263679	39982394	Fei, Ryun	Fei, Ryun	USA	name+fed+age
 30264362	39903982	Xu, Shawn	Xu, Shawn	USA	name+fed+age
 30265844	39935809	Rosenstock, Ephraim M	Rosenstock, Ephraim M	USA	name+fed+age
+30268551	39907953	Kurre, Tanay Ram	Kurre, Tanay Ram	USA	name+fed+age
 30270229	39912116	Jaikumar, Diksha	Jaikumar, Diksha	USA	name+fed+age
 30270256	39912108	Jaikumar, Nishita	Jaikumar, Nishita	USA	name+fed+age
 30272842	39953513	Xiong, Gabriel	Xiong, Gabriel	USA	name+fed+age
@@ -1038,6 +1452,8 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30279329	39947734	Lin, Skylar	Lin, Skylar	USA	name+fed+age
 30280437	39912027	Arun, Pranav	Arun, Pranav	USA	name+fed+age
 30280672	39914305	Prasanna, Advik	Prasanna, Advik	USA	name+fed+age
+30282796	39963640	Rao, Deepak Sri Kartikeya	Rao, Deepak Sri Kartikeya	USA	name+fed+age
+30286250	39982572	Sathish, Skanda	Sathish, Skanda	USA	name+fed+age
 30287188	39932320	Balamurugan, Diya	Balamurugan, Diya	USA	name+fed+age
 30288162	39974464	Chodniewicz, Asher	Chodniewicz, Asher	USA	name+fed+age
 30289070	39964841	Padala, Arav	Padala, Arav	USA	name+fed+age
@@ -1050,6 +1466,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30301498	39944069	He, Jayden	He, Jayden	USA	name+fed+age
 30302170	39968820	Yang, Ningxiu Matthew	Yang, Ningxiu Matthew	USA	name+fed+age
 30303075	39988449	Keefe, Grace	Keefe, Grace	USA	name+fed+age
+30304131	150111860	Watson, Tiger	Watson, Tiger	USA	name+fed+age
 30305617	30997208	Zhang, Ella Xinyue	Zhang, Ella Xinyue	USA	name+fed+age
 30306939	39964817	Hoffman, Ari	Hoffman, Ari	USA	name+fed+age
 30311276	39927822	Qiao, Richardson Jingsi	Qiao, Richardson Jingsi	USA	name+fed+age
@@ -1076,11 +1493,13 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30350651	39943798	Zhou, Arthur	Zhou, Arthur	USA	name+fed+age
 30351272	39947777	Liang, Melanie	Liang, Melanie	USA	name+fed+age
 30356989	39977048	Lien, Isaac	Lien, Isaac	USA	name+fed+age
+30357434	3530310	Lopez-Naranjo, Ubaldo	Lopez Naranjo, Ubaldo Enrique	USA	name-subset+fed+age
 30358373	39916294	Kolli, Rishi	Kolli, Rishi	USA	name+fed+age
 30359466	39924939	Creswell, Charlie	Creswell, Charlie	USA	name+fed+age
 30360050	39950590	Yu, Benjamin	Yu, Benjamin	USA	name+fed+age
 30360321	39920682	Schaefer, Sasha Milo	Schaefer, Sasha Milo	USA	name+fed+age
 30361280	39917738	Ikkurthi, Ishaan	Ikkurthi, Ishaan	USA	name+fed+age
+30362957	39949540	Wirkkala, Zane	Wirkkala, Zane	USA	name+fed+age
 30363150	39965791	Yan, Gracie Ge	Yan, Gracie Ge	USA	name+fed+age
 30364859	39924459	He, Julian	He, Julian	USA	name+fed+age
 30366447	39914984	Mulay, Vivan Prakash	Mulay, Vivan Prakash	USA	name+fed+age
@@ -1090,19 +1509,24 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30381329	39903079	Roy Choudhury, Arya	Roy Choudhury, Arya	USA	name+fed+age
 30381740	39941094	Li, Tanqi	Li, Tanqi	USA	name+fed+age
 30383505	39952614	Waters, Kai	Waters, Kai	USA	name+fed+age
+30386864	39904890	Syal, Yash	Syal, Yash	USA	name+fed+age
 30387069	39981568	Kim, Jordan	Kim, Jordan	USA	name+fed+age
 30387169	39925382	Muhammad, Khabir	Muhammad, Khabir	USA	name+fed+age
 30387428	39917487	Li, Aiden Linyuan	Li, Aiden Linyuan	USA	name+fed+age
 30390852	39918270	Liu, Liam	Liu, Liam	USA	name+fed+age
 30391177	39985873	Lin, Amy	Lin, Amy	USA	name+fed+age
+30392341	39931706	Guo, Loida Cheng	Guo, Loida	USA	name-subset+fed+age
 30393269	39967492	Zhu, Magnolia	Zhu, Magnolia	USA	name+fed+age
 30394882	39940870	Bhoopathi, Rishith	Bhoopathi, Rishith	USA	name+fed+age
+30395417	39966364	Karthik, Krish	Karthik, Krish	USA	name+fed+age
 30399924	39910261	Rajaram, Adit	Rajaram, Adit	USA	name+fed+age
 30401502	39918556	Bhargava, Anay	Bhargava, Anay	USA	name+fed+age
+30403332	39963713	Hug, Tyler Shane	Hug, Tyler Shane	USA	name+fed+age
 30406960	25997343	Ramesan, Raunak Amit	Ramesan, Raunak Amit	CAN	name+fed+age
 30407439	39910571	Ni, Leo	Ni, Leo	USA	name+fed+age
 30413685	39935140	Karthik, Aarav	Karthik, Aarav	USA	name+fed+age
 30413767	39942392	Nguyen, Suri Ngoc	Nguyen, Suri Ngoc	USA	name+fed+age
+30414226	396217419	Orduno, Omar	Orduno Gonzalez, Omar	MEX	name-subset+fed+age
 30415711	39934217	Bandaru, Vanshika	Bandaru, Vanshika	USA	name+fed+age
 30416604	566025419	Premkumar, Aradhya	Premkumar, Aradhya	USA	name+fed+age
 30420180	39946576	Richardson, Avanni	Richardson, Avanni	USA	name+fed+age
@@ -1121,6 +1545,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30452740	39944220	Krishnan, Sreyshthaa	Krishnan, Sreyshthaa	USA	name+fed+age
 30452762	39918793	LI, LEON	Li, Leon	USA	name+fed+age
 30455029	39935558	Bandatmakuru, Navyan Reddy	Bandatmakuru, Navyan Reddy	USA	name+fed+age
+30460531	39974880	Majmudar, Aayush	Majmudar, Aayush	USA	name+fed+age
 30462940	39979440	Thoppai, Arnav	Thoppai, Arnav	USA	name+fed+age
 30464451	39974219	Liu, Alexandra	Liu, Alexandra	USA	name+fed+age
 30471767	39941736	Kaushik, Siddharth	Kaushik, Siddharth	USA	name+fed+age
@@ -1128,6 +1553,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30472353	39932818	Muhammad, Mustafa	Muhammad, Mustafa	USA	name+fed+age
 30475163	39953556	Rong, Mirabella	Rong, Mirabella	USA	name+fed+age
 30481807	39923134	Wang, Charles	Wang, Charles	USA	name+fed+age
+30484285	39944379	LeBakken, Lukas	LeBakken, Lukas W	USA	name-subset+fed+age
 30485114	39915107	Chen, Celine	Chen, Celine	USA	name+fed+age
 30489449	39967735	Boyer-Olson, Jack	Boyer-Olson, Jack	USA	name+fed+age
 30489659	39943534	Yu, Nicole Q	Yu, Nicole Q	USA	name+fed+age
@@ -1143,6 +1569,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30507691	39941817	Gopi, Sahishnu	Gopi, Sahishnu	USA	name+fed+age
 30518186	39976564	DB, Pranav	DB, Pranav	USA	name+fed+age
 30518588	39957837	Wang, Yulan	Wang, Yulan	USA	name+fed+age
+30525734	30997585	Taguinin, Leah Bernardo	Taguinin, Leah Bernardo	USA	name+fed+age
 30526905	39931749	Sathiesh, Shivani	Sathiesh, Shivani	USA	name+fed+age
 30528417	39924157	Rangamreddy, Aashvi Sri	Rangamreddy, Aashvi Sri	USA	name+fed+age
 30528820	39981762	Wang, Kai Yi	Wang, Kai Yi	USA	name+fed+age
@@ -1156,6 +1583,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30555237	39974286	Chung, Maxwell	Chung, Maxwell	USA	name+fed+age
 30555512	39970027	Peng, Ellen Jia-Ning	Peng, Ellen Jia-Ning	USA	name+fed+age
 30566652	39956180	Chu, Rosalyn	Chu, Rosalyn	USA	name+fed+age
+30569528	429069874	Joseph, Alisa Antony	Joseph, Alisa	USA	name-subset+fed+age
 30569551	2637774	qian, eric	Qian, Eric	CAN	name+fed+age
 30574940	3939944	Ceballos, Sebastian Merida	Merida Ceballos, Sebastian	VEN	name+fed+age
 30575100	39952274	Sommerstein, Adrian Harrison	Sommerstein, Adrian Harrison	USA	name+fed+age
@@ -1168,10 +1596,12 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30586735	39909107	Mehlhaff, Samuel	Mehlhaff, Samuel	USA	name+fed+age
 30587257	39946436	Le-Tran, Leo	Le-Tran, Leo	USA	name+fed+age
 30589535	39990877	RAJ, ADITYA	Raj, Aditya	USA	name+fed+age
+30595615	2627949	Qin, Kevin	Qin, Kevin	CAN	name+fed+age
 30595735	39986500	Nigatu, Jason	Nigatu, Jason	USA	name+fed+age
 30597651	39960927	Eby, Devika	Eby, Devika	USA	name+fed+age
 30598551	39933067	He, Alvin	He, Alvin	USA	name+fed+age
 30598637	39942627	Wang, Angela Zixi	Wang, Angela Zixi	USA	name+fed+age
+30599160	39964469	Pereira, Wes	Pereira, Wes	USA	name+fed+age
 30600679	39959724	Margalit, Ryder Sebastian	Margalit, Ryder Sebastian	USA	name+fed+age
 30603409	39942341	Liu, Steven	Liu, Steven	USA	name+fed+age
 30603651	39928004	Wei, Jeffrey	Wei, Jeffrey	USA	name+fed+age
@@ -1182,6 +1612,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30623886	39948412	Brovman, Daniel	Brovman, Daniel	USA	name+fed+age
 30623909	39983935	Zhang, Blake	Zhang, Blake	USA	name+fed+age
 30624540	39966828	Liang, Jerry	Liang, Jerry	USA	name+fed+age
+30624926	39941582	Toth, Joseph	Toth, Joseph Daniel	USA	name-subset+fed+age
 30632191	39978630	Anna, Trisha Kiran	Anna, Trisha Kiran	USA	name+fed+age
 30632494	39923452	Chang, RYAN	Chang, Ryan	USA	name+fed+age
 30633647	39918106	Ragavan, Samarth Rajesh	Ragavan, Samarth Rajesh	USA	name+fed+age
@@ -1209,17 +1640,21 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30675122	566030706	Avinashkarthi, Tharun	Avinashkarthi, Tharun	USA	name+fed+age
 30675953	39967476	Lim, Madeleine K	Lim, Madeleine K	USA	name+fed+age
 30675974	2643774	Banerjee, Evan	Banerjee, Evan	CAN	name+fed+age
+30677176	39958540	Sripada, Vishnu	Sripada, Vishnu	USA	name+fed+age
 30678105	39923622	Wilson, Aubri	Wilson, Aubri	USA	name+fed+age
 30682963	25073060	Chatterjee, Koustav	Koustav Chatterjee	IND	name+fed+age
 30684354	5185840	AGUILAR HUANG, JULIO ALBERTO	Aguilar Huang, Julio Alberto	MEX	name+fed+age
 30685010	39912914	Demirel, Esat Omer	Demirel, Esat Omer	USA	name+fed+age
 30687689	39924904	Praveen, Swathi	Praveen, Swathi	USA	name+fed+age
+30687838	39936368	RATHEESH, NIVED	Ratheesh, Nived	USA	name+fed+age
 30688304	39961869	Durai Murugan, Kavinvel	Durai Murugan, Kavinvel	USA	name+fed+age
 30688439	39960552	Tang, Edward Jiayi	Tang, Edward Jiayi	USA	name+fed+age
 30688898	39932338	Balamurugan, Druv	Balamurugan, Druv	USA	name+fed+age
 30690974	5082749	Goyal, Tarini	Tarini Goyal	IND	name+fed+age
 30693976	39974960	Tal, Daniel	Tal, Daniel	USA	name+fed+age
+30696707	5169585	Escobar, Laura Alejandra	Escobar Lopez, Laura Alejandra	MEX	name-subset+fed+age
 30704614	25727583	Roy, Aanya	Roy, Aanya	USA	name+fed+age
+30706741	39919315	Tkaczewski, Krystian	Tkaczewski Jr., Krystian	USA	name-subset+fed+age
 30707276	750930	Marjanovic, Annamaria	Marjanovic, Annamaria	HUN	name+fed+age
 30709775	566006384	Saripalli, Prahlada	Saripalli, Prahlada	USA	name+fed+age
 30715417	366110082	Rajeev, Pavana	Rajeev, Pavana	FID	name+fed+age
@@ -1231,16 +1666,22 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30721084	39958809	Scamehorn, Jackson	Scamehorn, Jackson	USA	name+fed+age
 30721310	39930572	Yu, Allyson	Yu, Allyson	USA	name+fed+age
 30722465	33435278	Vyas, Miransh Purven	Vyas, Miransh Purven	USA	name+fed+age
+30724876	39971333	Patil, Aditi Sudarshan	Patil, Aditi	USA	name-subset+fed+age
 30728935	39920240	Hengen, Luke O	Hengen, Luke O	USA	name+fed+age
 30729099	39956938	Johnson, Emerson Aurelius	Johnson, Emerson Aurelius	USA	name+fed+age
 30730052	39959589	Zhong, Andy	Zhong, Andy	USA	name+fed+age
 30731611	39952002	Jani, Suraj	Jani, Suraj	USA	name+fed+age
 30733032	39912639	Xin, Stella	Xin, Stella	USA	name+fed+age
 30733511	39983994	Jiang, Brooks	Jiang, Brooks	USA	name+fed+age
+30736471	39966801	Liu, Gavin	Liu, Gavin	USA	name+fed+age
+30739905	566010403	Murugappan, Sarvesh	Murugappan, Sarvesh	USA	name+fed+age
 30740596	39968430	Gao, Ziqian	Gao, Ziqian	USA	name+fed+age
+30743643	3272281	Ciarliero, Frank Andrew	Ciarliero, Frank	AUS	name-subset+fed+age
+30744208	2654261	XU, ZHIHAN	Xu, Zhihan (samuel)	CAN	name-subset+fed+age
 30745116	39940160	Bates, Evan	Bates, Evan	USA	name+fed+age
 30746032	39920160	Ismagilov, Daniel	Ismagilov, Daniel	USA	name+fed+age
 30746121	39969436	Zhang, Miller	Zhang, Miller	USA	name+fed+age
+30747478	39989631	Sridhar, Tharun	Sridhar, Tharun	USA	name+fed+age
 30752032	39994384	Liu, Taylor	Liu, Taylor	USA	name+fed+age
 30754017	39966178	Koneti, Jeevesh	Koneti, Jeevesh	USA	name+fed+age
 30762047	39953670	Parthasarathy, Siddharth	Parthasarathy, Siddharth	USA	name+fed+age
@@ -1250,6 +1691,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30771959	566020808	Lien, Leonardo	Lien, Leonardo	USA	name+fed+age
 30771991	39933016	Bronshtein, Marc	Bronshtein, Marc	USA	name+fed+age
 30772146	39927245	Guan, Renee Jiayi	Guan, Renee Jiayi	USA	name+fed+age
+30779464	39939537	Balaji, Tanav	Balaji, Tanav	USA	name+fed+age
 30780293	39941981	Wu, Winsley	Wu, Winsley	USA	name+fed+age
 30784129	55747175	Khanbutaev, Artemii	Khanbutaev, Artemii	USA	name+fed+age
 30784821	39969533	Thottimpudi, Anjana	Thottimpudi, Anjana	USA	name+fed+age
@@ -1258,6 +1700,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30789361	566009995	Lan, William	Lan, William	USA	name+fed+age
 30789435	39962440	Gao, Vincent	Gao, Vincent	USA	name+fed+age
 30792537	39975908	Zhang, Matthew	Zhang, Matthew	USA	name+fed+age
+30796397	566010594	Lokesh, Lohith Sharan	Lokesh, Lohith Sharan	USA	name+fed+age
 30799518	39973077	Goodrich, Sebastian	Goodrich, Sebastian	USA	name+fed+age
 30801195	44582439	Bayrambeyli, Emel	Bayrambeyli, Emel	TUR	name+fed+age
 30806196	13318713	Simanovski, Davit	Simanovski, Davit	ARM	name+fed+age
@@ -1266,25 +1709,33 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30811327	39959325	Wang, Miles	Wang, Miles	USA	name+fed+age
 30813081	39934241	Pittala, Ashvath Reddy	Pittala, Ashvath Reddy	USA	name+fed+age
 30816564	39977749	Kwan, Wesley	Kwan, Wesley	USA	name+fed+age
+30817030	33420874	Madasu, Pratheek	Pratheek Madasu	IND	name+fed+age
 30818543	566022797	Belelieu, Hudson Seales	Belelieu, Hudson Seales	USA	name+fed+age
 30826774	39941876	Gu, Hardy	Gu, Hardy	USA	name+fed+age
 30829613	39962555	Tsuchida-Tomashevsky, Winnie	Tsuchida-Tomashevsky, Winnie	USA	name+fed+age
 30839927	39988988	Pang, Justin	Pang, Justin	USA	name+fed+age
 30844505	39938000	Aravind, Kavin	Aravind, Kavin	USA	name+fed+age
 30846586	39995780	Wan, Yipei	Wan, Yipei	USA	name+fed+age
+30848085	10827943	Kamoni, Elsie	Kamoni Elsie Wambui	KEN	name-subset+fed+age
 30848839	39955168	Lu, Hanwen	Lu, Hanwen	USA	name+fed+age
+30853222	343099162	Shukla, Weg	Shukla, Weg	USA	name+fed+age
+30865697	3513106	Parra, Adrian	Parra Gomez, Adrian	CUB	name-subset+fed+age
 30869719	39968316	Das, Abhinav	Das, Abhinav	USA	name+fed+age
 30869865	39938042	Pyne, Carlene R	Pyne, Carlene R	USA	name+fed+age
 30873256	39984001	OKONOVA, AVRORA	Okonova, Avrora	USA	name+fed+age
 30884711	39935027	Ren, Hannah	Ren, Hannah	USA	name+fed+age
+30886850	39952193	Kotha, Kaarthi	Kotha, Kaarthi	USA	name+fed+age
 30891912	39986926	Madireddy, Krivi R	Madireddy, Krivi R	USA	name+fed+age
 30893153	39973360	Bhakta, Aayansh Amit	Bhakta, Aayansh Amit	USA	name+fed+age
 30897070	39960749	Tang, Emily Jiaying	Tang, Emily Jiaying	USA	name+fed+age
 30899050	39971120	Qin, Sophia	Qin, Sophia	USA	name+fed+age
+30899106	39985210	Li, David	Li, David	USA	name+fed+age
 30902582	39938794	Wang, Matthew	Wang, Matthew	USA	name+fed+age
 30916380	39986322	Velagala, Sowbhagya	Velagala, Sowbhagya	USA	name+fed+age
 30918494	39919994	Atoufi, Artin	Atoufi, Artin	USA	name+fed+age
 30933942	39972364	Kakarla, Aadya	Kakarla, Aadya	USA	name+fed+age
+30941608	39927423	Dutoit, Ty	Dutoit, Ty Chen	USA	name-subset+fed+age
+30945318	39982807	Liu, Evelyn Youran	Liu, Evelyn	USA	name-subset+fed+age
 30950789	3533603	Villar-Lopez, Carlos Daniel	Villar Lopez, Carlos Daniel	CUB	name+fed+age
 30952649	39948790	Whitecloud, Marcella Maya	Whitecloud, Marcella Maya	USA	name+fed+age
 30958761	39956164	Lee, Angelina	Lee, Angelina	USA	name+fed+age
@@ -1295,6 +1746,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30962955	39979946	Thanikonda, Kruti	Thanikonda, Kruti	USA	name+fed+age
 30971145	39946304	Nikhil, Nirav	Nikhil, Nirav	USA	name+fed+age
 30982459	566006465	Srinivasan, Atul	Srinivasan, Atul	USA	name+fed+age
+30983894	39927474	Sharma, Vedant	Sharma, Vedant	USA	name+fed+age
 30984601	566010063	Mathew, Benjamin	Mathew, Benjamin	USA	name+fed+age
 30986199	39985369	Kuang, Terence	Kuang, Terence	USA	name+fed+age
 30986647	39972062	Lin, Abigail	Lin, Abigail	USA	name+fed+age
@@ -1303,6 +1755,8 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 30997328	39922618	Garrison, Nichol	Garrison, Nichol	USA	name+fed+age
 31002689	39984389	Gopinath, Thanisha	Gopinath, Thanisha	USA	name+fed+age
 31006010	24164879	Lomasov, Semyon	Lomasov, Semyon	ISR	name+fed+age
+31010390	39927504	Munkhsuld, Bishrelt Aiden	Munkhsuld, Bishrelt	USA	name-subset+fed+age
+31012174	39976041	Das, Sambuddha Sekhar	Das, Sambuddha Sekhar	USA	name+fed+age
 31019666	566017165	Koshy, Nathaniel Githin	Koshy, Nathaniel Githin	USA	name+fed+age
 31023794	39949354	Hengen, Clover	Hengen, Clover	USA	name+fed+age
 31025481	39976858	Jayabarath, Johann	Jayabarath, Johann	USA	name+fed+age
@@ -1316,9 +1770,12 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 31087893	39977935	Liu, Matthew Mingming	Liu, Matthew Mingming	USA	name+fed+age
 31087905	39927776	Mahajan, Krish	Mahajan, Krish	USA	name+fed+age
 31092762	39983200	Liang, Ryan	Liang, Ryan	USA	name+fed+age
+31093154	150101194	Nemeth, Jake	Nemeth, Jake	USA	name+fed+age
 31093354	48740624	Bimod, Karthik	Karthik Bimod	IND	name+fed+age
+31093860	39955397	Pu, Hugo	Pu, Hugo	USA	name+fed+age
 31095130	39945600	Ni, Beiyang	Ni, Beiyang	USA	name+fed+age
 31096166	39982645	Bernstein, Theodore	Bernstein, Theodore	USA	name+fed+age
+31098968	39974413	Walthrust, Najee-Ana Carmel	Walthrust, Najee-Ana Carmel	USA	name+fed+age
 31102852	39939910	Xia, Benjamin	Xia, Benjamin	USA	name+fed+age
 31103518	39957241	Maringanti, Mohit Anirudh Prasad	Maringanti, Mohit Anirudh Prasad	USA	name+fed+age
 31125536	39977889	Liu, Brian	Liu, Brian	USA	name+fed+age
@@ -1331,13 +1788,16 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 31146648	566000360	Raaja, Avira	Raaja, Avira	USA	name+fed+age
 31153487	34137238	Laishevkin, Mykhailo	Laishevkin, Mykhailo	UKR	name+fed+age
 31159125	39989810	Chen, Tony	Chen, Tony	USA	name+fed+age
+31160074	39978265	Palla, Shashank	Palla, Shashank	USA	name+fed+age
 31160822	39957438	Chelladorai, Isabelle	Chelladorai, Isabelle	USA	name+fed+age
 31161091	39957420	Chelladorai, Joshua	Chelladorai, Joshua	USA	name+fed+age
 31163791	25113879	Ramesh, Nehanraj	Ramesh, Nehanraj	USA	name+fed+age
 31165944	39978273	Palla, Roopali	Palla, Roopali	USA	name+fed+age
+31178280	39959759	Qian, Jack Letian	Qian, Jack Letian	USA	name+fed+age
 31180216	39991628	Muthoo, Anbu Chezhiyan	Muthoo, Anbu Chezhiyan	USA	name+fed+age
 31180759	39988287	Daddario, Aayush	Daddario, Aayush	USA	name+fed+age
 31184590	39932648	Sabarish, Shravan	Sabarish, Shravan	USA	name+fed+age
+31188408	39981975	Laney, Brexton	Laney, Brexton	USA	name+fed+age
 31209632	39955230	Weiss, Roi	Weiss, Roi	USA	name+fed+age
 31210067	39982408	Yan, Valerie	Yan, Valerie	USA	name+fed+age
 31211179	39944255	Nguyen, Alex	Nguyen, Alex	USA	name+fed+age
@@ -1350,19 +1810,27 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 31235349	8626480	XUE, TIANHAO	Xue, Tianhao	CHN	name+fed+age
 31235579	39952258	Bleiberg, Jacob Ernest	Bleiberg, Jacob Ernest	USA	name+fed+age
 31241102	566000343	Raaja, Mithran	Raaja, Mithran	USA	name+fed+age
+31249664	7007167	van Dooijeweert, Sebastian	Endo van Dooijeweert, Sebastian	JPN	name-subset+fed+age
 31256739	411850	Smith, Olivia	Smith, Olivia	WLS	name+fed+age
+31261939	39983633	Nair, Harinandh	Nair, Harinandh	USA	name+fed+age
 31264605	39958191	Jiang, Caroline Q	Jiang, Caroline Q	USA	name+fed+age
 31264633	566026784	Chen, Ivy	Chen, Ivy	USA	name+fed+age
 31266687	39953203	Zhang, Laura	Zhang, Laura	USA	name+fed+age
 31269264	39967760	Ivanov, Matvey	Ivanov, Matvey	USA	name+fed+age
 31275275	39970370	Kouyate, Dervin	Kouyate, Dervin	USA	name+fed+age
+31285792	39964434	Wills, Daniel	Wills, Daniel	USA	name+fed+age
 31292230	6007937	Kao, Jamison Edrich	Kao, Jamison Edrich	HKG	name+fed+age
 31293417	39946959	Raj, Skandha	Raj, Skandha	USA	name+fed+age
 31296341	39950352	Su, Milo	Su, Milo	USA	name+fed+age
+31298210	39947580	Singh, Arnav	Singh, Arnav	USA	name+fed+age
 31302481	81414013	Loayza Rivera, Bryan James	Loayza Rivera, Bryan James	PER	name+fed+age
 31312167	39968979	Phillips, Maximus A	Phillips, Maximus A	USA	name+fed+age
 31312861	39955591	Huang, Si Hao	Huang, Si Hao	USA	name+fed+age
+31316019	39948463	Araujo, Gabriel Joseph	Araujo, Gabriel Joseph	USA	name+fed+age
 31330126	13441094	Bakhishova, Maryam	Bakhishova, Maryam	AZE	name+fed+age
+31332342	39938034	Patil, Arjun	Patil, Arjun Chetan	USA	name-subset+fed+age
+31337940	39945111	Murugan, Akil Kumar	Murugan, Akil Kumar	USA	name+fed+age
+31350991	566017831	Shephard, Nathan	Shephard, Nathan	USA	name+fed+age
 31352797	39960919	Xu, Olivia	Xu, Olivia	USA	name+fed+age
 31353746	566020840	YUAN, GRACE	Yuan, Grace	USA	name+fed+age
 31353893	39977773	Xiong, Lucas	Xiong, Lucas	USA	name+fed+age
@@ -1373,7 +1841,9 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 31365654	39982530	Paleja, Zoe	Paleja, Zoe	USA	name+fed+age
 31368540	39991296	Maokhampio, Olivia	Maokhampio, Olivia	USA	name+fed+age
 31368597	39983307	Maokhampio, Lucas	Maokhampio, Lucas	USA	name+fed+age
+31368701	39954803	Byelashova, Darya	Byelashova, Darya	USA	name+fed+age
 31373726	39986098	Meng, Max	Meng, Max	USA	name+fed+age
+31374191	39997162	Xiong, Alex	Xiong, Alex	USA	name+fed+age
 31376689	39951022	Ye, Brian	Ye, Brian	USA	name+fed+age
 31378607	39938956	Sabarish, Shashwath	Sabarish, Shashwath	USA	name+fed+age
 31378780	39974944	Zhang, Allison J	Zhang, Allison J	USA	name+fed+age
@@ -1385,15 +1855,18 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 31390134	39990648	Sardar, Ekam S	Sardar, Ekam S	USA	name+fed+age
 31390648	39970639	Bernstein, Charles B	Bernstein, Charles B	USA	name+fed+age
 31390759	48746363	Garnepudi, Vaisali	Vaisali Garnepudi	IND	name+fed+age
+31393447	55642713	DABAEVA, ARINA	Dabaeva, Arina Vad	RUS	name-subset+fed+age
 31394375	39954781	Byelashova, Sofia	Byelashova, Sofia	USA	name+fed+age
 31394432	39964833	Chen, Winston Ruiying	Chen, Winston Ruiying	USA	name+fed+age
 31395087	39959953	Osman, Yaseen	Osman, Yaseen	USA	name+fed+age
+31399400	39987817	Chen, Azariah	Chen, Azariah Bryan	USA	name-subset+fed+age
 31400593	39953424	Khudyev, Elina Umi	Khudyev, Elina Umi	USA	name+fed+age
 31406007	12420131	Can, Thanh Chi	Can, Chi Thanh	VIE	name+fed+age
 31416581	39976068	Wu, Shanna	Wu, Shanna	USA	name+fed+age
 31417777	39985717	Zhou, Zihan Brendon	Zhou, Zihan Brendon	USA	name+fed+age
 31419170	39985539	Nelakurthy, Vihaan	Nelakurthy, Vihaan	USA	name+fed+age
 31420695	39961745	Nigam, Myra	Nigam, Myra	USA	name+fed+age
+31422407	39937410	Williams, Theodore	Williams, Theodore	USA	name+fed+age
 31428855	39971015	Yan, Grace Lingxin	Yan, Grace Lingxin	USA	name+fed+age
 31429328	39978389	Vignesh, Laksha	Vignesh, Laksha	USA	name+fed+age
 31431024	39996883	Radjabov, Samir	Radjabov, Samir	USA	name+fed+age
@@ -1403,6 +1876,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 31440567	39974367	Chan, William	Chan, William	USA	name+fed+age
 31444912	39950530	Zheng, William	Zheng, William	USA	name+fed+age
 31446853	566003180	PRASAD, AVYAAN	Prasad, Avyaan	USA	name+fed+age
+31448479	39942570	Vairavan, Kavin	Vairavan, Kavin	USA	name+fed+age
 31450577	39989399	Long, Ethan	Long, Ethan	USA	name+fed+age
 31453265	39948080	Meadors, Landon	Meadors, Landon	USA	name+fed+age
 31456373	25671758	Pratheep Kumar, Amudha	Pratheep Kumar, Amudha	USA	name+fed+age
@@ -1410,8 +1884,10 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 31465705	566019311	Iyer, Aadvik	Iyer, Aadvik	USA	name+fed+age
 31466883	39949427	Qin, Skyler	Qin, Skyler	USA	name+fed+age
 31478922	39978214	Nallu, Yashwin Reddy	Nallu, Yashwin Reddy	USA	name+fed+age
+31479603	55816681	Fedorov, Svetoslav Borisovich	Fedorov, Svetoslav	RUS	name-subset+fed+age
 31486157	33418306	Maneesh, Avantika	Avantika Maneesh	IND	name+fed+age
 31490450	39982378	Chang, Charlotte Tai-En	Chang, Charlotte Tai-En	USA	name+fed+age
+31490740	33401624	Rajagopalan, Krishna	Krishna Rajagopalan	IND	name+fed+age
 31493104	39956369	Dai, Jonathan	Dai, Jonathan	USA	name+fed+age
 31493287	39952800	kandi, PRANAV	Kandi, Pranav	USA	name+fed+age
 31493887	566007062	Vignesh, Vihaandev	Vignesh, Vihaandev	USA	name+fed+age
@@ -1425,12 +1901,15 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 31523128	39968790	Zhang, Matthew	Zhang, Matthew	USA	name+fed+age
 31531624	39999408	GACHIRI, MAXWELL	Gachiri, Maxwell	USA	name+fed+age
 31535718	39955567	Zhou, Francis	Zhou, Francis	USA	name+fed+age
+31539287	39980065	Vattikuti, Sahith	Vattikuti, Sahith	USA	name+fed+age
 31545873	39985725	Huang, Sean	Huang, Sean	USA	name+fed+age
 31559668	39956261	Gallagher, Miriam	Gallagher, Miriam	USA	name+fed+age
 31567870	39954625	He, Oliver Lang	He, Oliver Lang	USA	name+fed+age
+31569531	39971384	Loyalka, Lua	Loyalka, Lua	USA	name+fed+age
 31575027	39995623	Lagzdin, Mikhail	Lagzdin, Mikhail	USA	name+fed+age
 31577261	3501639	Morella Cabrera, Julio Antonio	Morella Cabrera, Julio Antonio	CUB	name+fed+age
 31597048	39997960	Kelsch, Gallagher	Kelsch, Gallagher	USA	name+fed+age
+31600322	39933873	Hsu, Noah	Hsu, Noah	USA	name+fed+age
 31603312	39977110	Turaga, Varun Karthik	Turaga, Varun Karthik	USA	name+fed+age
 31610593	39950522	Tare, Eevie	Tare, Eevie	USA	name+fed+age
 31619668	39998533	Rahul, Rihaan	Rahul, Rihaan	USA	name+fed+age
@@ -1485,6 +1964,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 31902347	39982882	Chatterjee, Shourjo	Chatterjee, Shourjo	USA	name+fed+age
 31903628	39974537	Huang, Aiden	Huang, Aiden	USA	name+fed+age
 31907445	39968464	Li, Shawn	Li, Shawn	USA	name+fed+age
+31910876	39984214	Ndengang, Aviel Alanyengi	Ndengang, Aviel Alanyengi	USA	name+fed+age
 31922477	39978443	Upadrasta, Atharv	Upadrasta, Atharv	USA	name+fed+age
 31926970	39976742	Ren, Easton	Ren, Easton	USA	name+fed+age
 31930554	39976149	Chang, Allison	Chang, Allison	USA	name+fed+age
@@ -1496,22 +1976,28 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 31946530	10669515	George, Kevin	George, Kevin	EGY	name+fed+age
 31948699	566008867	Gao, Elvin	Gao, Elvin	USA	name+fed+age
 31952635	566006988	Liu, Jessica Yongxin	Liu, Jessica Yongxin	USA	name+fed+age
+31956702	39943305	Zhao, Raymond	Zhao, Raymond Rubao	USA	name-subset+fed+age
 31956728	39994546	Li, Pei Ning	Li, Pei Ning	USA	name+fed+age
 31962377	34166262	Pikh, Akim	Pikh, Akim	UKR	name+fed+age
 31968176	39984150	Shanmuganathan, Zayn	Shanmuganathan, Zayn	USA	name+fed+age
 31968521	39986276	Reddy Pittu, Jayaditya	Reddy Pittu, Jayaditya	USA	name+fed+age
 31968556	566009308	Koyyalamudi, Vedu	Koyyalamudi, Vedu	USA	name+fed+age
+31973857	566002915	Tien (Peter), Vu Lan	Vu, Peter	USA	name-subset+fed+age
 31979184	566006872	Basu, Sainika	Basu, Sainika	USA	name+fed+age
 31979530	39988015	Thokur, Dhruv	Thokur, Dhruv	USA	name+fed+age
 31979844	7006357	Nishida, Eito	Nishida, Eito	JPN	name+fed+age
 31980852	2526050	Spence, Beckett	Spence, Beckett	IRL	name+fed+age
 31982613	39982564	Tang, Martin	Tang, Martin	USA	name+fed+age
+31985518	39998053	Doshi, Ansh Ankit	Doshi, Ansh Ankit	USA	name+fed+age
+31989266	39996433	Sai, Inba Siva	Sai, Inba Siva	USA	name+fed+age
+31989874	39983188	Ta, Luke Asher	Ta, Luke	USA	name-subset+fed+age
 31991141	3507475	Soto Hernandez, Henry	Soto Hernandez, Henry	CUB	name+fed+age
 31992255	39995801	Pande, Aryan	Pande, Aryan	USA	name+fed+age
 31992590	25019872	Bommini, Mounika Akshaya	Bommini Mounika Akshaya	IND	name+fed+age
 31994889	39976963	Devaiah, Roy	Devaiah, Roy	USA	name+fed+age
 31997127	39997634	Lam, Dylan	Lam, Dylan	USA	name+fed+age
 31997245	39982327	Xu, Max	Xu, Max	USA	name+fed+age
+31998151	3804178	Chumpitaz, Ann Lindsay	Chumpitaz, Ann	PER	name-subset+fed+age
 32004268	39994074	Salguti, Sai Viraj	Salguti, Sai Viraj	USA	name+fed+age
 32012686	39978303	Meadors, Christian	Meadors, Christian	USA	name+fed+age
 32015307	566000211	Chen, Jaden Bao	Chen, Jaden Bao	USA	name+fed+age
@@ -1527,11 +2013,14 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 32069722	566004632	Mallapu, Mokshith Kumar	Mallapu, Mokshith Kumar	USA	name+fed+age
 32084741	566000823	Karthik, Dhanya	Karthik, Dhanya	USA	name+fed+age
 32093506	566005817	Cheng, Angelina	Cheng, Angelina	USA	name+fed+age
+32093572	566005809	Cheng, Isabella	Cheng, Isabella	USA	name+fed+age
+32094369	3507831	Perez Rodriguez, Jennifer	Perez Rodriguez, Jennifer	PAR	name+fed+age
 32097558	39987671	Wonsidler, Paul	Wonsidler, Paul	USA	name+fed+age
 32103096	39989801	Ju, Jason Jialong	Ju, Jason Jialong	USA	name+fed+age
 32115321	2665328	Szeto, Martina	Szeto, Martina	CAN	name+fed+age
 32137289	39984451	Zeng, Melody	Zeng, Melody	USA	name+fed+age
 32144440	566006236	Han, Felix	Han, Felix	USA	name+fed+age
+32149890	39978117	Kadher Sulaimon, Muhammad Abdur Rahman	Kadher Sulaimon, Muhammad Abdur Rahman	USA	name+fed+age
 32155195	39979644	Livinskyi, Akim	Livinskyi, Akim	USA	name+fed+age
 32157518	39986713	Rathi, Aarav Sodhani	Rathi, Aarav Sodhani	USA	name+fed+age
 32172683	3118193	Stuart, Sean	Stuart, Sean	PUR	name+fed+age
@@ -1539,8 +2028,13 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 32205615	566016320	Neshvadian, Dario	Neshvadian, Dario	USA	name+fed+age
 32216299	566008735	Chanda, Rishabh	Chanda, Rishabh	USA	name+fed+age
 32221585	34425969	lyutsinger, Iren	Lyutsinger, Iren	FID	name+fed+age
+32223114	5038650	Gagare, Shalmali	Gagare, Shalmali	IND	name+fed+age
 32250708	39985105	Kulkarni, Samik	Kulkarni, Samik	USA	name+fed+age
+32252989	2662264	Singh, Arnav	Singh, Arnav	CAN	name+fed+age
+32285622	566021480	MEJIA, EVA	Mejia, Eva	USA	name+fed+age
 32327593	39995569	Adreddy, Saahith Reddy	Adreddy, Saahith Reddy	USA	name+fed+age
+32327810	6213430	Kledmanee, Darun	Kledmanee, Darun	THA	name+fed+age
+32328131	39978257	Kuo, Olivia	Kuo, Olivia Jade	USA	name-subset+fed+age
 32371070	39989526	Singh, Aarav	Singh, Aarav	USA	name+fed+age
 32396886	537014005	Karuturi, Sharanya	Sharanya Karuturi	IND	name+fed+age
 32404660	39993973	Sahu, Aarush	Sahu, Aarush	USA	name+fed+age
@@ -1552,6 +2046,7 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 32495453	566007291	Nair, Bhagavat	Nair, Bhagavat	USA	name+fed+age
 32500775	39999181	Sridhar, Riya	Sridhar, Riya	USA	name+fed+age
 32511540	895733	Sonis, Francesco	Sonis, Francesco	ITA	name+fed+age
+32512780	132104330	Madirawalage, Usara	Madirawalage, Usara Evin	USA	name-subset+fed+age
 32530523	566004640	Murugesh, Hyindhav	Murugesh, Hyindhav	USA	name+fed+age
 32545514	566017068	George, Joshua Mathews	George, Joshua Mathews	USA	name+fed+age
 32551529	51683288	Kaya, Mars	Kaya, Mars	USA	name+fed+age
@@ -1560,11 +2055,14 @@ uschess_id	fide_id	uschess_name	fide_name	fide_fed	matched_by
 32570535	25937219	SAXENA, APAAR	Apaar Saxena	IND	name+fed+age
 32604202	12424803	Duong, Vu Anh	Duong Vu Anh	VIE	name+fed+age
 32620529	566023505	Lasch, Beckett Houston	Lasch, Beckett Houston	USA	name+fed+age
+32648700	2683024	Fang, Echo	Fang, Echo Heming	CAN	name-subset+fed+age
+32653066	566024277	Jumaniyazov, Arslan	Jumaniyazov, Arslan	USA	name+fed+age
 32677551	10831053	Kuka, Riziki	Kuka Riziki	KEN	name+fed+age
 32677569	10825606	Wambui Gikandi, Bernice	Gikandi Bernice Wambui	KEN	name+fed+age
 32677574	10831533	Kuka, Kyle	Kuka Kyle	KEN	name+fed+age
 32677596	10812091	Mumbi Muturi, Erica	Muturi, Erica Mumbi	KEN	name+fed+age
 32784274	538024250	Jaffe Zacharias, Sofia	Zacharias, Sofia Jaffe	BRA	name+fed+age
+32785928	5304946	Arkadan, Adib	Arkadan, Adib	LBN	name+fed+age
 32809389	2860368	Eshkol, Idan	Eshkol, Idan	ISR	name+fed+age
 32809394	2846209	Eshkol, Lilian	Eshkol, Lilian	ISR	name+fed+age
 32825319	566026512	Li, Yi	Li, Yi	USA	name+fed+age

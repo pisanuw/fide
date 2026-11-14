@@ -18,3 +18,4 @@
 2026-11-13 [note] Render did not apply render.yaml changes (RATE_LIMIT still 60 live): env vars and start command are set in the Render dashboard.
 2026-11-14 [decision] US Chess ids from the 160 US Chess top-100 lists (owner authorized despite robots.txt Disallow), matched to FIDE by name + federation + sex + age-list birth year.
 2026-11-14 [code] uschess_id field (null if unknown), digit search over FIDE and US Chess ids, /api/players/uschess/<id>, scripts/uschess_top100.py, data/uschess_fide.tsv.
+2026-11-14 [code] Full fetch: 160 lists, 3633 US Chess players, 2068 matched (1797 exact name, 271 name subset e.g. middle names); 19 ambiguous, 45 no fit, 2 dropped. Memory unchanged.

@@ -9,6 +9,9 @@ needs the FIDE federation to be US Chess's country code or USA, the sex not to
 conflict, and a FIDE birth year to fit the age lists the player is on (e.g.
 "Regular12", "65Plus"). Names that fit several FIDE players, or only players in another
 federation, are skipped and reported: a wrong id is worse than a missing one.
+A second pass accepts a unique FIDE player whose name words are a superset or
+subset of the US Chess name (a middle name on one side only), with the same
+checks; those rows are marked name-subset+fed+age.
 
 Note: ratings.uschess.org's robots.txt disallows automated access. The owner of
 this project authorized fetching these lists (2026-11-14). Keep requests minimal:
@@ -116,11 +119,21 @@ def match_players(us: dict[str, dict], ix: PlayerIndex) -> dict:
     """Match US Chess players to FIDE records. Returns rows and the reasons others were skipped."""
     fi = {f: FIELDS.index(f) for f in ("fideid", "name", "fed", "sex", "birthday")}
     by_name: dict[tuple, list] = defaultdict(list)
+    by_word: dict[str, list] = defaultdict(list)
     for rec in ix.records:
         parts = rec.split(SEP)
-        by_name[tuple(sorted(fold(parts[fi["name"]]).split()))].append(
-            (int(parts[fi["fideid"]]), parts[fi["name"]], parts[fi["fed"]], parts[fi["sex"]],
-             int(parts[fi["birthday"]]) if parts[fi["birthday"]].isdigit() else 0))
+        words = tuple(sorted(fold(parts[fi["name"]]).split()))
+        c = (int(parts[fi["fideid"]]), parts[fi["name"]], parts[fi["fed"]], parts[fi["sex"]],
+             int(parts[fi["birthday"]]) if parts[fi["birthday"]].isdigit() else 0, frozenset(words))
+        by_name[words].append(c)
+        for w in set(words):
+            by_word[w].append(c)
+
+    def fits(p, c) -> bool:
+        lo, hi = p["born"]
+        return (c[2] in {p["country"] or "USA", "USA"}
+                and (not p["sex"] or not c[3] or c[3] == p["sex"])
+                and (not c[4] or lo <= c[4] <= hi))
 
     rows, unmatched, ambiguous, other_fed = [], [], [], []
     for p in us.values():
@@ -129,16 +142,12 @@ def match_players(us: dict[str, dict], ix: PlayerIndex) -> dict:
         # precision over recall: a wrong id is worse than a missing one. The FIDE federation
         # must be US Chess's country code or USA, the sex must not conflict, and a FIDE birth
         # year must fit the age lists the player is on.
-        feds = {p["country"] or "USA", "USA"}
-        lo, hi = p["born"]
-        same = [c for c in cands if c[2] in feds
-                and (not p["sex"] or not c[3] or c[3] == p["sex"])
-                and (not c[4] or lo <= c[4] <= hi)]
+        same = [c for c in cands if fits(p, c)]
         if len(same) > 1:  # prefer the player's own country code over USA
             own = [c for c in same if c[2] == (p["country"] or "USA")]
             same = own if len(own) == 1 else same
         if len(same) == 1:
-            fid, fname, ffed, _, _ = same[0]
+            fid, fname, ffed = same[0][:3]
             rows.append((p["id"], fid, f"{p['last']}, {p['first']}", fname, ffed, "name+fed+age"))
         elif same:
             ambiguous.append((p, same))
@@ -146,6 +155,27 @@ def match_players(us: dict[str, dict], ix: PlayerIndex) -> dict:
             other_fed.append((p, cands))
         else:
             unmatched.append(p)
+
+    # second pass: one name's words are a subset of the other's (a middle name or initial
+    # on one side only: "Niemann, Hans" / "Niemann, Hans Moke"), same checks, must be unique
+    taken = {r[1] for r in rows}
+    still = []
+    for p in unmatched:
+        words = frozenset(fold(f"{p['first']} {p['last']}").split())
+        last = fold(p["last"]).split()
+        if len(words) < 2 or not last:
+            still.append(p)
+            continue
+        cands = {c for c in by_word[last[-1]]
+                 if (words < c[5] or c[5] < words) and len(c[5]) >= 2 and c[0] not in taken and fits(p, c)}
+        if len(cands) == 1:
+            fid, fname, ffed = next(iter(cands))[:3]
+            rows.append((p["id"], fid, f"{p['last']}, {p['first']}", fname, ffed, "name-subset+fed+age"))
+        elif cands:
+            ambiguous.append((p, sorted(cands)))
+        else:
+            still.append(p)
+    unmatched = still
 
     # one FIDE player must not get two US Chess ids
     per_fide = defaultdict(list)
@@ -168,7 +198,7 @@ def match(cache: Path) -> None:
         w.writerow(["uschess_id", "fide_id", "uschess_name", "fide_name", "fide_fed", "matched_by"])
         w.writerows(rows)
     print(f"US Chess players in lists: {len(us)}")
-    print(f"matched: {len(rows)}")
+    print(f"matched: {len(rows)}  ({', '.join(f'{k}: {sum(x[5] == k for x in rows)}' for k in sorted({x[5] for x in rows}))})")
     print(f"no FIDE player with that name: {len(unmatched)}")
     print(f"ambiguous, same name and federation (skipped): {len(ambiguous)}")
     print(f"name found, but federation, sex or birth year does not fit (skipped): {len(other_fed)}")
