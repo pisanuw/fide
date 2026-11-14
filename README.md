@@ -10,6 +10,7 @@ Live: https://fide-lookup.hintwise.org
     GET /api/players?q=magnus carl&limit=3&format=xml
     GET /api/players?q=1503014&format=txt&download=1   FIDE id, attachment
     GET /api/players/fide/1503014                   exact FIDE id (404 if none)
+    GET /api/players/uschess/12743305               exact US Chess id (404 if not mapped)
 
 `format` is `json` (default), `xml` or `txt` (tab-separated, header row). All fields are always returned.
 `download=1` adds `Content-Disposition: attachment`. `limit` is 1-30 (default 5).
@@ -20,7 +21,9 @@ players with no year never match `born`). Filters apply to name and id searches;
 and "(N more entries match your search)" under the results.
 
 Search: all words must match. A query equal to the whole name (any word order, 2+ words) comes first, then prefix-of-a-word matches, then substring matches; each group is
-ordered by standard, then rapid, then blitz rating. Accents and punctuation are ignored. An all-digit `q` is a FIDE id: exact match first, then ids that start with those digits (3+ digits), best rating first.
+ordered by standard, then rapid, then blitz rating. Accents and punctuation are ignored. An all-digit `q` is a FIDE id or
+a US Chess id: exact matches of either kind first (an 8-digit number can be one player's FIDE id and another's US Chess id),
+then ids of either kind that start with those digits (3+ digits), best rating first.
 
 Only players with a rating in any list are indexed (about 800k of 1.95M); set `INCLUDE_UNRATED=1` for all.
 Data: newest `players/*/players_list_txt.zip`, loaded at startup (~8 s, ~320 MB RAM).
@@ -41,3 +44,9 @@ checks the column layout and player count, files it under `players/YYYYMM/` usin
 zip), runs the tests, and commits and pushes to `main` only when a new month arrived; Render redeploys from that push.
 `refresh_on_host.sh --check` verifies Python, git push access and FIDE reachability without changing anything.
 Log: `~/Library/Logs/fide-refresh.log`.
+
+US Chess ids: `data/uschess_fide.tsv` maps US Chess ids to FIDE ids for players on US Chess's top-100 lists
+(all 160 lists at ratings.uschess.org/top100, fetched 2026-11-14). The lists carry no FIDE id, so players are matched
+by name, and the FIDE federation must equal US Chess's country code and the sex must agree; ambiguous names are skipped. Every player record has a
+`uschess_id` field (null when unknown). ratings.uschess.org's robots.txt disallows automated access; the project owner
+authorized this fetch. Refresh: `python scripts/uschess_top100.py fetch CACHE_DIR` then `... match CACHE_DIR`.
