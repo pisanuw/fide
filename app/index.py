@@ -9,13 +9,15 @@ Name search tiers (each tier is rating-ordered; tiers are concatenated):
   2. every query word is a substring somewhere in the name (fallback)
 The total count is the size of tier 2's set, which contains the other tiers.
 
-Digit queries are FIDE ids: the exact id first, then ids starting with those
-digits (3+ digits), best rating first.
+Digit queries are FIDE or US Chess ids: exact matches of either kind first,
+then ids of either kind starting with those digits (3+ digits), best rating
+first. US Chess ids come from an optional mapping (data/uschess_fide.tsv).
 
 Optional filters: fed (federation code) and born (birth year).
 """
 from __future__ import annotations
 
+import csv
 import glob
 import heapq
 import io
@@ -38,7 +40,8 @@ _COLS = {
 }
 _INT_FIELDS = {"rating", "games", "k", "rapid_rating", "rapid_games", "rapid_k",
                "blitz_rating", "blitz_games", "blitz_k", "birthday"}
-FIELDS = ["fideid", "name"] + list(_COLS)
+_REC_FIELDS = ["fideid", "name"] + list(_COLS)          # stored per player
+FIELDS = _REC_FIELDS + ["uschess_id"]                    # returned (uschess_id may be None)
 _RATING_COLS = [_COLS[c] for c in ("rating", "rapid_rating", "blitz_rating")]
 SEP = "\x1f"
 
@@ -76,8 +79,20 @@ def _group(keys: array) -> dict[int, array]:
     return groups
 
 
+def load_uschess_map(path: str) -> dict[int, int]:
+    """{FIDE id: US Chess id} from a TSV with uschess_id and fide_id columns; {} if absent."""
+    if not os.path.isfile(path):
+        return {}
+    out: dict[int, int] = {}
+    with open(path, newline="") as f:
+        for row in csv.DictReader(f, delimiter="\t"):
+            if row.get("uschess_id", "").isdigit() and row.get("fide_id", "").isdigit():
+                out[int(row["fide_id"])] = int(row["uschess_id"])
+    return out
+
+
 class PlayerIndex:
-    def __init__(self, lines, include_unrated: bool = False):
+    def __init__(self, lines, include_unrated: bool = False, uschess: dict[int, int] | None = None):
         """lines: raw fixed-width data lines (no header)."""
         rows = []
         for raw in lines:
@@ -129,26 +144,42 @@ class PlayerIndex:
         self.id_pos = array("I", order)
         self.blob = "".join(blob_parts)
         self.offsets = offsets
+        self.set_uschess(uschess or {})
+
+    def set_uschess(self, fide_to_uschess: dict[int, int]) -> None:
+        """US Chess ids for FIDE players: {fide id: US Chess id}. Unknown FIDE ids are ignored."""
+        self.uschess_of: dict[int, int] = {}          # line -> US Chess id
+        pairs = []
+        for fid, uid in fide_to_uschess.items():
+            pos = self._pos_of_id(fid)
+            if pos is not None:
+                self.uschess_of[pos] = uid
+                pairs.append((uid, pos))
+        pairs.sort()
+        self.us_sorted = array("q", (u for u, _ in pairs))
+        self.us_pos = array("I", (p for _, p in pairs))
 
     @classmethod
-    def from_zip(cls, path: str, include_unrated: bool = False) -> "PlayerIndex":
+    def from_zip(cls, path: str, include_unrated: bool = False,
+                 uschess: dict[int, int] | None = None) -> "PlayerIndex":
         with zipfile.ZipFile(path) as z:
             member = next(n for n in z.namelist() if n.endswith(".txt"))
             with z.open(member) as f:
                 text = io.TextIOWrapper(f, encoding="utf-8", errors="replace", newline="")
                 next(text)  # header
-                return cls((l.rstrip("\r\n") for l in text), include_unrated)
+                return cls((l.rstrip("\r\n") for l in text), include_unrated, uschess)
 
     def __len__(self) -> int:
         return len(self.records)
 
     # -- record access -----------------------------------------------------
     def record(self, i: int) -> dict:
-        d: dict = dict(zip(FIELDS, self.records[i].split(SEP)))
+        d: dict = dict(zip(_REC_FIELDS, self.records[i].split(SEP)))
         for key in _INT_FIELDS:
             v = d[key]
             d[key] = int(v) if v.isdigit() else 0
         d["fideid"] = int(d["fideid"])
+        d["uschess_id"] = self.uschess_of.get(i)
         return d
 
     def _pos_of_id(self, fid: int) -> int | None:
@@ -156,6 +187,16 @@ class PlayerIndex:
         if j < len(self.id_sorted) and self.id_sorted[j] == fid:
             return self.id_pos[j]
         return None
+
+    def _pos_of_uschess(self, uid: int) -> int | None:
+        j = bisect_left(self.us_sorted, uid)
+        if j < len(self.us_sorted) and self.us_sorted[j] == uid:
+            return self.us_pos[j]
+        return None
+
+    def get_uschess(self, uid: int) -> dict | None:
+        i = self._pos_of_uschess(uid)
+        return None if i is None else self.record(i)
 
     def get_fide(self, fid: int) -> dict | None:
         i = self._pos_of_id(fid)
@@ -214,28 +255,35 @@ class PlayerIndex:
         _, total, exact = self.find(q, 1, fed, born, cap)
         return total, exact
 
+    @staticmethod
+    def _prefix_ranges(sorted_ids: array, positions: array, q: str) -> list[array]:
+        """Positions of ids that start with the digits q and are longer than q."""
+        if len(q) < 3:  # 1-2 digits are too ambiguous for prefix matching
+            return []
+        base, out = int(q), []
+        for k in range(1, 10 - len(q) + 1):  # ids have at most 9 digits
+            lo = bisect_left(sorted_ids, base * 10 ** k)
+            hi = bisect_left(sorted_ids, (base + 1) * 10 ** k)
+            if hi > lo:
+                out.append(positions[lo:hi])
+        return out
+
     def _find_id(self, q: str, limit: int, flt) -> tuple[list[int], int, bool]:
         base = int(q)
-        exact_pos = self._pos_of_id(base)
-        ranges = []
-        if len(q) >= 3:  # 1-2 digits are too ambiguous for prefix matching
-            for k in range(1, 10 - len(q) + 1):  # FIDE ids have at most 9 digits
-                lo = bisect_left(self.id_sorted, base * 10 ** k)
-                hi = bisect_left(self.id_sorted, (base + 1) * 10 ** k)
-                if hi > lo:
-                    ranges.append(self.id_pos[lo:hi])
-        if flt is None:
-            total = (exact_pos is not None) + sum(len(r) for r in ranges)
-            prefix = heapq.nsmallest(limit, chain.from_iterable(ranges))
+        exact = {p for p in (self._pos_of_id(base), self._pos_of_uschess(base)) if p is not None}
+        fide_ranges = self._prefix_ranges(self.id_sorted, self.id_pos, q)
+        us_ranges = self._prefix_ranges(self.us_sorted, self.us_pos, q)
+        if flt is None and not us_ranges and not (exact - {self._pos_of_id(base)}):
+            # FIDE ids only: the exact id cannot be in its own prefix ranges; count by arithmetic
+            total = len(exact) + sum(len(r) for r in fide_ranges)
+            prefix = heapq.nsmallest(limit, chain.from_iterable(fide_ranges))
         else:
-            ok = self._ok(flt)
-            if exact_pos is not None and not ok(exact_pos):
-                exact_pos = None
-            cands = [p for p in chain.from_iterable(ranges) if ok(p)]
-            total = (exact_pos is not None) + len(cands)
+            ok = self._ok(flt) if flt is not None else (lambda i: True)
+            exact = {p for p in exact if ok(p)}
+            cands = {p for p in chain.from_iterable(fide_ranges + us_ranges) if ok(p)} - exact
+            total = len(exact) + len(cands)
             prefix = heapq.nsmallest(limit, cands)
-        ids = ([exact_pos] if exact_pos is not None else []) + prefix
-        return ids[:limit], total, True
+        return (sorted(exact) + prefix)[:limit], total, True
 
     def _exact_two(self, tokens: list[str], ok, limit: int) -> list[int]:
         """Lines whose words are exactly the two tokens, either order, by direct search.

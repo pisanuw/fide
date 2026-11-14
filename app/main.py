@@ -12,11 +12,12 @@ from fastapi import FastAPI, HTTPException, Query, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse
 
-from .index import FIELDS, PlayerIndex, find_data_file
+from .index import FIELDS, PlayerIndex, find_data_file, load_uschess_map
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = os.environ.get("FIDE_DATA", str(ROOT / "players"))
 INCLUDE_UNRATED = os.environ.get("INCLUDE_UNRATED", "0") == "1"
+USCHESS_MAP = os.environ.get("USCHESS_MAP", str(ROOT / "data" / "uschess_fide.tsv"))
 RATE_LIMIT = int(os.environ.get("RATE_LIMIT", "120"))  # requests per window per IP
 RATE_WINDOW = float(os.environ.get("RATE_WINDOW", "60"))
 DEFAULT_LIMIT = 5
@@ -33,7 +34,8 @@ async def lifespan(app: FastAPI):
     if "index" not in state:  # tests may inject one
         path = find_data_file(DATA)
         t = time.time()
-        state["index"] = PlayerIndex.from_zip(path, INCLUDE_UNRATED)
+        uschess = load_uschess_map(USCHESS_MAP)
+        state["index"] = PlayerIndex.from_zip(path, INCLUDE_UNRATED, uschess)
         state["source"] = Path(path).parent.name
         print(f"loaded {len(state['index'])} players from {path} in {time.time() - t:.1f}s", flush=True)
     yield
@@ -91,9 +93,13 @@ app.add_middleware(
 
 
 # -- formatting ------------------------------------------------------------
+def _text(v) -> str:
+    return "" if v is None else str(v)
+
+
 def to_txt(players: list[dict]) -> str:
     lines = ["\t".join(FIELDS)]
-    lines += ["\t".join(str(p[f]) for f in FIELDS) for p in players]
+    lines += ["\t".join(_text(p[f]) for f in FIELDS) for p in players]
     return "\n".join(lines) + "\n"
 
 
@@ -101,7 +107,7 @@ def to_xml(players: list[dict]) -> str:
     out = ['<?xml version="1.0" encoding="UTF-8"?>', "<playerslist>"]
     for p in players:
         out.append("<player>")
-        out += [f"<{f}>{escape(str(p[f]))}</{f}>" for f in FIELDS]
+        out += [f"<{f}>{escape(_text(p[f]))}</{f}>" for f in FIELDS]
         out.append("</player>")
     out.append("</playerslist>")
     return "\n".join(out) + "\n"
@@ -143,6 +149,14 @@ def by_fide(fide_id: int, format: str = Format, download: bool = False):
     if p is None:
         raise HTTPException(404, "no such FIDE id")
     return render([p], format, download, f"fide-{fide_id}")
+
+
+@app.get("/api/players/uschess/{uschess_id}")
+def by_uschess(uschess_id: int, format: str = Format, download: bool = False):
+    p = state["index"].get_uschess(uschess_id)
+    if p is None:
+        raise HTTPException(404, "no FIDE player known for this US Chess id")
+    return render([p], format, download, f"uschess-{uschess_id}")
 
 
 @app.get("/api/whoami")

@@ -11,13 +11,14 @@
   .row{display:flex;gap:.5rem;align-items:center;margin:.6rem 0;flex-wrap:wrap}
   table{border-collapse:collapse;width:100%}
   td,th{padding:.35rem .5rem;border-bottom:1px solid #ddd;text-align:left}
+  th{white-space:nowrap}
   .num{text-align:right}
   small,.muted{color:#777}
   code{background:#f2f2f2;padding:0 .25rem}
 </style>
 </head>
 <body>
-<input id="q" placeholder="name or FIDE id" autofocus autocomplete="off">
+<input id="q" placeholder="name, FIDE id or US Chess id" autofocus autocomplete="off">
 <div class="row">
   <label>Format <select id="fmt"><option>json</option><option>xml</option><option>txt</option></select></label>
   <button id="all" disabled>Download all results</button>
@@ -51,10 +52,11 @@ async function search() {
 function draw() {
   $('all').disabled = !current.length;
   $('res').innerHTML = current.length
-    ? '<tr><th>Name</th><th>Fed</th><th>Title</th><th class="num">Std</th><th class="num">Rapid</th><th class="num">Blitz</th><th>FIDE id</th><th></th></tr>' +
+    ? '<tr><th>Name</th><th>Fed</th><th>Title</th><th class="num">Std</th><th class="num">Rapid</th><th class="num">Blitz</th><th>FIDE id</th><th>US Chess</th><th></th></tr>' +
       current.map(p => `<tr><td>${esc(p.name)}</td><td>${esc(p.fed)}</td><td>${esc(p.title)}</td>
         <td class="num">${p.rating||''}</td><td class="num">${p.rapid_rating||''}</td><td class="num">${p.blitz_rating||''}</td>
-        <td><a href="https://ratings.fide.com/profile/${p.fideid}" target="_blank" rel="noopener" title="FIDE profile">${p.fideid}</a></td><td><a href="${url('/api/players/fide/' + p.fideid, '&download=1')}">download</a></td></tr>`).join('')
+        <td><a href="https://ratings.fide.com/profile/${p.fideid}" target="_blank" rel="noopener" title="FIDE profile">${p.fideid}</a></td>
+        <td>${p.uschess_id ? `<a href="https://ratings.uschess.org/player/${p.uschess_id}" target="_blank" rel="noopener" title="US Chess profile">${p.uschess_id}</a>` : ''}</td><td><a href="${url('/api/players/fide/' + p.fideid, '&download=1')}">download</a></td></tr>`).join('')
     : '';
   const extra = total - current.length;
   $('more').textContent = extra <= 0 ? ''
